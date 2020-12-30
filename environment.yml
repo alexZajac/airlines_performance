@@ -1,0 +1,19 @@
+name: ramp-airlines-performance
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyter
+  - matplotlib
+  - numpy
+  - pandas
+  - scikit-learn
+
+  # Extra requirements conda
+
+  - pip
+  - pip:
+      - ramp-workflow
+      - osfclient
+
+    # Extra requirements pip
