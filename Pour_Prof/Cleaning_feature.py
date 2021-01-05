@@ -4,7 +4,7 @@ import datetime
 from sklearn.preprocessing import StandardScaler
 from pathlib import Path
 
-path = Path("../data/")
+path = Path("../data")
 # Read the CSV file, delete unnamed columns, creates load factor, keeps only number of seats > 10, creates DATE column
 
 

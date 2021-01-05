@@ -5,11 +5,13 @@ from geopy.geocoders import Nominatim
 from functools import partial
 import ast
 import datetime
+from pathlib import Path
 
-path = 'data/'
+path = Path("../data")
 features = ['TAVG', 'TMAX', 'PRCP', 'SNOW', 'WSPD', 'TSUN']
 tqdm.pandas()
-geolocator = Nominatim(user_agent="application_name", timeout=6000)
+geolocator = Nominatim(user_agent="city_coordinator", timeout=6000)
+
 
 def get_city_statistics(row, start_date, end_date, features, agg_freq="1M"):
     """Fetches all weather given stats for a longitude and latitude"""
@@ -31,35 +33,60 @@ def get_city_statistics(row, start_date, end_date, features, agg_freq="1M"):
     data.fillna(0., inplace=True)
     return data
 
-##Get lat and long fro each destination
 
-def lat_long_destinations(df) : 
-    unique_destinations = pd.DataFrame(df["DEST_CITY_NAME"].unique(), columns=["DEST_CITY_NAME"])
-    unique_destinations["LOCATION"] = unique_destinations["DEST_CITY_NAME"].progress_apply(geolocator.geocode)
-    unique_destinations["POINT"] = unique_destinations["LOCATION"].apply(lambda loc: tuple((loc.point[0], loc.point[1])) if loc else (0., 0.))
+def get_lat_long_destinations(df):
+    """Get lat and long for each destination"""
+    unique_destinations = pd.DataFrame(
+        df["DEST_CITY_NAME"].unique(), columns=["DEST_CITY_NAME"]
+    )
+    unique_destinations["LOCATION"] = unique_destinations["DEST_CITY_NAME"].progress_apply(
+        geolocator.geocode
+    )
+    unique_destinations["POINT"] = unique_destinations["LOCATION"].apply(
+        lambda loc: tuple((loc.point[0], loc.point[1])) if loc else (0., 0.)
+    )
     del unique_destinations["LOCATION"]
     return unique_destinations
 
-# get the weather information
-def get_weather_df(unique_destinations):
-    unique_destinations["POINT"] = unique_destinations["POINT"].apply(lambda x: ast.literal_eval(x))
-    start_date = datetime.datetime(2014, 1, 1)
-    end_date = datetime.datetime(2020, 1, 1)
-    lower_features = [f.lower() for f in features]
 
-    unique_destinations["WEATHER_STATS"] = unique_destinations.progress_apply(
-        partial(get_city_statistics, start_date=start_date, end_date=end_date, features=lower_features),
+def extract_weather_statistics(df):
+    """Calls the meteostat API to collect weather statistics"""
+    lower_features = [f.lower() for f in features]
+    df["WEATHER_STATS"] = df.progress_apply(
+        partial(
+            get_city_statistics,
+            start_date=start_date,
+            end_date=end_date,
+            features=lower_features
+        ),
         axis=1
     )
-    unique_destinations["DATE"] = unique_destinations.apply(lambda row: pd.date_range(start_date, end_date, freq="1M"), axis=1)
-    unique_destinations = unique_destinations.explode("DATE").reset_index()#drop = True ?
-    unique_destinations[["TAVG", "TMAX", "PRCP", "SNOW", "WSPD", "TSUN"]] = unique_destinations.progress_apply(
-        lambda row: row["WEATHER_STATS"].iloc[row.name % len(row["WEATHER_STATS"].index)], 
+    return df
+# get the weather information
+
+
+def get_weather_df(unique_destinations):
+    start_date = datetime.datetime(2014, 1, 1)
+    end_date = datetime.datetime(2020, 1, 1)
+    unique_destinations = extract_weather_statistics(unique_destinations)
+
+    # expand dimensions to one motnh for each airlines/corrdinate pair
+    unique_destinations["DATE"] = unique_destinations.apply(
+        lambda row: pd.date_range(start_date, end_date, freq="1M"), axis=1)
+    unique_destinations = unique_destinations.explode(
+        "DATE").reset_index(drop=True)
+    unique_destinations[features] = unique_destinations.progress_apply(
+        lambda row: row["WEATHER_STATS"].iloc[
+            row.name % len(row["WEATHER_STATS"].index)
+        ],
         axis=1
     )
     del unique_destinations["WEATHER_STATS"]
+    return unique_destinations
 
-df = pd.read_csv(path + 'features.csv')
-unique_destinations =  lat_long_destinations(df)
-weather_df = get_weather_df(unique_destinations)
-weather_df.to_csv("weather_dataset.csv")
+
+if __name__ == "__main__":
+    df = pd.read_csv(path / 'features.csv')
+    unique_destinations = get_lat_long_destinations(df)
+    weather_df = get_weather_df(unique_destinations)
+    weather_df.to_csv("weather_dataset.csv")
