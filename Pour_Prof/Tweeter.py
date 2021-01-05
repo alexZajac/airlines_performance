@@ -1,8 +1,4 @@
-import re
-import csv
-import os
 from time import sleep
-from selenium.common.exceptions import NoSuchElementException
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import argparse
@@ -13,16 +9,12 @@ import datetime
 import pandas as pd
 import multiprocessing as mp
 from functools import partial
-import calendar
-import signal
 import sys
 
 
-def init_worker():
-    signal.signal(signal.SIGINT, signal.SIG_IGN)
-
-
 class Tweet:
+    """Wrapper class to contain scraped tweets data"""
+
     def __init__(self, username, timestamp, text, likes, retweets, replies, url):
         self.username = username
         self.timestamp = timestamp
@@ -35,11 +27,6 @@ class Tweet:
 
 def get_data(card):
     """Extract data from tweet card"""
-    # try:
-    #     username = card.find_element_by_xpath('.//span').text
-    # except:
-    #     return
-
     try:
         handle = card.find_element_by_xpath(
             './/span[contains(text(), "@")]').text
@@ -82,13 +69,6 @@ def get_data(card):
     except:
         like_cnt = 0
 
-    # try:
-    #     element = card.find_element_by_xpath(
-    #         './/div[2]/div[2]//img[contains(@src, "twimg")]')
-    #     image_link = element.get_attribute('src')
-    # except:
-    #     image_link = ""
-
         # handle promoted tweets
     try:
         promoted = card.find_element_by_xpath(
@@ -97,25 +77,6 @@ def get_data(card):
         promoted = False
     if promoted:
         return
-
-    # get a string of all emojis contained in the tweet
-    # try:
-    #     emoji_tags = card.find_elements_by_xpath(
-    #         './/img[contains(@src, "emoji")]')
-    # except:
-    #     return
-    # emoji_list = []
-    # for tag in emoji_tags:
-    #     try:
-    #         filename = tag.get_attribute('src')
-    #         emoji = chr(
-    #             int(re.search(r'svg\/([a-z0-9]+)\.svg', filename).group(1), base=16))
-    #     except AttributeError:
-    #         continue
-    #     if emoji:
-    #         emoji_list.append(emoji)
-    # emojis = ' '.join(emoji_list)
-
     # tweet url
     try:
         element = card.find_element_by_xpath(
@@ -126,27 +87,14 @@ def get_data(card):
     like_cnt = 0 if not like_cnt else like_cnt
     retweet_cnt = 0 if not retweet_cnt else retweet_cnt
     reply_cnt = 0 if not reply_cnt else reply_cnt
-    # FILTER
-    # if not like_cnt and not retweet_cnt and not reply_cnt:
-    #     return None
+
     return Tweet(
         handle, postdate, text, like_cnt, retweet_cnt, reply_cnt, tweet_url
     )
 
 
-def log_search_page(driver, start_date, end_date, lang, display_type, words, to_accounts, from_accounts):
-    ''' Search for this query between start_date and end_date'''
-
-    # req='%20OR%20'.join(words)
-    if from_accounts != None:
-        from_accounts = "(from%3A"+from_accounts+")%20"
-    else:
-        from_accounts = ""
-
-    if to_accounts != None:
-        to_accounts = "(to%3A"+to_accounts+")%20"
-    else:
-        to_accounts = ""
+def log_search_page(driver, start_date, end_date, lang, display_type, words):
+    """Builds and searches for a query between start_date and end_date"""
 
     if words != None:
         words = str(words).split("//")
@@ -162,7 +110,6 @@ def log_search_page(driver, start_date, end_date, lang, display_type, words, to_
     end_date = "until%3A"+end_date+"%20"
     start_date = "since%3A"+start_date+"%20"
 
-    # to_from = str('%20'.join([from_accounts,to_accounts]))+"%20"
     query = f"https://twitter.com/search?q={words}{from_accounts}{to_accounts}"\
         f"{end_date}{start_date}{lang}&src=typed_query"
     driver.get(query)
@@ -173,8 +120,7 @@ def log_search_page(driver, start_date, end_date, lang, display_type, words, to_
     try:
         driver.find_element_by_link_text(display_type).click()
     except:
-        pass
-        # print("Latest Button doesnt exist.")
+        print("Latest Button doesnt exist.")
 
 
 def init_driver(navig, headless, proxy):
@@ -224,41 +170,30 @@ def init_driver(navig, headless, proxy):
         return driver
 
 
-def get_last_date_from_csv(path):
-
-    df = pd.read_csv(path)
-    return datetime.datetime.strftime(max(pd.to_datetime(df["Timestamp"])), '%Y-%m-%dT%H:%M:%S.000Z')
-
-
 def keep_scroling(driver):
-    """ scrolling function """
+    """Keeps scrolling the Twitter feed and records tweets"""
     data = []
     scrolling = True
     last_position = driver.execute_script("return window.pageYOffset;")
     while scrolling:
         # get the card of tweets
         page_cards = driver.find_elements_by_xpath(
-            '//div[@data-testid="tweet"]')
+            '//div[@data-testid="tweet"]'
+        )
         for card in page_cards:
             tweet = get_data(card)
             if tweet:
-                # check if the tweet is unique (by URL)
                 data.append(tweet)
                 last_date = tweet.timestamp
-                # print("Tweet made at: " + str(last_date)+" is found.")
-                # writer.writerows([tweet])
+                print("Tweet made at: " + str(last_date)+" is found.")
         scroll_attempt = 0
         while True:
-            # check scroll position
-            # print("scroll", scroll)
-            # sleep(1)
             driver.execute_script(
                 'window.scrollTo(0, document.body.scrollHeight);')
             sleep(1)
             curr_position = driver.execute_script("return window.pageYOffset;")
             if last_position == curr_position:
                 scroll_attempt += 1
-
                 # end of scroll region
                 if scroll_attempt > 1:
                     scrolling = False
@@ -272,92 +207,53 @@ def keep_scroling(driver):
 
 
 def make_output_path(words, init_date, max_date):
+    """Builds an output path to save the tweets for given dates"""
     first_term = words.split("//")[0]
     first_date = str(init_date).split(" ")[0]
     first_end_date = str(max_date).split(" ")[0]
     return f"outputs/{first_term}_{first_date}_{first_end_date}.csv"
 
 
-def scrap(data_tuple, words, days_between, lang, display_type):
-    '''
+def scrap(
+    data_tuple,
+    words,
+    days_between,
+    lang,
+    display_type,
+    driver,
+    headless,
+    proxy
+):
+    """
     scrap data from twitter using requests, starting from start_date until max_date. The bot make a search between each start_date and end_date
     (days_between) until it reaches the max_date.
 
     return:
     data : df containing all tweets scraped with the associated features.
     save a csv file containing all tweets scraped with the associated features.
-    '''
+    """
     start_date, end_date = data_tuple
     # initiate the driver
-    driver = init_driver("chrome", True, None)
-
-    # data = []
-    # tweet_ids = set()
-    # save_dir = "outputs"
-    # if not os.path.exists(save_dir):
-    #     os.makedirs(save_dir)
-
-    # start scraping from start_date until max_date
-    # init_date = start_date  # used for saving file
-    # add days_between to start_date to get end_date for te first search
-    # if words:
-    #     path = save_dir+"/"+words.split("//")[0]+'_'+str(init_date).split(' ')[
-    #         0]+'_'+str(max_date).split(' ')[0]+'.csv'
-    # elif from_accounts:
-    #     path = save_dir+"/"+from_accounts+'_' + \
-    #         str(init_date).split(' ')[0]+'_'+str(max_date).split(' ')[0]+'.csv'
-    # elif to_accounts:
-    #     path = save_dir+"/"+to_accounts+'_' + \
-    #         str(init_date).split(' ')[0]+'_'+str(max_date).split(' ')[0]+'.csv'
-
-    # if resume == True:
-    #     start_date = str(get_last_date_from_csv(path))[: 10]
-    # start_date = datetime.datetime.strptime(start_date, '%Y-%m-%d')
-    # end_date = datetime.datetime.strptime(
-    #     start_date, '%Y-%m-%d') + datetime.timedelta(days=days_between)
-
-    # save_every = days_between  #save every "days_between" days
-
-    # keep searching until max_date
-
-    # with open(path, write_mode, newline='', encoding='utf-8') as f:
-    #     header = ['UserName', 'Timestamp', 'Text',
-    #               'Likes', 'Retweets', 'Tweet URL']
-    # writer = csv.writer(f)
-    # if write_mode == 'w':
-    #     writer.writerow(header)
-    # while end_date <= datetime.datetime.strptime(max_date, '%Y-%m-%d'):
+    driver = init_driver(driver, headless, proxy)
 
     # log search page between start_date and end_date
     log_search_page(driver=driver, words=words, start_date=datetime.datetime.strftime(start_date, '%Y-%m-%d'), end_date=datetime.datetime.strftime(
-        end_date, '%Y-%m-%d'), to_accounts=None, from_accounts=None, lang=lang, display_type=display_type
+        end_date, '%Y-%m-%d'), lang=lang, display_type=display_type
     )
 
     print(f"looking for tweets between {start_date} and {end_date}...")
-
     count_failed = 0
     data = keep_scroling(driver)
+    # retrying in case of timeouts of disconnections (up to 3 times)
     while len(data) == 0 and count_failed < 2:
         driver.close()
-        driver = init_driver("chrome", True, None)
+        driver = init_driver(driver, headless, proxy)
         log_search_page(driver=driver, words=words, start_date=datetime.datetime.strftime(start_date, '%Y-%m-%d'), end_date=datetime.datetime.strftime(
-            end_date, '%Y-%m-%d'), to_accounts=None, from_accounts=None, lang=lang, display_type=display_type
+            end_date, '%Y-%m-%d'), lang=lang, display_type=display_type
         )
         data = keep_scroling(driver)
         count_failed += 1
-    # data = keep_scroling(driver)
-
-    # keep updating <start date> and <end date> for every search
-    # if type(start_date) == str:
-    #     start_date = datetime.datetime.strptime(
-    #         start_date, '%Y-%m-%d') + datetime.timedelta(days=days_between)
-    # else:
-    #     start_date = start_date + datetime.timedelta(days=days_between)
-    # end_date = end_date + datetime.timedelta(days=days_between)
-
-    # close the web driver
     driver.close()
-
     return data
 
 
@@ -366,30 +262,24 @@ if __name__ == '__main__':
 
     parser.add_argument('--words', type=str,
                         help='Queries. they should be devided by "//" : Cat//Dog.', default=None)
-    # parser.add_argument('--from_account', type=str,
-    #                     help='Tweets from this account (axample : @Tesla).', default=None)
-    # parser.add_argument('--to_account', type=str,
-    #                     help='Tweets replyed to this account (axample : @Tesla).', default=None)
     parser.add_argument('--max_date', type=str,
                         help='Max date for search query. example : %%Y-%%m-%%d.', required=True)
     parser.add_argument('--start_date', type=str,
                         help='Start date for search query. example : %%Y-%%m-%%d.', required=True)
     parser.add_argument('--interval', type=int,
                         help='Interval days between each start date and end date for search queries. example : 5.', default=1)
-    # parser.add_argument('--navig', type=str,
-    #                     help='Navigator to use : chrome or edge.', default="chrome")
+    parser.add_argument('--navig', type=str,
+                        help='Navigator to use : chrome or edge.', default="chrome")
     parser.add_argument('--lang', type=str,
                         help='Tweets language. example : "en" for english and "fr" for french.', default="en")
-    # parser.add_argument('--headless', type=bool,
-    #                     help='Headless webdrives or not. True or False', default=False)
-    # parser.add_argument('--limit', type=int,
-    #                     help='Limit tweets per <interval>', default=float("inf"))
+    parser.add_argument('--headless', type=bool,
+                        help='Headless webdrives or not. True or False', default=True)
     parser.add_argument('--display_type', type=str,
                         help='Display type of twitter page : Latest or Top', default="Top")
-    # parser.add_argument('--resume', type=bool,
-    #                     help='Resume the last scraping. specify the csv file path.', default=False)
-    # parser.add_argument('--proxy', type=str,
-    #                     help='Proxy server', default=None)
+    parser.add_argument('--proxy', type=str,
+                        help='Proxy server', default=None)
+    parser.add_argument('--custom_column_name', type=str,
+                        help='A column to include for the words query', default="airline")
 
     args = parser.parse_args()
 
@@ -397,15 +287,12 @@ if __name__ == '__main__':
     max_date = args.max_date
     start_date = args.start_date
     interval = args.interval
-    # navig = args.navig
+    navig = args.navig
     lang = args.lang
-    # headless = args.headless
-    # limit = args.limit
+    headless = args.headless
     display_type = args.display_type
-    # from_account = args.from_account
-    # to_account = args.to_account
-    # resume = args.resume
-    # proxy = args.proxy
+    proxy = args.proxy
+    custom_column_name = args.custom_column_name
 
     # monitor time
     start = datetime.datetime.now()
@@ -418,7 +305,8 @@ if __name__ == '__main__':
                            datetime.timedelta(days=interval))
     end_dates = [start_dates[i]
                  for i in range(1, len(start_dates))] + [end_date]
-    pool = mp.Pool(mp.cpu_count(), init_worker)
+    # launching one worker thread per interval of time to scrape
+    pool = mp.Pool(mp.cpu_count())
     try:
         all_tweets = pool.map(
             partial(
@@ -436,7 +324,7 @@ if __name__ == '__main__':
         ]
         # save file
         df = pd.DataFrame([
-            {**vars(tweet), **{"airline": "_".join(words.split("//"))}}
+            {**vars(tweet), **{custom_column_name: "_".join(words.split("//"))}}
             for tweet in merged_tweets
         ])
         df.to_csv(make_output_path(words, start_date, end_date), index=False)
@@ -447,4 +335,3 @@ if __name__ == '__main__':
         pool.terminate()
         pool.join()
         sys.exit()
-
