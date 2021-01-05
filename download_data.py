@@ -11,7 +11,8 @@ from osfclient.api import OSF
 # osf upload local_path remote_path
 
 LOCAL_PATH = 'data'  # local path to the data
-REMOTE_PATH = 'airlines_data/'  # remote path where to store the data on OSF
+# remote path where to store the data on OSF
+REMOTE_PATH = 'airlines_data/local/'
 PROJECT_CODE = 'cd98u'  # to find your PROJECT_CODE navigate to your OSF
 # project on the web. The link will be something of this type:
 # https://osf.io/cd98u/ , here cd98u is the PROJECT_CODE

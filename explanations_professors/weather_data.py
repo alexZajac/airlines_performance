@@ -49,7 +49,7 @@ def get_lat_long_destinations(df):
     return unique_destinations
 
 
-def extract_weather_statistics(df):
+def extract_weather_statistics(df, start_date, end_date):
     """Calls the meteostat API to collect weather statistics"""
     lower_features = [f.lower() for f in features]
     df["WEATHER_STATS"] = df.progress_apply(
@@ -62,13 +62,15 @@ def extract_weather_statistics(df):
         axis=1
     )
     return df
-# get the weather information
 
 
 def get_weather_df(unique_destinations):
+    """Applies the whole pipeline to get weather features"""
     start_date = datetime.datetime(2014, 1, 1)
     end_date = datetime.datetime(2020, 1, 1)
-    unique_destinations = extract_weather_statistics(unique_destinations)
+    unique_destinations = extract_weather_statistics(
+        unique_destinations, start_date, end_date
+    )
 
     # expand dimensions to one motnh for each airlines/corrdinate pair
     unique_destinations["DATE"] = unique_destinations.apply(
