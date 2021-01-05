@@ -4,3 +4,9 @@ numpy
 pandas
 ramp-workflow
 scikit-learn
+ipython-autotime
+meteostat
+osfclient
+plotly
+geopy
+
