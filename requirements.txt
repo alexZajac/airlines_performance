@@ -3,6 +3,7 @@ matplotlib
 numpy
 pandas
 ramp-workflow
+ramp-utils
 scikit-learn
 ipython-autotime
 meteostat
