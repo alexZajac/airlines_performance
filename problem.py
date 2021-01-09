@@ -12,7 +12,7 @@ from rampwf.workflows import TimeSeriesFeatureExtractor
 from rampwf.score_types import BaseScoreType
 import rampwf as rw
 
-
+## https://paris-saclay-cds.github.io/ramp-workflow/problem.html
 DATA_HOME = ""
 DATA_PATH = "data/"
 WINDOWS_SIZE = 12
@@ -101,7 +101,8 @@ class EstimatorAirlines(SKLearnPipeline):
             if carrier != 'US Airways Inc.':
                 if is_classifier( estimator_fitted[carrier]):
                     predictions_tmp = estimator_fitted.get(carrier).predict_proba(X)
-                predictions_tmp = estimator_fitted.get(carrier).predict(X)
+                else :
+                    predictions_tmp = estimator_fitted.get(carrier).predict(X)
             predictions[carrier] = predictions_tmp
         
         #y_pred_full = sum(predictions.values(), [])
@@ -114,6 +115,7 @@ def make_workflow():
 
 def get_cv(X, y):
     ## a faire
+    #https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html
     tscv = TimeSeriesSplit(n_splits=4) ## a voir plus d'option et size 
     return tscv.split(X, y)
 
