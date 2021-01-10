@@ -10,6 +10,7 @@ import pandas as pd
 import multiprocessing as mp
 from functools import partial
 import sys
+from glob import glob
 
 
 class Tweet:
@@ -110,7 +111,7 @@ def log_search_page(driver, start_date, end_date, lang, display_type, words):
     end_date = "until%3A"+end_date+"%20"
     start_date = "since%3A"+start_date+"%20"
 
-    query = f"https://twitter.com/search?q={words}{from_accounts}{to_accounts}"\
+    query = f"https://twitter.com/search?q={words}"\
         f"{end_date}{start_date}{lang}&src=typed_query"
     driver.get(query)
 
@@ -129,7 +130,7 @@ def init_driver(navig, headless, proxy):
     if navig == "chrome":
         browser_path = ''
         if platform.system() == 'Windows':
-            # print('Detected OS : Windows')
+            print('Detected OS : Windows')
             browser_path = './drivers/chromedriver_win.exe'
         elif platform.system() == 'Linux':
             print('Detected OS : Linux')
@@ -211,7 +212,7 @@ def make_output_path(words, init_date, max_date):
     first_term = words.split("//")[0]
     first_date = str(init_date).split(" ")[0]
     first_end_date = str(max_date).split(" ")[0]
-    return f"outputs/{first_term}_{first_date}_{first_end_date}.csv"
+    return f"tweeter_output/{first_term}_{first_date}_{first_end_date}.csv"
 
 
 def scrap(
@@ -289,6 +290,7 @@ if __name__ == '__main__':
     interval = args.interval
     navig = args.navig
     lang = args.lang
+    driver = args.navig
     headless = args.headless
     display_type = args.display_type
     proxy = args.proxy
@@ -315,6 +317,9 @@ if __name__ == '__main__':
                 days_between=interval,
                 lang=lang,
                 display_type=display_type,
+                driver=driver,
+                headless=headless,
+                proxy=proxy,
             ),
             zip(start_dates, end_dates)
         )
