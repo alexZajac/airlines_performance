@@ -29,8 +29,8 @@ class MAE (BaseScoreType):
 
     def __call__(self, y_true, y_pred):
         error = []
-        carriers = np.unique( y_train['UNIQUE_CARRIER_NAME'])
-        m_df = predictions.merge(y_train,how = 'left')## a changer pour garder les date
+        carriers = np.unique( y_true['UNIQUE_CARRIER_NAME'])
+        m_df = y_pred.merge(y_true,how = 'left')## a changer pour garder les date
         for carrier in carriers:
           if carrier != 'US Airways Inc.':
             y_true_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['LOAD_FACTOR']#y_true.get(carrier)
@@ -123,7 +123,7 @@ class _Predictions(BasePrediction):
         elif n_samples is not None:
             # self.n_columns == 0:
             shape = n_samples
-            self.y_pred = df.dataframe()
+            self.y_pred = pd.dataframe()
             self.y_pred.fill(np.nan)
         else:
             raise ValueError(
