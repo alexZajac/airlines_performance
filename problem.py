@@ -6,16 +6,16 @@ from sklearn.base import is_classifier
 from sklearn.utils import _safe_indexing
 from sklearn.model_selection import TimeSeriesSplit
 
-from rampwf.utils.importing import import_module_from_source
+from rampwf.utils.importing import import_module_from_source ## a revoir 
 from rampwf.workflows import SKLearnPipeline
-from rampwf.workflows import TimeSeriesFeatureExtractor
 from rampwf.score_types import BaseScoreType
+from rampwf.prediction_types.base import BasePrediction
 import rampwf as rw
 
 ## https://paris-saclay-cds.github.io/ramp-workflow/problem.html
 DATA_HOME = ""
 DATA_PATH = "data/"
-WINDOWS_SIZE = 12
+#WINDOWS_SIZE = 12
 
 
 class MAE (BaseScoreType):
@@ -29,12 +29,13 @@ class MAE (BaseScoreType):
 
     def __call__(self, y_true, y_pred):
         error = []
-        carriers = np.unique( y_true['UNIQUE_CARRIER_NAME'])
+        carriers = np.unique( y_train['UNIQUE_CARRIER_NAME'])
+        m_df = predictions.merge(y_train,how = 'left')## a changer pour garder les date
         for carrier in carriers:
-            if carrier != 'US Airways Inc.':
-                y_true_c = y_true.get(carrier)
-                y_pred_c = y_pred.get(carrier)
-                error.append(np.abs(y_true_c - y_pred_c) / len(y_true_c))
+          if carrier != 'US Airways Inc.':
+            y_true_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['LOAD_FACTOR']#y_true.get(carrier)
+            y_pred_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['PRED']
+            error.extend(np.abs(y_true_c - y_pred_c) / len(y_true_c))
         return np.mean(error)
 
 class EstimatorAirlines(SKLearnPipeline):
@@ -76,6 +77,7 @@ class EstimatorAirlines(SKLearnPipeline):
         for carrier in carriers:
             if carrier != 'US Airways Inc.':
                 X = X_train[X_train['UNIQUE_CARRIER_NAME'] == carrier]
+                X.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
                 Y = y_train[y_train['UNIQUE_CARRIER_NAME'] == carrier]
                 estimators[carrier] = estimator.fit(X,Y)
         ####
@@ -99,41 +101,75 @@ class EstimatorAirlines(SKLearnPipeline):
         predictions = {}
         for carrier in carriers:
             if carrier != 'US Airways Inc.':
-                if is_classifier( estimator_fitted[carrier]):
-                    predictions_tmp = estimator_fitted.get(carrier).predict_proba(X)
-                else :
-                    predictions_tmp = estimator_fitted.get(carrier).predict(X)
+                X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
+                X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
+                #if is_classifier(estimator_fitted[carrier]):
+                #    predictions_tmp = estimator_fitted.get(carrier).predict_proba(X_used)
+                #else :
+                predictions_tmp = estimator_fitted.get(carrier).predict(X_used)
             predictions[carrier] = predictions_tmp
         
         #y_pred_full = sum(predictions.values(), [])
         #########
         return predictions
 
+class _Predictions(BasePrediction):
+    def __init__(self, y_pred=None, y_true=None, n_samples=None,):
+        """Essentially the same as in a regression task, but the prediction is a list not a float."""
+        if y_pred is not None:
+            self.y_pred = y_pred 
+        elif y_true is not None:
+            self.y_true = y_true
+        elif n_samples is not None:
+            # self.n_columns == 0:
+            shape = n_samples
+            self.y_pred = df.dataframe()
+            self.y_pred.fill(np.nan)
+        else:
+            raise ValueError(
+                "Missing init argument: y_pred, y_true, or n_samples"
+            )
+        self.check_y_pred_dimensions()
+        ## deja fait en base ##https://github.com/paris-saclay-cds/ramp-workflow/blob/master/rampwf/prediction_types/base.py
+
+    @property
+    def valid_indexes(self):
+        """Return valid indices (e.g., a cross-validation slice)."""
+        if len(self.y_pred.shape) == 2:
+            return ~pd.isnull(self.y_pred[:, 0])
+        else:
+            raise ValueError("y_pred should be 2D (dataframe)")
+
+
+
+def make_LF_detection():
+    return _Predictions#()
+    
 def make_workflow(): 
     ## a faire
     return EstimatorAirlines()
 
 def get_cv(X, y):
-    ## a faire
     #https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html
-    tscv = TimeSeriesSplit(n_splits=4) ## a voir plus d'option et size 
+    tscv = TimeSeriesSplit(n_splits=2) ## a voir plus d'option et size 
     return tscv.split(X, y)
 
-def _read_data(path, f_name):
+def _read_data(path, dir_name):
     DATA_HOME = path
-    data = pd.read_csv(os.path.join(DATA_HOME,DATA_PATH, f_name))
+    data = pd.read_csv(os.path.join(DATA_HOME,DATA_PATH,dir_name, 'features.csv'),index_col = 0)
     data['DATE'] = pd.to_datetime(data['DATE'])
-    y_array = data['Load Factor'].values
+    data.set_index('DATE', inplace=True)
+    y_array = data[['UNIQUE_CARRIER_NAME', 'LOAD_FACTOR']]#'DATE',
     X_df = data
     return X_df, y_array
 
 
 def get_train_data(path="."):
-    return _read_data(path, 'train.csv')
+    return _read_data(path, 'train')
 
 
 def get_test_data(path="."):
-    return _read_data(path, 'test.csv')
+    return _read_data(path, 'test')
 
 
 # def get_data(trainOrtest, path="."):
@@ -146,7 +182,7 @@ def get_test_data(path="."):
 ###################################################################
 problem_title = 'US Airlines Performance'
 
-Predictions = rw.prediction_types.make_regression(label_names=['LF'])
+Predictions = make_LF_detection()#rw.prediction_types.make_regression(label_names=['LF'])
 ## a voir si mettre contraint entre 0 et 1 ??
 #https://github.com/paris-saclay-cds/ramp-workflow/blob/master/rampwf/prediction_types/regression.py
 
@@ -155,7 +191,7 @@ workflow = make_workflow()
 ###https://github.com/paris-saclay-cds/ramp-workflow/blob/master/rampwf/workflows/ts_feature_extractor.py
 
 score_types = [
-     MAE(name='MAS')
+     MAE(name='MAE')
 ]
 #rw.score_types.RMSE(name='MSE')
 #https://github.com/paris-saclay-cds/ramp-workflow/blob/master/rampwf/score_types/rmse.py
