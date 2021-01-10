@@ -15,8 +15,12 @@ import rampwf as rw
 ## https://paris-saclay-cds.github.io/ramp-workflow/problem.html
 DATA_HOME = ""
 DATA_PATH = "data/"
+batch_size = 2# a changer
 #WINDOWS_SIZE = 12
 
+##############################################
+# 3 - Score class
+##############################################
 
 class MAE (BaseScoreType):
     is_lower_the_better = True
@@ -29,15 +33,19 @@ class MAE (BaseScoreType):
 
     def __call__(self, y_true, y_pred):
         error = []
+        y_true = pd.DataFrame(y_true, columns=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
+        y_pred = pd.DataFrame(y_pred, columns=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
         carriers = np.unique( y_true['UNIQUE_CARRIER_NAME'])
-        m_df = y_pred.merge(y_true,how = 'left')## a changer pour garder les date
+        m_df = y_pred.merge(y_true,how = 'left', on = ['DATE', 'UNIQUE_CARRIER_NAME'])
         for carrier in carriers:
           if carrier != 'US Airways Inc.':
-            y_true_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['LOAD_FACTOR']#y_true.get(carrier)
-            y_pred_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['PRED']
+            y_true_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['LOAD_FACTOR_x']#y_true.get(carrier)
+            y_pred_c = m_df[m_df['UNIQUE_CARRIER_NAME'] == carrier]['LOAD_FACTOR_y']##a changer
             error.extend(np.abs(y_true_c - y_pred_c) / len(y_true_c))
         return np.mean(error)
-
+##############################################
+# 3 - Workflow class
+##############################################
 class EstimatorAirlines(SKLearnPipeline):
 
     def __init__(self):
@@ -72,6 +80,7 @@ class EstimatorAirlines(SKLearnPipeline):
         X_train = _safe_indexing(X, train_idx)
         y_train = _safe_indexing(y, train_idx)
         ####
+        y_train = pd.DataFrame(y_train, columns=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
         estimators = {}
         carriers = np.unique( X_train['UNIQUE_CARRIER_NAME'])
         for carrier in carriers:
@@ -98,24 +107,30 @@ class EstimatorAirlines(SKLearnPipeline):
         """
         ######
         carriers = np.unique( X['UNIQUE_CARRIER_NAME'])
-        predictions = {}
+        predictions = pd.DataFrame(columns= ['UNIQUE_CARRIER_NAME','PRED'])
         for carrier in carriers:
-            if carrier != 'US Airways Inc.':
-                X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
-                X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
-                #if is_classifier(estimator_fitted[carrier]):
-                #    predictions_tmp = estimator_fitted.get(carrier).predict_proba(X_used)
-                #else :
-                predictions_tmp = estimator_fitted.get(carrier).predict(X_used)
-            predictions[carrier] = predictions_tmp
-        
-        #y_pred_full = sum(predictions.values(), [])
+          if carrier != 'US Airways Inc.':
+            X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
+            y_pred_sub=pd.DataFrame( X[X['UNIQUE_CARRIER_NAME'] == carrier]['UNIQUE_CARRIER_NAME'][batch_size:],columns= ['UNIQUE_CARRIER_NAME','PRED'])
+            X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
+            predictions_tmp = estimator_fitted.get(carrier).predict(X_used)
+            y_pred_sub['PRED'] = predictions_tmp
+            predictions = predictions.append(y_pred_sub)
+        predictions.reset_index(level=0, inplace=True)
+        if predictions is None:
+            raise ValueError('NaNs found in the predictions.')
         #########
-        return predictions
-
+        print(np.array(predictions))
+        print('-----------------------------------')
+        return np.array(predictions)
+        
+##############################################
+# 3 - Prediction type class
+##############################################
 class _Predictions(BasePrediction):
-    def __init__(self, y_pred=None, y_true=None, n_samples=None,):
+    def __init__(self,n_columns, y_pred=None, y_true=None, n_samples=None,):
         """Essentially the same as in a regression task, but the prediction is a list not a float."""
+        self.n_columns = n_columns
         if y_pred is not None:
             self.y_pred = y_pred 
         elif y_true is not None:
@@ -123,7 +138,7 @@ class _Predictions(BasePrediction):
         elif n_samples is not None:
             # self.n_columns == 0:
             shape = n_samples
-            self.y_pred = pd.dataframe()
+            self.y_pred = df.dataframe()
             self.y_pred.fill(np.nan)
         else:
             raise ValueError(
@@ -141,9 +156,39 @@ class _Predictions(BasePrediction):
             raise ValueError("y_pred should be 2D (dataframe)")
 
 
+def _regression_init(self, y_pred=None, y_true=None, n_samples=None):
+    if y_pred is not None:
+        self.y_pred = np.array(y_pred)
+    elif y_true is not None:
+        self.y_true = np.array(y_true)
+    elif n_samples is not None:
+        if self.n_columns == 0:
+            shape = (n_samples)
+        else:
+            shape = (n_samples, self.n_columns)
+        self.y_pred = np.empty(shape, dtype=float)
+        self.y_pred.fill(np.nan)
+    else:
+        raise ValueError(
+            'Missing init argument: y_pred, y_true, or n_samples')
+    #self.check_y_pred_dimensions()
 
-def make_LF_detection():
-    return _Predictions#()
+
+##############################################
+#4 - definir functions
+##############################################
+
+def make_LF_detection(label_names=[]):
+    #_Predictions(n_columns = 3)
+    Predictions = type(
+        'Regression',
+        (BasePrediction,),
+        {'label_names': label_names,
+         'n_columns': len(label_names),
+         'n_columns_true': len(label_names),
+         '__init__': _regression_init,
+         })
+    return 
     
 def make_workflow(): 
     ## a faire
@@ -158,8 +203,10 @@ def _read_data(path, dir_name):
     DATA_HOME = path
     data = pd.read_csv(os.path.join(DATA_HOME,DATA_PATH,dir_name, 'features.csv'),index_col = 0)
     data['DATE'] = pd.to_datetime(data['DATE'])
-    data.set_index('DATE', inplace=True)
-    y_array = data[['UNIQUE_CARRIER_NAME', 'LOAD_FACTOR']]#'DATE',
+    #data.set_index('DATE', inplace=True)#pas besion ds le batch
+    y_array = data[['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR']]#'DATE',
+    #y_array.reset_index(level=0, inplace=True)#pas besion ds le batch
+    y_array = np.array(y_array)
     X_df = data
     return X_df, y_array
 
@@ -177,12 +224,14 @@ def get_test_data(path="."):
 #     X_df = pd.read_csv(trainOrtest + 'X.csv' )
 #     y = pd.read_csv(trainOrtest + 'y.csv' )
 #     return  X_df, y
-###################################################################
-###################################################################
-###################################################################
+
+##############################################
+#5- Definir nos variable de base
+##############################################
 problem_title = 'US Airlines Performance'
 
-Predictions = make_LF_detection()#rw.prediction_types.make_regression(label_names=['LF'])
+Predictions = make_LF_detection(label_names=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
+#Predictions =rw.prediction_types.make_regression(label_names=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
 ## a voir si mettre contraint entre 0 et 1 ??
 #https://github.com/paris-saclay-cds/ramp-workflow/blob/master/rampwf/prediction_types/regression.py
 
