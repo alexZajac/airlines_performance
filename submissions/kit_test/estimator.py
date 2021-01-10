@@ -20,6 +20,25 @@ batch_size = 2
 num_features = 104
 
 #https://towardsdatascience.com/pipelines-custom-transformers-in-scikit-learn-ef792bbb3260
+class CustomScaler(BaseEstimator, TransformerMixin):
+    def __init__(self):
+        super().__init__()
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X, y=None):
+      ##but ==> ne pas scalerizer la column date
+      scaler = StandardScaler()
+      X.set_index('DATE', inplace=True)
+      idx = X.index
+      #print(X)
+      X = scaler.fit_transform(X)
+      X_df = pd.DataFrame( X,index=idx)
+      #print(X_df)
+      #X_df.set_index('DATE', inplace=True)
+      #X.reset_index(level=0, inplace=True)
+      return X_df
 class Label_Encoding(BaseEstimator, TransformerMixin):
     def __init__(self):
         super().__init__()
@@ -42,18 +61,20 @@ class DLClassifier(BaseEstimator, ClassifierMixin,TransformerMixin):
     def fit(self, X, y):
         #print(X)
         #print('---------')
-        #date_max = max(X['DATE'])#.index.values)
-        #date_min = date_max.astype('M8[M]')  - np.timedelta64(12,'M') 
-        #self.batch  = X[(X.index > date_min) & (X.index <= date_max)]
+        date_max = max(X.index.values)#'DATE'])#[:,1])
+        date_min = date_max.astype('M8[M]')  - np.timedelta64(12,'M') 
+        self.batch  = X[(X.index > date_min) & (X.index <= date_max)]
         
         y = np.asarray(y.iloc[ :,-1].values)
         train_generator = TimeseriesGenerator(X, y, length=win_length, sampling_rate=1, batch_size=batch_size)
         return self.model.fit(train_generator, epochs = 50 , shuffle=False, verbose = 0)
     def predict(self, X):
-        #X_used = pd.concat([self.batch ,X])
-        X_used = X
-        y = X_used[:, -1]
-        ## comment on predit avec le Y avec nous ???
+        X_used = pd.concat([self.batch ,X])## problem la il predi 22 elem??
+        #X_used = ##
+        #y = X_used[:, -1]
+        y =X_used[X_used.columns[-1]]
+        
+        ## pas trop imp :: comment on predit avec le Y avec nous ???
         test_generator = TimeseriesGenerator(X_used,y,length=win_length, sampling_rate=1, batch_size=batch_size)
         return self.model.predict(test_generator)
 
@@ -75,7 +96,7 @@ def create_model():
 def get_estimator():
     labelEncoding_transforme = Label_Encoding()
     #preprocessor = make_column_transformer(('drop', ['UNIQUE_CARRIER_NAME' ]),remainder='passthrough')# ou aussi 'LOAD_FACTOR_SHIFTED'
-    scaler = StandardScaler()
+    scaler = CustomScaler() #StandardScaler()
 
     clf = create_model ()#KerasRegressor(build_fn=create_model,epochs= 100, verbose=0)
     custer  = DLClassifier(clf)
