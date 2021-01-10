@@ -40,12 +40,21 @@ class DLClassifier(BaseEstimator, ClassifierMixin,TransformerMixin):
     def __init__(self, model, n_jobs=1):
         self.model = model
     def fit(self, X, y):
+        #print(X)
+        #print('---------')
+        #date_max = max(X['DATE'])#.index.values)
+        #date_min = date_max.astype('M8[M]')  - np.timedelta64(12,'M') 
+        #self.batch  = X[(X.index > date_min) & (X.index <= date_max)]
+        
+        y = np.asarray(y.iloc[ :,-1].values)
         train_generator = TimeseriesGenerator(X, y, length=win_length, sampling_rate=1, batch_size=batch_size)
         return self.model.fit(train_generator, epochs = 50 , shuffle=False, verbose = 0)
     def predict(self, X):
-        y = X[:, -1]
+        #X_used = pd.concat([self.batch ,X])
+        X_used = X
+        y = X_used[:, -1]
         ## comment on predit avec le Y avec nous ???
-        test_generator = TimeseriesGenerator(X,y,length=win_length, sampling_rate=1, batch_size=batch_size)
+        test_generator = TimeseriesGenerator(X_used,y,length=win_length, sampling_rate=1, batch_size=batch_size)
         return self.model.predict(test_generator)
 
 
@@ -65,18 +74,18 @@ def create_model():
 
 def get_estimator():
     labelEncoding_transforme = Label_Encoding()
-    preprocessor = make_column_transformer(('drop', ['UNIQUE_CARRIER_NAME', 'LOAD_FACTOR_SHIFTED']),remainder='passthrough')
+    #preprocessor = make_column_transformer(('drop', ['UNIQUE_CARRIER_NAME' ]),remainder='passthrough')# ou aussi 'LOAD_FACTOR_SHIFTED'
     scaler = StandardScaler()
 
-    clf = KerasRegressor(build_fn=create_model,epochs= 100, verbose=0)
+    clf = create_model ()#KerasRegressor(build_fn=create_model,epochs= 100, verbose=0)
     custer  = DLClassifier(clf)
     
     # just create the pipeline
     pipeline = Pipeline([
         ('LE_transformer', labelEncoding_transforme),
-        ('Drop_transformer', preprocessor),
-        ('preprocess',scaler),
+        #('Drop_transformer', preprocessor),
+        ('scaling',scaler),
         ('clf',custer)
         ##inverse scaler
-    ])
+    ], verbose = False)
     return pipeline
