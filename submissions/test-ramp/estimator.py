@@ -17,7 +17,6 @@ class DummyEstimator(BaseEstimator):
     def predict(self, X):
         print(min(X["DATE"]), "5")
         print(max(X["DATE"]), "6")
-        print(X.columns)
         y = np.array([0] * len(X))
         return y
 
