@@ -15,9 +15,8 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.base import ClassifierMixin, RegressorMixin
 
 pd.options.mode.chained_assignment = None 
-win_length = 2
-batch_size = 2
-num_features = 104
+num_features = 128
+win_length = 2# a changer
 
 #https://towardsdatascience.com/pipelines-custom-transformers-in-scikit-learn-ef792bbb3260
 class CustomScaler(BaseEstimator, TransformerMixin):
@@ -32,13 +31,10 @@ class CustomScaler(BaseEstimator, TransformerMixin):
       scaler = StandardScaler()
       X.set_index('DATE', inplace=True)
       idx = X.index
-      #print(X)
       X = scaler.fit_transform(X)
       X_df = pd.DataFrame( X,index=idx)
-      #print(X_df)
-      #X_df.set_index('DATE', inplace=True)
-      #X.reset_index(level=0, inplace=True)
       return X_df
+
 class Label_Encoding(BaseEstimator, TransformerMixin):
     def __init__(self):
         super().__init__()
@@ -56,27 +52,48 @@ class Label_Encoding(BaseEstimator, TransformerMixin):
         return X
 
 class DLClassifier(BaseEstimator, ClassifierMixin,TransformerMixin):
-    def __init__(self, model, n_jobs=1):
-        self.model = model
+    def __init__(self, model,win_length = 2,batch_size = 2, n_jobs=1):
+        self.estimator = model
+        self.win_length = win_length
+        self.batch_size = batch_size
+        self.model = {}
+        self.batch = None
+
     def fit(self, X, y):
         #print(X)
         #print('---------')
         date_max = max(X.index.values)#'DATE'])#[:,1])
-        date_min = date_max.astype('M8[M]')  - np.timedelta64(12,'M') 
+        date_min = date_max.astype('M8[M]')  - np.timedelta64(self.win_length,'M') 
         self.batch  = X[(X.index > date_min) & (X.index <= date_max)]
         
-        y = np.asarray(y.iloc[ :,-1].values)
-        train_generator = TimeseriesGenerator(X, y, length=win_length, sampling_rate=1, batch_size=batch_size)
-        return self.model.fit(train_generator, epochs = 50 , shuffle=False, verbose = 0)
-    def predict(self, X):
-        X_used = pd.concat([self.batch ,X])## problem la il predi 22 elem??
-        #X_used = ##
-        #y = X_used[:, -1]
-        y =X_used[X_used.columns[-1]]
+        y_train = pd.DataFrame(y, columns=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
+        carriers = np.unique( X['UNIQUE_CARRIER_NAME'])
+        for carrier in carriers:
+                X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
+                X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
+                y_used = y_train[y_train['UNIQUE_CARRIER_NAME'] == carrier]
+                y_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
+                train_generator = TimeseriesGenerator(X_used, y_used, length = self.win_length, sampling_rate=1, batch_size = self.batch_size)
+                self.model[carrier] = self.estimator.fit(train_generator, epochs = 10 , shuffle=False, verbose = 0)
         
-        ## pas trop imp :: comment on predit avec le Y avec nous ???
-        test_generator = TimeseriesGenerator(X_used,y,length=win_length, sampling_rate=1, batch_size=batch_size)
-        return self.model.predict(test_generator)
+        return self
+        
+    def predict(self, X):
+        #Sans batch#X_used = ###y = X_used[:, -1]
+        X = pd.concat([self.batch ,X])## problem la il predi 22 elem??
+        carriers = np.unique(X['UNIQUE_CARRIER_NAME'])
+        predictions = pd.DataFrame(columns= ['UNIQUE_CARRIER_NAME','PRED'])
+        for carrier in carriers:
+            X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
+            y_pred_sub=pd.DataFrame( X[X['UNIQUE_CARRIER_NAME'] == carrier]['UNIQUE_CARRIER_NAME'][self.win_length:],columns= ['UNIQUE_CARRIER_NAME','PRED'])
+            X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
+            y = np.zeros(X_used.shape[0])
+            test_generator = TimeseriesGenerator(X_used,y,length=self.win_length, sampling_rate=1, batch_size=self.batch_size)
+            predictions_tmp = self.model.get(carrier).predict(test_generator)
+            y_pred_sub['PRED'] = predictions_tmp
+            predictions = predictions.append(y_pred_sub)
+        predictions.reset_index(level=0, inplace=True)
+        return predictions['PRED'].to_numpy()
 
 
 def create_model():
