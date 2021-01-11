@@ -15,7 +15,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.base import ClassifierMixin, RegressorMixin
 
 pd.options.mode.chained_assignment = None 
-num_features = 128
+num_features = 127
 win_length = 2# a changer
 
 #https://towardsdatascience.com/pipelines-custom-transformers-in-scikit-learn-ef792bbb3260
@@ -29,10 +29,11 @@ class CustomScaler(BaseEstimator, TransformerMixin):
     def transform(self, X, y=None):
       ##but ==> ne pas scalerizer la column date
       scaler = StandardScaler()
-      X.set_index('DATE', inplace=True)
+      X.set_index(['DATE','UNIQUE_CARRIER_NAME'], inplace=True)
       idx = X.index
       X = scaler.fit_transform(X)
       X_df = pd.DataFrame( X,index=idx)
+      X_df.reset_index(level='UNIQUE_CARRIER_NAME', inplace = True)
       return X_df
 
 class Label_Encoding(BaseEstimator, TransformerMixin):
@@ -45,7 +46,7 @@ class Label_Encoding(BaseEstimator, TransformerMixin):
     def transform(self, X, y=None):
         le = LabelEncoder()
         for column_name in X.columns:
-            if X[column_name].dtype == object:
+            if X[column_name].dtype == object and column_name != 'UNIQUE_CARRIER_NAME' :
                 X[column_name] = le.fit_transform(X[column_name])
             else:
                 pass
@@ -53,6 +54,7 @@ class Label_Encoding(BaseEstimator, TransformerMixin):
 
 class DLClassifier(BaseEstimator, ClassifierMixin,TransformerMixin):
     def __init__(self, model,win_length = 2,batch_size = 2, n_jobs=1):
+        self.n_jobs = n_jobs
         self.estimator = model
         self.win_length = win_length
         self.batch_size = batch_size
@@ -66,16 +68,19 @@ class DLClassifier(BaseEstimator, ClassifierMixin,TransformerMixin):
         date_min = date_max.astype('M8[M]')  - np.timedelta64(self.win_length,'M') 
         self.batch  = X[(X.index > date_min) & (X.index <= date_max)]
         
-        y_train = pd.DataFrame(y, columns=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
+        #y_train = pd.DataFrame(y, columns=['DATE','UNIQUE_CARRIER_NAME', 'LOAD_FACTOR'])
         carriers = np.unique( X['UNIQUE_CARRIER_NAME'])
         for carrier in carriers:
-                X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
+                X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier].copy()
+                #print(np.where(X['UNIQUE_CARRIER_NAME'] == carrier)[0])
                 X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
-                y_used = y_train[y_train['UNIQUE_CARRIER_NAME'] == carrier]
-                y_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
+                #print(X_used)
+                y_used = y[np.where(X['UNIQUE_CARRIER_NAME'] == carrier)[0]]
+                #y_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
                 train_generator = TimeseriesGenerator(X_used, y_used, length = self.win_length, sampling_rate=1, batch_size = self.batch_size)
-                self.model[carrier] = self.estimator.fit(train_generator, epochs = 10 , shuffle=False, verbose = 0)
-        
+                self.model[carrier] = create_model()#tf.keras.models.clone_model(self.estimator)
+                self.model[carrier].fit(train_generator, epochs = 10 , shuffle=False, verbose = 0)
+                #ou https://www.tensorflow.org/api_docs/python/tf/keras/models/clone_model
         return self
         
     def predict(self, X):
@@ -84,11 +89,12 @@ class DLClassifier(BaseEstimator, ClassifierMixin,TransformerMixin):
         carriers = np.unique(X['UNIQUE_CARRIER_NAME'])
         predictions = pd.DataFrame(columns= ['UNIQUE_CARRIER_NAME','PRED'])
         for carrier in carriers:
-            X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier]
+            X_used = X[X['UNIQUE_CARRIER_NAME'] == carrier].copy()
             y_pred_sub=pd.DataFrame( X[X['UNIQUE_CARRIER_NAME'] == carrier]['UNIQUE_CARRIER_NAME'][self.win_length:],columns= ['UNIQUE_CARRIER_NAME','PRED'])
             X_used.drop(columns='UNIQUE_CARRIER_NAME', inplace=True)
             y = np.zeros(X_used.shape[0])
             test_generator = TimeseriesGenerator(X_used,y,length=self.win_length, sampling_rate=1, batch_size=self.batch_size)
+            #print(self.model)
             predictions_tmp = self.model.get(carrier).predict(test_generator)
             y_pred_sub['PRED'] = predictions_tmp
             predictions = predictions.append(y_pred_sub)
