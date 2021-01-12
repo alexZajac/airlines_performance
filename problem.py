@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import os
 
-from sklearn.metrics import mean_absolute_error, r2_score
+from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error
 
 from rampwf.workflows import Estimator
 from rampwf.score_types import BaseScoreType
@@ -12,6 +12,8 @@ from rampwf.score_types import RMSE
 DATA_HOME = ""
 DATA_PATH = "data/"
 PREDICT_COLUMN = "LOAD_FACTOR"
+NUM_AIRLINES = 20
+NUM_MONTHS_TO_PREDICT = 12
 
 # --------------------------------------
 # 1) Objects implementing the score type
@@ -42,7 +44,53 @@ class MAE(BaseScoreType):
         ------
         score : float representing the MAE of the 2 predictions
         """
+        num_preds = len(y_pred)
+        num_expected_preds = NUM_MONTHS_TO_PREDICT*NUM_AIRLINES
+        if num_preds < num_expected_preds:
+            raise ValueError(
+                f"Insufficient number of predictions, expected " +
+                f"{min_expected_preds}, instead got {num_preds}.\n Make sure to" +
+                f"have one preiction for each airline and month of the year."
+            )
+        y_true = y_true[-num_expected_preds:]
+        y_pred = y_pred[-num_expected_preds:]
         return mean_absolute_error(y_true, y_pred)
+
+
+class RMSE(BaseScoreType):
+    is_lower_the_better = True
+    minimum = 0.0
+    maximum = float("inf")
+
+    def __init__(self, name="rmse", precision=3):
+        self.name = name
+        self.precision = precision
+
+    def __call__(self, y_true, y_pred):
+        """
+        Calculate the RMSE between the forecasted y_pred and y_true
+
+        Parameters
+        ----------
+        y_true : np.array representing the real values of the load factors 
+
+        y_pred : np.array representing the predicted values of the load factors 
+
+        Returns
+        ------
+        score : float representing the RMSE with the predictions
+        """
+        num_preds = len(y_pred)
+        num_expected_preds = NUM_MONTHS_TO_PREDICT*NUM_AIRLINES
+        if num_preds < num_expected_preds:
+            raise ValueError(
+                f"Insufficient number of predictions, expected " +
+                f"{min_expected_preds}, instead got {num_preds}.\n Make sure to" +
+                f"have one preiction for each airline and month of the year."
+            )
+        y_true = y_true[-num_expected_preds:]
+        y_pred = y_pred[-num_expected_preds:]
+        return np.sqrt(mean_squared_error(y_true, y_pred))
 
 
 class RSquared(BaseScoreType):
@@ -70,6 +118,16 @@ class RSquared(BaseScoreType):
         ------
         score : float representing the r² coefficient of the 2 predictions
         """
+        num_preds = len(y_pred)
+        num_expected_preds = NUM_MONTHS_TO_PREDICT*NUM_AIRLINES
+        if num_preds < num_expected_preds:
+            raise ValueError(
+                f"Insufficient number of predictions, expected " +
+                f"{min_expected_preds}, instead got {num_preds}.\n Make sure to" +
+                f"have one preiction for each airline and month of the year."
+            )
+        y_true = y_true[-num_expected_preds:]
+        y_pred = y_pred[-num_expected_preds:]
         return r2_score(y_true, y_pred)
 
 
@@ -82,7 +140,7 @@ def _read_data(path, dir_name):
     """RAMP function to read and get data for the challenge"""
     DATA_HOME = path
     X = pd.read_csv(
-        os.path.join(DATA_HOME, DATA_PATH, dir_name, "features.csv"),
+        os.path.join(DATA_HOME, DATA_PATH, dir_name, "local.csv"),
         index_col=0
     )
     X["DATE"] = pd.to_datetime(X["DATE"])
@@ -111,7 +169,7 @@ workflow = Estimator()
 score_types = [RMSE(precision=3), RSquared(precision=3)]
 
 
-def _get_airline_cv(X, n_folds=3, test_size_in_months=12):
+def _get_airline_cv(X, n_folds=1, test_size_in_months=12):
     """
     Splits the X dataset in a similar fashion as for the TimeSeriesSplit from
     sklearn, but with a custom airline/data groups separation, and usable for
