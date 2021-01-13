@@ -3,12 +3,11 @@ import numpy as np
 
 from sklearn.pipeline import Pipeline
 from sklearn.base import BaseEstimator
-
 import statsmodels.api as sm
 
 
 class SARIMAEstimator(BaseEstimator):
-    def __init__(self, trend_orders=(0, 1, 0), seasonal_orders=(1, 0, 1, 4)):
+    def __init__(self, trend_orders=(0, 0, 1), seasonal_orders=(1, 0, 2, 12)):
         self.airline_models = {}
         self.trend_orders = trend_orders
         self.seasonal_orders = seasonal_orders
@@ -18,13 +17,19 @@ class SARIMAEstimator(BaseEstimator):
         carriers = np.unique(X_features["UNIQUE_CARRIER_NAME"])
 
         for carrier in carriers:
+            # subsetting X_df for current airiline
             X_used = X_features[X_features["UNIQUE_CARRIER_NAME"]
                                 == carrier].copy()
             X_used.drop(columns="UNIQUE_CARRIER_NAME", inplace=True)
             X_used.set_index("DATE", inplace=True)
+
+            # finding the indices in y corresponding to X_used
             y_used = pd.Series(y[np.where(
                 X_features["UNIQUE_CARRIER_NAME"] == carrier)[0]])
             y_used.index = X_used.index
+            y_used.index.freq = "MS"
+
+            # fitting and saving model for airline
             model = sm.tsa.statespace.SARIMAX(
                 y_used,
                 order=self.trend_orders,
@@ -46,7 +51,6 @@ class SARIMAEstimator(BaseEstimator):
         # the prediction dates boundaries
         start_predict_date = min(X_features["DATE"])
         end_predict_date = max(X_features["DATE"])
-        print(start_predict_date, end_predict_date)
         # prediction with the model for each carrier
         for carrier in carriers:
             # get forecast for number of months

@@ -6,8 +6,8 @@ from functools import partial
 import ast
 import datetime
 from pathlib import Path
-#data\train\features.csv
-path = Path("data/train/")
+# data\train\features.csv
+path = Path("../data/train/")
 features = ['TAVG', 'TMAX', 'PRCP', 'SNOW', 'WSPD', 'TSUN']
 tqdm.pandas()
 geolocator = Nominatim(user_agent="city_coordinator", timeout=6000)
@@ -37,7 +37,8 @@ def get_city_statistics(row, start_date, end_date, features, agg_freq="1M"):
 def get_lat_long_destinations(df):
     """Get lat and long for each destination"""
     unique_destinations = pd.DataFrame(
-        df["TOP1_DEST"].unique(), columns=["DEST_CITY_NAME"]## a changer si on change le fichier
+        # a changer si on change le fichier
+        df["TOP1_DEST"].unique(), columns=["DEST_CITY_NAME"]
     )
     unique_destinations["LOCATION"] = unique_destinations["DEST_CITY_NAME"].progress_apply(
         geolocator.geocode

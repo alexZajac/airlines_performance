@@ -3,12 +3,18 @@ matplotlib
 numpy
 pandas
 ramp-workflow
-ramp-utils
 scikit-learn
+osfclient
+# needed for provided starting kits
+statsmodels
+keras
+tensorflow
+# see tf need?
+# only used for notebooks explaining to professors
 ipython-autotime
 meteostat
-osfclient
 plotly
+tqdm
 geopy
-statsmodels
-
+msedge-selenium-tools
+selenium

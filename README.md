@@ -17,7 +17,7 @@ usage.
 
 ### Challenge description
 
-Get started on this RAMP with a dedicated notebook.
+Get started on this RAMP with a [dedicated notebook](./airlines_performance.ipynb).
 
 ### Test a submission
 
@@ -39,4 +39,4 @@ ramp-test --help
 ### To go further
 
 You can find more information regarding `ramp-workflow` in the
-[dedicated documentation](https://paris-saclay-cds.github.io/ramp-docs/ramp-workflow/stable/using_kits.html)
+[dedicated documentation.](https://paris-saclay-cds.github.io/ramp-docs/ramp-workflow/stable/using_kits.html)

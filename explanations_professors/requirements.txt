@@ -1,5 +1,0 @@
-msedge-selenium-tools
-selenium
-pandas
-geopy
-meteostat

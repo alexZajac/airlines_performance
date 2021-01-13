@@ -1,3 +1,6 @@
+/* if you have an installation of npm run: npm i node-fetch
+   else you can try it in a hosted JS environement running node
+*/
 const fetch = require("node-fetch");
 const fs = require("fs");
 
