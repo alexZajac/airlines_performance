@@ -12,9 +12,11 @@ class SARIMAEstimator(BaseEstimator):
         self.airline_models = {}
         self.trend_orders = trend_orders
         self.seasonal_orders = seasonal_orders
+        self.end_X_train = None
 
     def fit(self, X, y):
         X_features = X.features
+        self.end_X_train = max(X_features["DATE"])
         carriers = np.unique(X_features['UNIQUE_CARRIER_NAME'])
 
         for carrier in carriers:
@@ -39,26 +41,42 @@ class SARIMAEstimator(BaseEstimator):
 
     def predict(self, X):
         X_features = X.features
+        # get all unique carriers
         carriers = np.unique(X_features['UNIQUE_CARRIER_NAME'])
+        # init a dataframe of predictions to align with dates and carriers
         predictions = pd.DataFrame(columns=['UNIQUE_CARRIER_NAME', 'PRED'])
-        for carrier in carriers:
-            airline_model = self.airline_models[carrier]
-            pred_airline = airline_model.get_forecast(steps=12)
-            y_pred = pred_airline.predicted_mean
-            y_pred_df = pd.DataFrame(
-                X_features[
-                    X_features['UNIQUE_CARRIER_NAME'] == carrier
-                ][['DATE', 'UNIQUE_CARRIER_NAME']]
+        # the last prediction date
+        end_predict_date = max(X_features["DATE"])
+        print(self.end_X_train)
+        print(end_predict_date)
+        month_to_forecast = (
+            end_predict_date.to_period('M') - self.end_X_train.to_period('M')
+        ).n
+        #  used to have dummy prediction before the months to predict
+        y_dummy = pd.Series(
+            0,
+            index=np.unique(
+                X_features[X_features["DATE"] <= self.end_X_train]["DATE"]
             )
+        )
+        # prediction with the model for each carrier
+        for carrier in carriers:
+            # get forecast for number of months
+            airline_model = self.airline_models[carrier]
+            pred_airline = airline_model.get_forecast(steps=month_to_forecast)
+
+            load_factor_forecast = pred_airline.predicted_mean
+            # subsetting dataframe for current airline
+            y_pred_df = X_features[
+                X_features['UNIQUE_CARRIER_NAME'] == carrier
+            ][["UNIQUE_CARRIER_NAME", "DATE"]].copy()
+            y_pred_df.set_index("DATE", inplace=True)
+
+            # dummy prediction for previous years and needed predictions
+            y_pred = pd.concat([y_dummy, load_factor_forecast])
             y_pred_df['PRED'] = y_pred
             predictions = predictions.append(y_pred_df)
-        predictions.reset_index(level=0, inplace=True)
-        for carrier in carriers:
-            print(predictions[
-                predictions['UNIQUE_CARRIER_NAME'] == carrier
-            ][['DATE', 'PRED']])
-        # print(predictions)
-        return predictions['PRED'].to_numpy()
+        return predictions['PRED'].values
 
 
 def get_estimator():

@@ -61,11 +61,11 @@ class AirlineData:
     def load_from_file(cls, path_features, path_tweets):
         features_df = pd.read_csv(path_features, index_col=0)
         features_df["DATE"] = pd.to_datetime(features_df["DATE"])
-        features_df.sort_values(["DATE", "UNIQUE_CARRIER_NAME"], inplace=True)
+        features_df.sort_values(["UNIQUE_CARRIER_NAME", "DATE"], inplace=True)
 
         tweets_df = pd.read_csv(path_tweets, index_col=0)
         tweets_df["DATE"] = pd.to_datetime(tweets_df["DATE"])
-        tweets_df.sort_values(["DATE", "UNIQUE_CARRIER_NAME"], inplace=True)
+        tweets_df.sort_values(["UNIQUE_CARRIER_NAME", "DATE"], inplace=True)
 
         return cls(
             features_df, tweets_df, AirlineDataIndexer(features_df, tweets_df)
@@ -202,6 +202,7 @@ def _read_data(path, dir_name):
     )
     X = AirlineData.load_from_file(path_features, path_tweets)
     airline_features = X.features
+    print(airline_features[PREDICT_COLUMN])
     y = airline_features[PREDICT_COLUMN].values
     del airline_features[PREDICT_COLUMN]
     return X, y
