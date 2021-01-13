@@ -222,7 +222,7 @@ workflow = Estimator()
 score_types = [RMSE(precision=3), MAE(precision=3)]
 
 
-def _get_airline_cv(X, n_folds=1, test_size_in_months=12):
+def _get_airline_cv(X, n_folds=3, test_size_in_months=12):
     """
     Splits the X dataset in a similar fashion as for the TimeSeriesSplit from
     sklearn, but with a custom airline/data groups separation, and usable for

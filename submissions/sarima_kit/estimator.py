@@ -8,14 +8,13 @@ import statsmodels.api as sm
 
 
 class SARIMAEstimator(BaseEstimator):
-    def __init__(self, trend_orders=(0, 1, 0), seasonal_orders=(1, 0, 1, 12)):
+    def __init__(self, trend_orders=(0, 1, 0), seasonal_orders=(1, 0, 1, 4)):
         self.airline_models = {}
         self.trend_orders = trend_orders
         self.seasonal_orders = seasonal_orders
 
     def fit(self, X, y):
         X_features = X.features
-        self.end_X_train = max(X_features["DATE"])
         carriers = np.unique(X_features["UNIQUE_CARRIER_NAME"])
 
         for carrier in carriers:
