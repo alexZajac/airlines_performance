@@ -219,7 +219,7 @@ def get_test_data(path="."):
 problem_title = "US Airlines Performance Forecast"
 Predictions = make_regression()
 workflow = Estimator()
-score_types = [RMSE(precision=3), RSquared(precision=3)]
+score_types = [RMSE(precision=3), MAE(precision=3)]
 
 
 def _get_airline_cv(X, n_folds=1, test_size_in_months=12):
