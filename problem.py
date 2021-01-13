@@ -195,9 +195,10 @@ class RSquared(BaseScoreType):
 def _read_data(path, dir_name):
     """RAMP function to read and get data for the challenge"""
     DATA_HOME = path
-    path_features = os.path.join(DATA_HOME, DATA_PATH, dir_name, "local.csv")
+    path_features = os.path.join(
+        DATA_HOME, DATA_PATH, dir_name, "features.csv")
     path_tweets = os.path.join(
-        DATA_HOME, DATA_PATH, dir_name, "tweets_local.csv"
+        DATA_HOME, DATA_PATH, dir_name, "tweets.csv"
     )
     X = AirlineData.load_from_file(path_features, path_tweets)
     airline_features = X.features
