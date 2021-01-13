@@ -10,5 +10,5 @@ meteostat
 osfclient
 plotly
 geopy
-statsmodels==0.10.2
+statsmodels
 

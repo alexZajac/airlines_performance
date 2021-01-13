@@ -41,7 +41,7 @@ def download_from_osf():
         # do not include project name
         pathname = pathname[pathname.find(REMOTE_PATH)+len(REMOTE_PATH):]
         save_file = os.path.join(LOCAL_PATH, pathname)
-        pathfile, filename = os.path.split(save_file)
+        pathfile, _ = os.path.split(save_file)
 
         if not os.path.exists(pathfile):
             os.makedirs(pathfile)
