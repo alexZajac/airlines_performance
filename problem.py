@@ -31,7 +31,7 @@ class AirlineDataIndexer:
         Allows the AirlineData class to be subscriptable. For a certain key,
         which here will mainly be list of x_train indices for cross validation,
         we get the corresponding date in the features dataframe, and since it
-        has unique dates, and the tweets dataframe doesn't, we select all the 
+        has unique dates, and the tweets dataframe doesn't, we select all the
         tweets corresponding to that date.
         """
         features_row_df = self.features.iloc[key]
@@ -48,7 +48,7 @@ class AirlineDataIndexer:
 @dataclass
 class AirlineData:
     """
-    Wrapper class around the airlines traditional features (stats + weather) 
+    Wrapper class around the airlines traditional features (stats + weather)
     and the tweets additional dataframe
     """
 
@@ -92,9 +92,9 @@ class MAE(BaseScoreType):
 
         Parameters
         ----------
-        y_true : np.array representing the real values of the load factors 
+        y_true : np.array representing the real values of the load factors
 
-        y_pred : np.array representing the predicted values of the load factors 
+        y_pred : np.array representing the predicted values of the load factors
 
         Returns
         ------
@@ -128,9 +128,9 @@ class RMSE(BaseScoreType):
 
         Parameters
         ----------
-        y_true : np.array representing the real values of the load factors 
+        y_true : np.array representing the real values of the load factors
 
-        y_pred : np.array representing the predicted values of the load factors 
+        y_pred : np.array representing the predicted values of the load factors
 
         Returns
         ------
@@ -144,8 +144,6 @@ class RMSE(BaseScoreType):
                 f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
-        y_true = y_true[-num_expected_preds:]
-        y_pred = y_pred[-num_expected_preds:]
         return np.sqrt(mean_squared_error(y_true, y_pred))
 
 
@@ -160,15 +158,15 @@ class RSquared(BaseScoreType):
 
     def __call__(self, y_true, y_pred):
         """
-        Calculate the r squared coefficient between y_true and y_pred. A 
-        constant model that always predicts the expected value of y, 
+        Calculate the r squared coefficient between y_true and y_pred. A
+        constant model that always predicts the expected value of y,
         disregarding the input features, would get a R² score of 0.0.
 
         Parameters
         ----------
-        y_true : np.array representing the real values of the load factors 
+        y_true : np.array representing the real values of the load factors
 
-        y_pred : np.array representing the predicted values of the load factors 
+        y_pred : np.array representing the predicted values of the load factors
 
         Returns
         ------
@@ -182,8 +180,6 @@ class RSquared(BaseScoreType):
                 f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
-        y_true = y_true[-num_expected_preds:]
-        y_pred = y_pred[-num_expected_preds:]
         return r2_score(y_true, y_pred)
 
 
@@ -202,7 +198,6 @@ def _read_data(path, dir_name):
     )
     X = AirlineData.load_from_file(path_features, path_tweets)
     airline_features = X.features
-    print(airline_features[PREDICT_COLUMN])
     y = airline_features[PREDICT_COLUMN].values
     del airline_features[PREDICT_COLUMN]
     return X, y
@@ -231,18 +226,18 @@ def _get_airline_cv(X, n_folds=1, test_size_in_months=12):
     """
     Splits the X dataset in a similar fashion as for the TimeSeriesSplit from
     sklearn, but with a custom airline/data groups separation, and usable for
-    both RAMP and local data. Note that the function is not scalables for other 
+    both RAMP and local data. Note that the function is not scalables for other
     challenges since it wasn"t its purpose hence the naming for the parameters.
 
     Parameters
     ----------
     X : pandas DataFrame sorted by date and carrier name (n_rows, n_cols)
-        Training data, where n_samples is the number of samples and 
+        Training data, where n_samples is the number of samples and
         n_features is the number of features. Note that X is sorted by date.
 
     n_folds : integer representing how many folds to perform on X_used
 
-    test_size_in_months : The number of datapoints to constitute a test sample 
+    test_size_in_months : The number of datapoints to constitute a test sample
     (for the current problem it"s 12 months)
 
     Yields
