@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os
+from dataclasses import dataclass
 
 from sklearn.metrics import mean_absolute_error, r2_score, mean_squared_error
 
@@ -14,6 +15,61 @@ DATA_PATH = "data/"
 PREDICT_COLUMN = "LOAD_FACTOR"
 NUM_AIRLINES = 20
 NUM_MONTHS_TO_PREDICT = 12
+
+# --------------------------------------
+# 1) Objects implementing the score type
+# --------------------------------------
+
+
+class AirlineDataIndexer:
+    def __init__(self, features, tweets):
+        self.features = features
+        self.tweets = tweets
+
+    def __getitem__(self, key):
+        """
+        Allows the AirlineData class to be subscriptable. For a certain key,
+        which here will mainly be list of x_train indices for cross validation,
+        we get the corresponding date in the features dataframe, and since it
+        has unique dates, and the tweets dataframe doesn't, we select all the 
+        tweets corresponding to that date.
+        """
+        features_row_df = self.features.iloc[key]
+        indexed_date = features_row_df["DATE"]
+        tweets_for_date_df = self.tweets[self.tweets["DATE"].isin(
+            indexed_date)]
+        return AirlineData(
+            features_row_df,
+            tweets_for_date_df,
+            AirlineDataIndexer(features_row_df, tweets_for_date_df)
+        )
+
+
+@dataclass
+class AirlineData:
+    """
+    Wrapper class around the airlines traditional features (stats + weather) 
+    and the tweets additional dataframe
+    """
+
+    features: pd.DataFrame
+    tweets: pd.DataFrame
+    # hack to allow custom indexing on the airline data object
+    iloc: AirlineDataIndexer
+
+    @classmethod
+    def load_from_file(cls, path_features, path_tweets):
+        features_df = pd.read_csv(path_features, index_col=0)
+        features_df["DATE"] = pd.to_datetime(features_df["DATE"])
+        features_df.sort_values(["DATE", "UNIQUE_CARRIER_NAME"], inplace=True)
+
+        tweets_df = pd.read_csv(path_tweets, index_col=0)
+        tweets_df["DATE"] = pd.to_datetime(tweets_df["DATE"])
+        tweets_df.sort_values(["DATE", "UNIQUE_CARRIER_NAME"], inplace=True)
+
+        return cls(
+            features_df, tweets_df, AirlineDataIndexer(features_df, tweets_df)
+        )
 
 # --------------------------------------
 # 1) Objects implementing the score type
@@ -49,7 +105,7 @@ class MAE(BaseScoreType):
         if num_preds < num_expected_preds:
             raise ValueError(
                 f"Insufficient number of predictions, expected " +
-                f"{min_expected_preds}, instead got {num_preds}.\n Make sure to" +
+                f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
         y_true = y_true[-num_expected_preds:]
@@ -85,7 +141,7 @@ class RMSE(BaseScoreType):
         if num_preds < num_expected_preds:
             raise ValueError(
                 f"Insufficient number of predictions, expected " +
-                f"{min_expected_preds}, instead got {num_preds}.\n Make sure to" +
+                f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
         y_true = y_true[-num_expected_preds:]
@@ -123,7 +179,7 @@ class RSquared(BaseScoreType):
         if num_preds < num_expected_preds:
             raise ValueError(
                 f"Insufficient number of predictions, expected " +
-                f"{min_expected_preds}, instead got {num_preds}.\n Make sure to" +
+                f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
         y_true = y_true[-num_expected_preds:]
@@ -139,14 +195,14 @@ class RSquared(BaseScoreType):
 def _read_data(path, dir_name):
     """RAMP function to read and get data for the challenge"""
     DATA_HOME = path
-    X = pd.read_csv(
-        os.path.join(DATA_HOME, DATA_PATH, dir_name, "local.csv"),
-        index_col=0
+    path_features = os.path.join(DATA_HOME, DATA_PATH, dir_name, "local.csv")
+    path_tweets = os.path.join(
+        DATA_HOME, DATA_PATH, dir_name, "tweets_local.csv"
     )
-    X["DATE"] = pd.to_datetime(X["DATE"])
-    X.sort_values(["DATE", "UNIQUE_CARRIER_NAME"], ascending=[True, True])
-    y = X[PREDICT_COLUMN]
-    del X[PREDICT_COLUMN]
+    X = AirlineData.load_from_file(path_features, path_tweets)
+    airline_features = X.features
+    y = airline_features[PREDICT_COLUMN].values
+    del airline_features[PREDICT_COLUMN]
     return X, y
 
 
@@ -195,15 +251,15 @@ def _get_airline_cv(X, n_folds=1, test_size_in_months=12):
     test : ndarray
         The testing set indices for that split.
     """
-    max_date = max(X["DATE"]) + pd.DateOffset(months=1)
-    X_index = X.index
+    X_features = X.features
+    max_date = max(X_features["DATE"]) + pd.DateOffset(months=1)
     indices = []
     while n_folds > 0:
         test_split_start = max_date - \
             pd.DateOffset(months=test_size_in_months)
-        test_indices = X_index[(X["DATE"] >= test_split_start) & (
-            X["DATE"] < max_date)]
-        train_indices = X_index[X["DATE"] < test_split_start]
+        test_indices = np.where((X_features["DATE"] >= test_split_start) & (
+            X_features["DATE"] < max_date))[0]
+        train_indices = np.where(X_features["DATE"] < test_split_start)[0]
         indices.append((train_indices, test_indices))
         max_date = test_split_start
         n_folds -= 1
