@@ -31,7 +31,6 @@ class CustomStandardScaler(BaseEstimator, TransformerMixin):
     def transform(self, X, y=None):
         # out features are contained in this attribute
         X_features_mod = X.features.copy()
-        print(np.mean(X.features.iloc[:, 30]))
         scaler = StandardScaler()
         X_features_mod.set_index(['DATE', 'UNIQUE_CARRIER_NAME'], inplace=True)
         idx = X_features_mod.index
@@ -40,12 +39,12 @@ class CustomStandardScaler(BaseEstimator, TransformerMixin):
         X_df = pd.DataFrame(X_features_mod, index=idx)
         X_df.reset_index(level=['DATE', 'UNIQUE_CARRIER_NAME'], inplace=True)
         X.features = X_df
-        print(np.mean(X.features.iloc[:, 30]))
         return X
 
 
 class CustomLabelEncoder(BaseEstimator, TransformerMixin):
     """Wrapper of a standard scaler for out AirlineData data structure"""
+
     def __init__(self):
         super().__init__()
 
@@ -81,7 +80,7 @@ class LSTMRegressor(BaseEstimator, RegressorMixin, TransformerMixin):
             X_used = X_features[X_features['UNIQUE_CARRIER_NAME']
                                 == carrier].copy()
             X_used.drop(columns=['DATE', 'UNIQUE_CARRIER_NAME'], inplace=True)
-            # finding the 
+            # finding the
             y_used = y[np.where(
                 X_features['UNIQUE_CARRIER_NAME'] == carrier)[0]]
             train_generator = TimeseriesGenerator(
@@ -114,7 +113,8 @@ class LSTMRegressor(BaseEstimator, RegressorMixin, TransformerMixin):
 
 def create_model(win_length):
     model = Sequential()
-    model.add(LSTM(64, return_sequences=True, input_shape=(win_length, num_features)))
+    model.add(LSTM(64, return_sequences=True,
+                   input_shape=(win_length, num_features)))
     model.add(LSTM(128, return_sequences=True))
     model.add(LSTM(256, return_sequences=True))
     model.add(LSTM(128, return_sequences=True))
