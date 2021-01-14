@@ -107,6 +107,9 @@ class MAE(BaseScoreType):
                 f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
+        # clipping preditions to last year
+        y_true = y_true[-num_expected_preds:]
+        y_pred = y_pred[-num_expected_preds:]
         return mean_absolute_error(y_true, y_pred)
 
 
@@ -141,6 +144,9 @@ class RMSE(BaseScoreType):
                 f"{num_expected_preds}, instead got {num_preds}.\n Make sure to" +
                 f"have one preiction for each airline and month of the year."
             )
+        # clipping preditions to last year
+        y_true = y_true[-num_expected_preds:]
+        y_pred = y_pred[-num_expected_preds:]
         return np.sqrt(mean_squared_error(y_true, y_pred))
 
 
