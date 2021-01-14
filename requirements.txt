@@ -1,15 +1,13 @@
 jupyter
 matplotlib
-numpy
+numpy==1.19.5
 pandas
 ramp-workflow
 scikit-learn
 osfclient
 # needed for provided starting kits
-statsmodels
-keras
-tensorflow
-# see tf need?
+statsmodels==0.12.1
+keras==2.4.3
 # only used for notebooks explaining to professors
 ipython-autotime
 meteostat
