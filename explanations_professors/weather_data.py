@@ -6,8 +6,8 @@ from functools import partial
 import ast
 import datetime
 from pathlib import Path
-# data\train\features.csv
-path = Path("data/")
+
+path = Path("../data")
 features = ['TAVG', 'TMAX', 'PRCP', 'SNOW', 'WSPD', 'TSUN']
 tqdm.pandas()
 geolocator = Nominatim(user_agent="city_coordinator", timeout=6000)
@@ -89,7 +89,7 @@ def get_weather_df(unique_destinations):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv(path / 'T_Domestic_Segment_Original_All_Years.csv')
+    df = pd.read_csv(path / 'root.csv')
     unique_destinations = get_lat_long_destinations(df)
     weather_df = get_weather_df(unique_destinations)
     weather_df.to_csv("weather_dataset.csv")
