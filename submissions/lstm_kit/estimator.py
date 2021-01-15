@@ -87,7 +87,7 @@ class LSTMRegressor(BaseEstimator, RegressorMixin, TransformerMixin):
                 X_used, y_used, length=self.win_length, sampling_rate=1, batch_size=self.batch_size)
             self.model[carrier] = create_model(self.win_length)
             self.model[carrier].fit(
-                train_generator, epochs=1, shuffle=False, verbose=0
+                train_generator, epochs=20, shuffle=False, verbose=0
             )
         return self
 
