@@ -1,0 +1,21 @@
+language: python
+env:
+  - PYTHON_VERSION=3.7 IPYTHON_KERNEL=python3
+before_install:
+  - wget -q http://repo.continuum.io/miniconda/Miniconda-3.6.0-Linux-x86_64.sh -O miniconda.sh
+  - chmod +x miniconda.sh
+  - ./miniconda.sh -b -p /home/travis/miniconda
+  - export PATH=/home/travis/miniconda/bin:$PATH
+  - conda update --yes --quiet conda
+install:
+  - conda create -n test_env --yes pip python=$PYTHON_VERSION
+  - source activate test_env
+  - pip install -q nbconvert[test]
+  - pip install git+https://github.com/paris-saclay-cds/ramp-workflow.git
+  - pip install -r requirements.txt
+script:
+  - python download_data.py
+  - jupyter nbconvert --execute airlines_performance.ipynb --ExecutePreprocessor.kernel_name=$IPYTHON_KERNEL --to markdown
+  - ramp-test --submission=starting_kit
+notifications:
+  email: true
