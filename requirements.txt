@@ -8,6 +8,7 @@ osfclient
 # needed for provided starting kits
 statsmodels==0.12.1
 keras==2.4.3
+tensorflow==2.4.0
 # only used for notebooks explaining to professors
 ipython-autotime
 meteostat
