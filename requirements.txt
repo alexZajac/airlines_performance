@@ -12,10 +12,9 @@ tensorflow==2.4.0
 # only used for notebooks explaining to professors
 ipython-autotime
 meteostat
-psutil
 plotly
 tqdm
 geopy
 msedge-selenium-tools
 selenium
-xlrd
+xlrd==1.2.0

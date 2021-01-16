@@ -10,6 +10,7 @@ before_install:
 install:
   - conda create -n test_env --yes pip python=$PYTHON_VERSION
   - source activate test_env
+  - conda install -c plotly plotly-orca==1.2.1 psutil requests
   - pip install -q nbconvert[test]
   - pip install git+https://github.com/paris-saclay-cds/ramp-workflow.git
   - pip install -r requirements.txt
@@ -18,6 +19,5 @@ script:
   - jupyter nbconvert --execute airlines_performance.ipynb --ExecutePreprocessor.kernel_name=$IPYTHON_KERNEL --to markdown
   - jupyter nbconvert --execute ./explanations_professors/data_engineering.ipynb --ExecutePreprocessor.kernel_name=$IPYTHON_KERNEL --to markdown
   - ramp-test --submission=starting_kit
-  - ramp-test --submission=lstm_kit
 notifications:
   email: true
