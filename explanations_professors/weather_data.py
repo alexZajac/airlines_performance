@@ -92,4 +92,4 @@ if __name__ == "__main__":
     df = pd.read_csv(path / 'root.csv')
     unique_destinations = get_lat_long_destinations(df)
     weather_df = get_weather_df(unique_destinations)
-    weather_df.to_csv("weather_dataset.csv")
+    weather_df.to_csv(path / "weather_dataset.csv")

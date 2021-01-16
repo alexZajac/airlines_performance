@@ -1,0 +1,1495 @@
+,UNIQUE_CARRIER_NAME,DATE,TOP1_DEST,TOP_1_DEST_FQ
+0,Air Wisconsin Airlines Corp,2014-01-01,"Charlotte, NC",0.16387959866220736
+1,Air Wisconsin Airlines Corp,2014-02-01,"Philadelphia, PA",0.16370106761565836
+2,Air Wisconsin Airlines Corp,2014-03-01,"Philadelphia, PA",0.1644295302013423
+3,Air Wisconsin Airlines Corp,2014-04-01,"Charlotte, NC",0.16393442622950818
+4,Air Wisconsin Airlines Corp,2014-05-01,"Charlotte, NC",0.1609907120743034
+5,Air Wisconsin Airlines Corp,2014-06-01,"Washington, DC",0.15806451612903225
+6,Air Wisconsin Airlines Corp,2014-07-01,"Philadelphia, PA",0.16216216216216217
+7,Air Wisconsin Airlines Corp,2014-08-01,"Philadelphia, PA",0.17153284671532848
+8,Air Wisconsin Airlines Corp,2014-09-01,"Philadelphia, PA",0.17625899280575538
+9,Air Wisconsin Airlines Corp,2014-10-01,"Philadelphia, PA",0.19402985074626866
+10,Air Wisconsin Airlines Corp,2014-11-01,"Philadelphia, PA",0.18867924528301888
+11,Air Wisconsin Airlines Corp,2014-12-01,"Philadelphia, PA",0.16728624535315986
+12,Air Wisconsin Airlines Corp,2015-01-01,"Philadelphia, PA",0.16666666666666666
+13,Air Wisconsin Airlines Corp,2015-02-01,"Philadelphia, PA",0.18725099601593626
+14,Air Wisconsin Airlines Corp,2015-03-01,"Philadelphia, PA",0.16549295774647887
+15,Air Wisconsin Airlines Corp,2015-04-01,"Philadelphia, PA",0.17437722419928825
+16,Air Wisconsin Airlines Corp,2015-05-01,"Philadelphia, PA",0.18149466192170818
+17,Air Wisconsin Airlines Corp,2015-06-01,"Philadelphia, PA",0.17252396166134185
+18,Air Wisconsin Airlines Corp,2015-07-01,"Philadelphia, PA",0.15737704918032788
+19,Air Wisconsin Airlines Corp,2015-08-01,"Philadelphia, PA",0.15894039735099338
+20,Air Wisconsin Airlines Corp,2015-09-01,"Philadelphia, PA",0.16783216783216784
+21,Air Wisconsin Airlines Corp,2015-10-01,"Philadelphia, PA",0.17735849056603772
+22,Air Wisconsin Airlines Corp,2015-11-01,"Philadelphia, PA",0.18007662835249041
+23,Air Wisconsin Airlines Corp,2015-12-01,"Philadelphia, PA",0.16358024691358025
+24,Air Wisconsin Airlines Corp,2016-01-01,"Philadelphia, PA",0.18518518518518517
+25,Air Wisconsin Airlines Corp,2016-02-01,"Philadelphia, PA",0.18631178707224336
+26,Air Wisconsin Airlines Corp,2016-03-01,"Philadelphia, PA",0.18672199170124482
+27,Air Wisconsin Airlines Corp,2016-04-01,"Philadelphia, PA",0.1814814814814815
+28,Air Wisconsin Airlines Corp,2016-05-01,"Philadelphia, PA",0.18007662835249041
+29,Air Wisconsin Airlines Corp,2016-06-01,"Philadelphia, PA",0.16911764705882354
+30,Air Wisconsin Airlines Corp,2016-07-01,"Philadelphia, PA",0.16433566433566432
+31,Air Wisconsin Airlines Corp,2016-08-01,"Philadelphia, PA",0.1794871794871795
+32,Air Wisconsin Airlines Corp,2016-09-01,"Washington, DC",0.171875
+33,Air Wisconsin Airlines Corp,2016-10-01,"Philadelphia, PA",0.17307692307692307
+34,Air Wisconsin Airlines Corp,2016-11-01,"Philadelphia, PA",0.1717557251908397
+35,Air Wisconsin Airlines Corp,2016-12-01,"Philadelphia, PA",0.1576923076923077
+36,Air Wisconsin Airlines Corp,2017-01-01,"Washington, DC",0.1556420233463035
+37,Air Wisconsin Airlines Corp,2017-02-01,"Washington, DC",0.17972350230414746
+38,Air Wisconsin Airlines Corp,2017-03-01,"Washington, DC",0.203125
+39,Air Wisconsin Airlines Corp,2017-04-01,"Philadelphia, PA",0.17587939698492464
+40,Air Wisconsin Airlines Corp,2017-05-01,"Philadelphia, PA",0.20114942528735633
+41,Air Wisconsin Airlines Corp,2017-06-01,"Philadelphia, PA",0.1871345029239766
+42,Air Wisconsin Airlines Corp,2017-07-01,"Philadelphia, PA",0.20987654320987653
+43,Air Wisconsin Airlines Corp,2017-08-01,"Philadelphia, PA",0.21428571428571427
+44,Air Wisconsin Airlines Corp,2017-09-01,"Philadelphia, PA",0.21739130434782608
+45,Air Wisconsin Airlines Corp,2017-10-01,"Philadelphia, PA",0.1507537688442211
+46,Air Wisconsin Airlines Corp,2017-11-01,"Washington, DC",0.1574468085106383
+47,Air Wisconsin Airlines Corp,2017-12-01,"Chicago, IL",0.19298245614035087
+48,Air Wisconsin Airlines Corp,2018-01-01,"Chicago, IL",0.2315270935960591
+49,Air Wisconsin Airlines Corp,2018-02-01,"Chicago, IL",0.2765957446808511
+50,Air Wisconsin Airlines Corp,2018-03-01,"Chicago, IL",0.32954545454545453
+51,Air Wisconsin Airlines Corp,2018-04-01,"Chicago, IL",0.30917874396135264
+52,Air Wisconsin Airlines Corp,2018-05-01,"Chicago, IL",0.27472527472527475
+53,Air Wisconsin Airlines Corp,2018-06-01,"Chicago, IL",0.3125
+54,Air Wisconsin Airlines Corp,2018-07-01,"Chicago, IL",0.3502824858757062
+55,Air Wisconsin Airlines Corp,2018-08-01,"Chicago, IL",0.31683168316831684
+56,Air Wisconsin Airlines Corp,2018-09-01,"Chicago, IL",0.3352272727272727
+57,Air Wisconsin Airlines Corp,2018-10-01,"Chicago, IL",0.29850746268656714
+58,Air Wisconsin Airlines Corp,2018-11-01,"Chicago, IL",0.3125
+59,Air Wisconsin Airlines Corp,2018-12-01,"Chicago, IL",0.3130841121495327
+60,Air Wisconsin Airlines Corp,2019-01-01,"Chicago, IL",0.308411214953271
+61,Air Wisconsin Airlines Corp,2019-02-01,"Chicago, IL",0.3101851851851852
+62,Air Wisconsin Airlines Corp,2019-03-01,"Chicago, IL",0.3194444444444444
+63,Air Wisconsin Airlines Corp,2019-04-01,"Chicago, IL",0.3116279069767442
+64,Air Wisconsin Airlines Corp,2019-05-01,"Chicago, IL",0.29357798165137616
+65,Air Wisconsin Airlines Corp,2019-06-01,"Chicago, IL",0.30416666666666664
+66,Air Wisconsin Airlines Corp,2019-07-01,"Chicago, IL",0.3053097345132743
+67,Air Wisconsin Airlines Corp,2019-08-01,"Chicago, IL",0.3021276595744681
+68,Air Wisconsin Airlines Corp,2019-09-01,"Chicago, IL",0.3157894736842105
+69,Air Wisconsin Airlines Corp,2019-10-01,"Chicago, IL",0.3150684931506849
+70,Air Wisconsin Airlines Corp,2019-11-01,"Chicago, IL",0.3056768558951965
+71,Air Wisconsin Airlines Corp,2019-12-01,"Chicago, IL",0.2926829268292683
+72,Alaska Airlines Inc.,2014-01-01,"Seattle, WA",0.22448979591836735
+73,Alaska Airlines Inc.,2014-02-01,"Seattle, WA",0.2240325865580448
+74,Alaska Airlines Inc.,2014-03-01,"Seattle, WA",0.22504892367906065
+75,Alaska Airlines Inc.,2014-04-01,"Seattle, WA",0.21936758893280633
+76,Alaska Airlines Inc.,2014-05-01,"Seattle, WA",0.2318840579710145
+77,Alaska Airlines Inc.,2014-06-01,"Seattle, WA",0.2222222222222222
+78,Alaska Airlines Inc.,2014-07-01,"Seattle, WA",0.22791519434628976
+79,Alaska Airlines Inc.,2014-08-01,"Seattle, WA",0.22466216216216217
+80,Alaska Airlines Inc.,2014-09-01,"Seattle, WA",0.2425828970331588
+81,Alaska Airlines Inc.,2014-10-01,"Seattle, WA",0.23707664884135474
+82,Alaska Airlines Inc.,2014-11-01,"Seattle, WA",0.23052464228934816
+83,Alaska Airlines Inc.,2014-12-01,"Seattle, WA",0.23393739703459637
+84,Alaska Airlines Inc.,2015-01-01,"Seattle, WA",0.23500810372771475
+85,Alaska Airlines Inc.,2015-02-01,"Seattle, WA",0.22773972602739725
+86,Alaska Airlines Inc.,2015-03-01,"Seattle, WA",0.23051409618573798
+87,Alaska Airlines Inc.,2015-04-01,"Seattle, WA",0.23305785123966943
+88,Alaska Airlines Inc.,2015-05-01,"Seattle, WA",0.23311897106109325
+89,Alaska Airlines Inc.,2015-06-01,"Seattle, WA",0.23014586709886548
+90,Alaska Airlines Inc.,2015-07-01,"Seattle, WA",0.21392190152801357
+91,Alaska Airlines Inc.,2015-08-01,"Seattle, WA",0.25076923076923074
+92,Alaska Airlines Inc.,2015-09-01,"Seattle, WA",0.25656877897990726
+93,Alaska Airlines Inc.,2015-10-01,"Seattle, WA",0.25892857142857145
+94,Alaska Airlines Inc.,2015-11-01,"Seattle, WA",0.2683982683982684
+95,Alaska Airlines Inc.,2015-12-01,"Seattle, WA",0.25035360678925034
+96,Alaska Airlines Inc.,2016-01-01,"Seattle, WA",0.24554183813443073
+97,Alaska Airlines Inc.,2016-02-01,"Seattle, WA",0.23714285714285716
+98,Alaska Airlines Inc.,2016-03-01,"Seattle, WA",0.24279835390946503
+99,Alaska Airlines Inc.,2016-04-01,"Seattle, WA",0.24568965517241378
+100,Alaska Airlines Inc.,2016-05-01,"Seattle, WA",0.251063829787234
+101,Alaska Airlines Inc.,2016-06-01,"Seattle, WA",0.25842696629213485
+102,Alaska Airlines Inc.,2016-07-01,"Seattle, WA",0.25
+103,Alaska Airlines Inc.,2016-08-01,"Seattle, WA",0.24281609195402298
+104,Alaska Airlines Inc.,2016-09-01,"Seattle, WA",0.2703488372093023
+105,Alaska Airlines Inc.,2016-10-01,"Seattle, WA",0.2575107296137339
+106,Alaska Airlines Inc.,2016-11-01,"Seattle, WA",0.25471698113207547
+107,Alaska Airlines Inc.,2016-12-01,"Seattle, WA",0.24307304785894207
+108,Alaska Airlines Inc.,2017-01-01,"Seattle, WA",0.25868725868725867
+109,Alaska Airlines Inc.,2017-02-01,"Seattle, WA",0.24834874504623514
+110,Alaska Airlines Inc.,2017-03-01,"Seattle, WA",0.23387096774193547
+111,Alaska Airlines Inc.,2017-04-01,"Seattle, WA",0.23529411764705882
+112,Alaska Airlines Inc.,2017-05-01,"Seattle, WA",0.24069148936170212
+113,Alaska Airlines Inc.,2017-06-01,"Seattle, WA",0.24968152866242038
+114,Alaska Airlines Inc.,2017-07-01,"Seattle, WA",0.23687580025608196
+115,Alaska Airlines Inc.,2017-08-01,"Seattle, WA",0.23863636363636365
+116,Alaska Airlines Inc.,2017-09-01,"Seattle, WA",0.24899598393574296
+117,Alaska Airlines Inc.,2017-10-01,"Seattle, WA",0.25229960578186594
+118,Alaska Airlines Inc.,2017-11-01,"Seattle, WA",0.2633802816901408
+119,Alaska Airlines Inc.,2017-12-01,"Seattle, WA",0.25297619047619047
+120,Alaska Airlines Inc.,2018-01-01,"Seattle, WA",0.24890190336749635
+121,Alaska Airlines Inc.,2018-02-01,"Seattle, WA",0.23751891074130105
+122,Alaska Airlines Inc.,2018-03-01,"Seattle, WA",0.23941605839416058
+123,Alaska Airlines Inc.,2018-04-01,"Seattle, WA",0.19664804469273742
+124,Alaska Airlines Inc.,2018-05-01,"Seattle, WA",0.18880351262349068
+125,Alaska Airlines Inc.,2018-06-01,"Seattle, WA",0.19393939393939394
+126,Alaska Airlines Inc.,2018-07-01,"Seattle, WA",0.19560185185185186
+127,Alaska Airlines Inc.,2018-08-01,"Seattle, WA",0.19358288770053475
+128,Alaska Airlines Inc.,2018-09-01,"Seattle, WA",0.19647058823529412
+129,Alaska Airlines Inc.,2018-10-01,"Seattle, WA",0.20588235294117646
+130,Alaska Airlines Inc.,2018-11-01,"Seattle, WA",0.200836820083682
+131,Alaska Airlines Inc.,2018-12-01,"Seattle, WA",0.19887005649717515
+132,Alaska Airlines Inc.,2019-01-01,"Seattle, WA",0.1903827281648675
+133,Alaska Airlines Inc.,2019-02-01,"Seattle, WA",0.1910828025477707
+134,Alaska Airlines Inc.,2019-03-01,"Seattle, WA",0.2163561076604555
+135,Alaska Airlines Inc.,2019-04-01,"Seattle, WA",0.2158351409978308
+136,Alaska Airlines Inc.,2019-05-01,"Seattle, WA",0.21058091286307054
+137,Alaska Airlines Inc.,2019-06-01,"Seattle, WA",0.20222446916076844
+138,Alaska Airlines Inc.,2019-07-01,"Seattle, WA",0.20626895854398383
+139,Alaska Airlines Inc.,2019-08-01,"Seattle, WA",0.20059288537549408
+140,Alaska Airlines Inc.,2019-09-01,"Seattle, WA",0.21772428884026257
+141,Alaska Airlines Inc.,2019-10-01,"Seattle, WA",0.2172972972972973
+142,Alaska Airlines Inc.,2019-11-01,"Seattle, WA",0.2179863147605083
+143,Alaska Airlines Inc.,2019-12-01,"Seattle, WA",0.21959858323494688
+144,Allegiant Air,2014-01-01,"Sanford, FL",0.12062937062937062
+145,Allegiant Air,2014-02-01,"Sanford, FL",0.11645962732919254
+146,Allegiant Air,2014-03-01,"Sanford, FL",0.13099041533546327
+147,Allegiant Air,2014-04-01,"Sanford, FL",0.13689482470784642
+148,Allegiant Air,2014-05-01,"Sanford, FL",0.11538461538461539
+149,Allegiant Air,2014-06-01,"Sanford, FL",0.11330049261083744
+150,Allegiant Air,2014-07-01,"Sanford, FL",0.11839708561020036
+151,Allegiant Air,2014-08-01,"Sanford, FL",0.12071778140293637
+152,Allegiant Air,2014-09-01,"Phoenix, AZ",0.0944741532976827
+153,Allegiant Air,2014-10-01,"Sanford, FL",0.1126984126984127
+154,Allegiant Air,2014-11-01,"Sanford, FL",0.11982248520710059
+155,Allegiant Air,2014-12-01,"Sanford, FL",0.12517385257301808
+156,Allegiant Air,2015-01-01,"Sanford, FL",0.12482065997130559
+157,Allegiant Air,2015-02-01,"Sanford, FL",0.12156295224312591
+158,Allegiant Air,2015-03-01,"Sanford, FL",0.12427745664739884
+159,Allegiant Air,2015-04-01,"Sanford, FL",0.11808669656203288
+160,Allegiant Air,2015-05-01,"Sanford, FL",0.11671469740634005
+161,Allegiant Air,2015-06-01,"Sanford, FL",0.10923276983094929
+162,Allegiant Air,2015-07-01,"Sanford, FL",0.10438144329896908
+163,Allegiant Air,2015-08-01,"Sanford, FL",0.10582639714625446
+164,Allegiant Air,2015-09-01,"Sanford, FL",0.10213414634146341
+165,Allegiant Air,2015-10-01,"Sanford, FL",0.10894941634241245
+166,Allegiant Air,2015-11-01,"Sanford, FL",0.1137855579868709
+167,Allegiant Air,2015-12-01,"Sanford, FL",0.12945368171021376
+168,Allegiant Air,2016-01-01,"Sanford, FL",0.1288265306122449
+169,Allegiant Air,2016-02-01,"Sanford, FL",0.12724935732647816
+170,Allegiant Air,2016-03-01,"Sanford, FL",0.11864406779661017
+171,Allegiant Air,2016-04-01,"Sanford, FL",0.12531328320802004
+172,Allegiant Air,2016-05-01,"Sanford, FL",0.12663755458515283
+173,Allegiant Air,2016-06-01,"Sanford, FL",0.1168032786885246
+174,Allegiant Air,2016-07-01,"Sanford, FL",0.10699588477366255
+175,Allegiant Air,2016-08-01,"Sanford, FL",0.1122345803842265
+176,Allegiant Air,2016-09-01,"Sanford, FL",0.10057803468208093
+177,Allegiant Air,2016-10-01,"Sanford, FL",0.10253699788583509
+178,Allegiant Air,2016-11-01,"Sanford, FL",0.11318897637795275
+179,Allegiant Air,2016-12-01,"Sanford, FL",0.11344922232387923
+180,Allegiant Air,2017-01-01,"Sanford, FL",0.1127348643006263
+181,Allegiant Air,2017-02-01,"Sanford, FL",0.11612903225806452
+182,Allegiant Air,2017-03-01,"Sanford, FL",0.11006289308176101
+183,Allegiant Air,2017-04-01,"Sanford, FL",0.11739130434782609
+184,Allegiant Air,2017-05-01,"Sanford, FL",0.10192307692307692
+185,Allegiant Air,2017-06-01,"St. Petersburg, FL",0.09674329501915709
+186,Allegiant Air,2017-07-01,"Sanford, FL",0.10150753768844221
+187,Allegiant Air,2017-08-01,"Sanford, FL",0.10887096774193548
+188,Allegiant Air,2017-09-01,"Sanford, FL",0.1013215859030837
+189,Allegiant Air,2017-10-01,"Sanford, FL",0.10559006211180125
+190,Allegiant Air,2017-11-01,"Sanford, FL",0.12670157068062826
+191,Allegiant Air,2017-12-01,"Sanford, FL",0.13904338153503892
+192,Allegiant Air,2018-01-01,"Sanford, FL",0.12362030905077263
+193,Allegiant Air,2018-02-01,"Sanford, FL",0.12314225053078556
+194,Allegiant Air,2018-03-01,"Sanford, FL",0.12374245472837023
+195,Allegiant Air,2018-04-01,"Sanford, FL",0.10261026102610261
+196,Allegiant Air,2018-05-01,"Sanford, FL",0.09098639455782313
+197,Allegiant Air,2018-06-01,"St. Petersburg, FL",0.11253776435045318
+198,Allegiant Air,2018-07-01,"St. Petersburg, FL",0.09779179810725552
+199,Allegiant Air,2018-08-01,"Sanford, FL",0.0974076983503535
+200,Allegiant Air,2018-09-01,"Sanford, FL",0.08941418293936279
+201,Allegiant Air,2018-10-01,"Sanford, FL",0.1070110701107011
+202,Allegiant Air,2018-11-01,"Sanford, FL",0.1457990115321252
+203,Allegiant Air,2018-12-01,"Sanford, FL",0.1328125
+204,Allegiant Air,2019-01-01,"Sanford, FL",0.1351039260969977
+205,Allegiant Air,2019-02-01,"Sanford, FL",0.13100436681222707
+206,Allegiant Air,2019-03-01,"Sanford, FL",0.13312693498452013
+207,Allegiant Air,2019-04-01,"Sanford, FL",0.12007874015748031
+208,Allegiant Air,2019-05-01,"Sanford, FL",0.11695376246600181
+209,Allegiant Air,2019-06-01,"Sanford, FL",0.10832587287376902
+210,Allegiant Air,2019-07-01,"Sanford, FL",0.11010830324909747
+211,Allegiant Air,2019-08-01,"Sanford, FL",0.1029535864978903
+212,Allegiant Air,2019-09-01,"Sanford, FL",0.08267270668176671
+213,Allegiant Air,2019-10-01,"Sanford, FL",0.112
+214,Allegiant Air,2019-11-01,"Sanford, FL",0.10766580534022395
+215,Allegiant Air,2019-12-01,"Sanford, FL",0.1188212927756654
+216,American Airlines Inc.,2014-01-01,"Dallas/Fort Worth, TX",0.19796215429403202
+217,American Airlines Inc.,2014-02-01,"Dallas/Fort Worth, TX",0.19825072886297376
+218,American Airlines Inc.,2014-03-01,"Dallas/Fort Worth, TX",0.2152080344332855
+219,American Airlines Inc.,2014-04-01,"Dallas/Fort Worth, TX",0.20738636363636365
+220,American Airlines Inc.,2014-05-01,"Dallas/Fort Worth, TX",0.20521945432977462
+221,American Airlines Inc.,2014-06-01,"Dallas/Fort Worth, TX",0.193390452876377
+222,American Airlines Inc.,2014-07-01,"Dallas/Fort Worth, TX",0.20405576679340937
+223,American Airlines Inc.,2014-08-01,"Dallas/Fort Worth, TX",0.21992709599027946
+224,American Airlines Inc.,2014-09-01,"Dallas/Fort Worth, TX",0.22376543209876543
+225,American Airlines Inc.,2014-10-01,"Dallas/Fort Worth, TX",0.23404255319148937
+226,American Airlines Inc.,2014-11-01,"Dallas/Fort Worth, TX",0.2222222222222222
+227,American Airlines Inc.,2014-12-01,"Dallas/Fort Worth, TX",0.22664835164835165
+228,American Airlines Inc.,2015-01-01,"Dallas/Fort Worth, TX",0.20664739884393063
+229,American Airlines Inc.,2015-02-01,"Dallas/Fort Worth, TX",0.20684292379471228
+230,American Airlines Inc.,2015-03-01,"Dallas/Fort Worth, TX",0.20949720670391062
+231,American Airlines Inc.,2015-04-01,"Dallas/Fort Worth, TX",0.20768307322929172
+232,American Airlines Inc.,2015-05-01,"Dallas/Fort Worth, TX",0.20352941176470588
+233,American Airlines Inc.,2015-06-01,"Dallas/Fort Worth, TX",0.1970387243735763
+234,American Airlines Inc.,2015-07-01,"Dallas/Fort Worth, TX",0.1091387245233399
+235,American Airlines Inc.,2015-08-01,"Dallas/Fort Worth, TX",0.10365853658536585
+236,American Airlines Inc.,2015-09-01,"Dallas/Fort Worth, TX",0.10503144654088051
+237,American Airlines Inc.,2015-10-01,"Dallas/Fort Worth, TX",0.10654761904761904
+238,American Airlines Inc.,2015-11-01,"Dallas/Fort Worth, TX",0.11124330755502677
+239,American Airlines Inc.,2015-12-01,"Dallas/Fort Worth, TX",0.1160815402038505
+240,American Airlines Inc.,2016-01-01,"Dallas/Fort Worth, TX",0.1108419139915203
+241,American Airlines Inc.,2016-02-01,"Dallas/Fort Worth, TX",0.10620601407549585
+242,American Airlines Inc.,2016-03-01,"Dallas/Fort Worth, TX",0.11977186311787072
+243,American Airlines Inc.,2016-04-01,"Dallas/Fort Worth, TX",0.12154696132596685
+244,American Airlines Inc.,2016-05-01,"Dallas/Fort Worth, TX",0.11703360370799537
+245,American Airlines Inc.,2016-06-01,"Dallas/Fort Worth, TX",0.11167227833894501
+246,American Airlines Inc.,2016-07-01,"Dallas/Fort Worth, TX",0.10645339216767788
+247,American Airlines Inc.,2016-08-01,"Dallas/Fort Worth, TX",0.11739594450373532
+248,American Airlines Inc.,2016-09-01,"Dallas/Fort Worth, TX",0.1094559585492228
+249,American Airlines Inc.,2016-10-01,"Dallas/Fort Worth, TX",0.11907810499359796
+250,American Airlines Inc.,2016-11-01,"Dallas/Fort Worth, TX",0.1182453909726637
+251,American Airlines Inc.,2016-12-01,"Dallas/Fort Worth, TX",0.11984536082474227
+252,American Airlines Inc.,2017-01-01,"Dallas/Fort Worth, TX",0.12265331664580725
+253,American Airlines Inc.,2017-02-01,"Dallas/Fort Worth, TX",0.11916376306620209
+254,American Airlines Inc.,2017-03-01,"Dallas/Fort Worth, TX",0.1251638269986894
+255,American Airlines Inc.,2017-04-01,"Dallas/Fort Worth, TX",0.12073170731707317
+256,American Airlines Inc.,2017-05-01,"Dallas/Fort Worth, TX",0.11131611316113162
+257,American Airlines Inc.,2017-06-01,"Dallas/Fort Worth, TX",0.1172950329144225
+258,American Airlines Inc.,2017-07-01,"Dallas/Fort Worth, TX",0.10201729106628242
+259,American Airlines Inc.,2017-08-01,"Dallas/Fort Worth, TX",0.11993047508690614
+260,American Airlines Inc.,2017-09-01,"Dallas/Fort Worth, TX",0.10951760104302477
+261,American Airlines Inc.,2017-10-01,"Dallas/Fort Worth, TX",0.11903246339910885
+262,American Airlines Inc.,2017-11-01,"Dallas/Fort Worth, TX",0.11749515816655907
+263,American Airlines Inc.,2017-12-01,"Dallas/Fort Worth, TX",0.12224938875305623
+264,American Airlines Inc.,2018-01-01,"Dallas/Fort Worth, TX",0.1236174365647365
+265,American Airlines Inc.,2018-02-01,"Dallas/Fort Worth, TX",0.120625
+266,American Airlines Inc.,2018-03-01,"Dallas/Fort Worth, TX",0.11570247933884298
+267,American Airlines Inc.,2018-04-01,"Dallas/Fort Worth, TX",0.1117612638970158
+268,American Airlines Inc.,2018-05-01,"Dallas/Fort Worth, TX",0.10386612810155799
+269,American Airlines Inc.,2018-06-01,"Dallas/Fort Worth, TX",0.11567821491485614
+270,American Airlines Inc.,2018-07-01,"Dallas/Fort Worth, TX",0.11543062200956938
+271,American Airlines Inc.,2018-08-01,"Dallas/Fort Worth, TX",0.11534154535274356
+272,American Airlines Inc.,2018-09-01,"Dallas/Fort Worth, TX",0.12411764705882353
+273,American Airlines Inc.,2018-10-01,"Dallas/Fort Worth, TX",0.11936805149210064
+274,American Airlines Inc.,2018-11-01,"Dallas/Fort Worth, TX",0.12272460364063417
+275,American Airlines Inc.,2018-12-01,"Dallas/Fort Worth, TX",0.11918158567774936
+276,American Airlines Inc.,2019-01-01,"Dallas/Fort Worth, TX",0.11643835616438356
+277,American Airlines Inc.,2019-02-01,"Dallas/Fort Worth, TX",0.11272321428571429
+278,American Airlines Inc.,2019-03-01,"Dallas/Fort Worth, TX",0.12079326923076923
+279,American Airlines Inc.,2019-04-01,"Dallas/Fort Worth, TX",0.11672095548317046
+280,American Airlines Inc.,2019-05-01,"Dallas/Fort Worth, TX",0.11330298431967628
+281,American Airlines Inc.,2019-06-01,"Dallas/Fort Worth, TX",0.12781954887218044
+282,American Airlines Inc.,2019-07-01,"Dallas/Fort Worth, TX",0.11321721311475409
+283,American Airlines Inc.,2019-08-01,"Dallas/Fort Worth, TX",0.11932418162618796
+284,American Airlines Inc.,2019-09-01,"Dallas/Fort Worth, TX",0.12148541114058356
+285,American Airlines Inc.,2019-10-01,"Dallas/Fort Worth, TX",0.11024062674874091
+286,American Airlines Inc.,2019-11-01,"Charlotte, NC",0.10353535353535354
+287,American Airlines Inc.,2019-12-01,"Dallas/Fort Worth, TX",0.10346487006737247
+288,Delta Air Lines Inc.,2014-01-01,"Atlanta, GA",0.1890527950310559
+289,Delta Air Lines Inc.,2014-02-01,"Atlanta, GA",0.18849557522123894
+290,Delta Air Lines Inc.,2014-03-01,"Atlanta, GA",0.18888888888888888
+291,Delta Air Lines Inc.,2014-04-01,"Atlanta, GA",0.1934651762682717
+292,Delta Air Lines Inc.,2014-05-01,"Atlanta, GA",0.1866151866151866
+293,Delta Air Lines Inc.,2014-06-01,"Atlanta, GA",0.19498502994011976
+294,Delta Air Lines Inc.,2014-07-01,"Atlanta, GA",0.1965389369592089
+295,Delta Air Lines Inc.,2014-08-01,"Atlanta, GA",0.20355029585798817
+296,Delta Air Lines Inc.,2014-09-01,"Atlanta, GA",0.2000800320128051
+297,Delta Air Lines Inc.,2014-10-01,"Atlanta, GA",0.1893687707641196
+298,Delta Air Lines Inc.,2014-11-01,"Atlanta, GA",0.1800232288037166
+299,Delta Air Lines Inc.,2014-12-01,"Atlanta, GA",0.1832986832986833
+300,Delta Air Lines Inc.,2015-01-01,"Atlanta, GA",0.18225584594222832
+301,Delta Air Lines Inc.,2015-02-01,"Atlanta, GA",0.1813759555246699
+302,Delta Air Lines Inc.,2015-03-01,"Atlanta, GA",0.19015482334259626
+303,Delta Air Lines Inc.,2015-04-01,"Atlanta, GA",0.18091521816246897
+304,Delta Air Lines Inc.,2015-05-01,"Atlanta, GA",0.1969639468690702
+305,Delta Air Lines Inc.,2015-06-01,"Atlanta, GA",0.18922604841459256
+306,Delta Air Lines Inc.,2015-07-01,"Atlanta, GA",0.19576508190171793
+307,Delta Air Lines Inc.,2015-08-01,"Atlanta, GA",0.18976466193500185
+308,Delta Air Lines Inc.,2015-09-01,"Atlanta, GA",0.18984056358917314
+309,Delta Air Lines Inc.,2015-10-01,"Atlanta, GA",0.1767337807606264
+310,Delta Air Lines Inc.,2015-11-01,"Atlanta, GA",0.1849112426035503
+311,Delta Air Lines Inc.,2015-12-01,"Atlanta, GA",0.17707996115247654
+312,Delta Air Lines Inc.,2016-01-01,"Atlanta, GA",0.16837209302325581
+313,Delta Air Lines Inc.,2016-02-01,"Atlanta, GA",0.18453781512605041
+314,Delta Air Lines Inc.,2016-03-01,"Atlanta, GA",0.17557755775577558
+315,Delta Air Lines Inc.,2016-04-01,"Atlanta, GA",0.181517058628685
+316,Delta Air Lines Inc.,2016-05-01,"Atlanta, GA",0.1961356179365658
+317,Delta Air Lines Inc.,2016-06-01,"Atlanta, GA",0.17702154230408992
+318,Delta Air Lines Inc.,2016-07-01,"Atlanta, GA",0.18250813155041562
+319,Delta Air Lines Inc.,2016-08-01,"Atlanta, GA",0.17651098901098902
+320,Delta Air Lines Inc.,2016-09-01,"Atlanta, GA",0.17817130466208891
+321,Delta Air Lines Inc.,2016-10-01,"Atlanta, GA",0.18221574344023322
+322,Delta Air Lines Inc.,2016-11-01,"Atlanta, GA",0.1753627662858907
+323,Delta Air Lines Inc.,2016-12-01,"Atlanta, GA",0.17503136762860727
+324,Delta Air Lines Inc.,2017-01-01,"Atlanta, GA",0.1769964243146603
+325,Delta Air Lines Inc.,2017-02-01,"Atlanta, GA",0.18008474576271186
+326,Delta Air Lines Inc.,2017-03-01,"Atlanta, GA",0.16502697556331322
+327,Delta Air Lines Inc.,2017-04-01,"Atlanta, GA",0.17463617463617465
+328,Delta Air Lines Inc.,2017-05-01,"Atlanta, GA",0.18028846153846154
+329,Delta Air Lines Inc.,2017-06-01,"Atlanta, GA",0.17780748663101603
+330,Delta Air Lines Inc.,2017-07-01,"Atlanta, GA",0.17232658959537572
+331,Delta Air Lines Inc.,2017-08-01,"Atlanta, GA",0.16583082581076564
+332,Delta Air Lines Inc.,2017-09-01,"Atlanta, GA",0.18658122879758765
+333,Delta Air Lines Inc.,2017-10-01,"Atlanta, GA",0.16745368688703233
+334,Delta Air Lines Inc.,2017-11-01,"Atlanta, GA",0.15911379657603222
+335,Delta Air Lines Inc.,2017-12-01,"Atlanta, GA",0.16394492475184116
+336,Delta Air Lines Inc.,2018-01-01,"Atlanta, GA",0.15883977900552487
+337,Delta Air Lines Inc.,2018-02-01,"Atlanta, GA",0.1661354581673307
+338,Delta Air Lines Inc.,2018-03-01,"Atlanta, GA",0.16129032258064516
+339,Delta Air Lines Inc.,2018-04-01,"Atlanta, GA",0.15510352342898656
+340,Delta Air Lines Inc.,2018-05-01,"Atlanta, GA",0.178117048346056
+341,Delta Air Lines Inc.,2018-06-01,"Atlanta, GA",0.1741912548880199
+342,Delta Air Lines Inc.,2018-07-01,"Atlanta, GA",0.16215185043876382
+343,Delta Air Lines Inc.,2018-08-01,"Atlanta, GA",0.15581854043392504
+344,Delta Air Lines Inc.,2018-09-01,"Atlanta, GA",0.15760640539401602
+345,Delta Air Lines Inc.,2018-10-01,"Atlanta, GA",0.15826158261582615
+346,Delta Air Lines Inc.,2018-11-01,"Atlanta, GA",0.14511595221363316
+347,Delta Air Lines Inc.,2018-12-01,"Atlanta, GA",0.15597982708933716
+348,Delta Air Lines Inc.,2019-01-01,"Atlanta, GA",0.15663551401869158
+349,Delta Air Lines Inc.,2019-02-01,"Atlanta, GA",0.15935334872979215
+350,Delta Air Lines Inc.,2019-03-01,"Atlanta, GA",0.16311216429699843
+351,Delta Air Lines Inc.,2019-04-01,"Atlanta, GA",0.16044042469524183
+352,Delta Air Lines Inc.,2019-05-01,"Atlanta, GA",0.15925589836660617
+353,Delta Air Lines Inc.,2019-06-01,"Atlanta, GA",0.15949820788530467
+354,Delta Air Lines Inc.,2019-07-01,"Atlanta, GA",0.14942980731419583
+355,Delta Air Lines Inc.,2019-08-01,"Atlanta, GA",0.1482590789966305
+356,Delta Air Lines Inc.,2019-09-01,"Atlanta, GA",0.16791354945968412
+357,Delta Air Lines Inc.,2019-10-01,"Atlanta, GA",0.1507120253164557
+358,Delta Air Lines Inc.,2019-11-01,"Atlanta, GA",0.14495952906548934
+359,Delta Air Lines Inc.,2019-12-01,"Atlanta, GA",0.15776081424936386
+360,Endeavor Air Inc.,2014-01-01,"Detroit, MI",0.13559322033898305
+361,Endeavor Air Inc.,2014-02-01,"Detroit, MI",0.13793103448275862
+362,Endeavor Air Inc.,2014-03-01,"Detroit, MI",0.1381011097410604
+363,Endeavor Air Inc.,2014-04-01,"Detroit, MI",0.1562021439509954
+364,Endeavor Air Inc.,2014-05-01,"Detroit, MI",0.15459610027855153
+365,Endeavor Air Inc.,2014-06-01,"Detroit, MI",0.1527777777777778
+366,Endeavor Air Inc.,2014-07-01,"Detroit, MI",0.15193370165745856
+367,Endeavor Air Inc.,2014-08-01,"Detroit, MI",0.15114709851551958
+368,Endeavor Air Inc.,2014-09-01,"Detroit, MI",0.18154761904761904
+369,Endeavor Air Inc.,2014-10-01,"Detroit, MI",0.17405063291139242
+370,Endeavor Air Inc.,2014-11-01,"Detroit, MI",0.16302765647743814
+371,Endeavor Air Inc.,2014-12-01,"Detroit, MI",0.15741935483870967
+372,Endeavor Air Inc.,2015-01-01,"Detroit, MI",0.14647137150466044
+373,Endeavor Air Inc.,2015-02-01,"Detroit, MI",0.16483516483516483
+374,Endeavor Air Inc.,2015-03-01,"Detroit, MI",0.18064516129032257
+375,Endeavor Air Inc.,2015-04-01,"Detroit, MI",0.1640625
+376,Endeavor Air Inc.,2015-05-01,"Detroit, MI",0.18016528925619835
+377,Endeavor Air Inc.,2015-06-01,"Detroit, MI",0.1752411575562701
+378,Endeavor Air Inc.,2015-07-01,"Detroit, MI",0.16775244299674266
+379,Endeavor Air Inc.,2015-08-01,"Detroit, MI",0.15867768595041323
+380,Endeavor Air Inc.,2015-09-01,"Detroit, MI",0.1813186813186813
+381,Endeavor Air Inc.,2015-10-01,"Detroit, MI",0.19798657718120805
+382,Endeavor Air Inc.,2015-11-01,"Detroit, MI",0.18996415770609318
+383,Endeavor Air Inc.,2015-12-01,"Detroit, MI",0.15482954545454544
+384,Endeavor Air Inc.,2016-01-01,"Detroit, MI",0.16569767441860464
+385,Endeavor Air Inc.,2016-02-01,"Detroit, MI",0.17784711388455537
+386,Endeavor Air Inc.,2016-03-01,"Detroit, MI",0.1784452296819788
+387,Endeavor Air Inc.,2016-04-01,"Detroit, MI",0.17739403453689168
+388,Endeavor Air Inc.,2016-05-01,"Detroit, MI",0.18618042226487524
+389,Endeavor Air Inc.,2016-06-01,"Detroit, MI",0.15527950310559005
+390,Endeavor Air Inc.,2016-07-01,"Detroit, MI",0.15555555555555556
+391,Endeavor Air Inc.,2016-08-01,"Detroit, MI",0.1488
+392,Endeavor Air Inc.,2016-09-01,"Detroit, MI",0.16808149405772496
+393,Endeavor Air Inc.,2016-10-01,"New York, NY",0.17590822179732313
+394,Endeavor Air Inc.,2016-11-01,"New York, NY",0.15024232633279483
+395,Endeavor Air Inc.,2016-12-01,"Detroit, MI",0.14832535885167464
+396,Endeavor Air Inc.,2017-01-01,"Detroit, MI",0.15251798561151078
+397,Endeavor Air Inc.,2017-02-01,"Detroit, MI",0.1539708265802269
+398,Endeavor Air Inc.,2017-03-01,"New York, NY",0.14378029079159935
+399,Endeavor Air Inc.,2017-04-01,"New York, NY",0.14720812182741116
+400,Endeavor Air Inc.,2017-05-01,"New York, NY",0.14586994727592267
+401,Endeavor Air Inc.,2017-06-01,"New York, NY",0.13361462728551335
+402,Endeavor Air Inc.,2017-07-01,"New York, NY",0.14779874213836477
+403,Endeavor Air Inc.,2017-08-01,"New York, NY",0.1357142857142857
+404,Endeavor Air Inc.,2017-09-01,"New York, NY",0.1544256120527307
+405,Endeavor Air Inc.,2017-10-01,"New York, NY",0.14814814814814814
+406,Endeavor Air Inc.,2017-11-01,"New York, NY",0.14165261382799327
+407,Endeavor Air Inc.,2017-12-01,"New York, NY",0.12223858615611193
+408,Endeavor Air Inc.,2018-01-01,"New York, NY",0.13423831070889894
+409,Endeavor Air Inc.,2018-02-01,"New York, NY",0.12975778546712802
+410,Endeavor Air Inc.,2018-03-01,"New York, NY",0.13667820069204153
+411,Endeavor Air Inc.,2018-04-01,"New York, NY",0.15220949263502456
+412,Endeavor Air Inc.,2018-05-01,"New York, NY",0.1617391304347826
+413,Endeavor Air Inc.,2018-06-01,"New York, NY",0.14324324324324325
+414,Endeavor Air Inc.,2018-07-01,"New York, NY",0.16506410256410256
+415,Endeavor Air Inc.,2018-08-01,"New York, NY",0.19230769230769232
+416,Endeavor Air Inc.,2018-09-01,"New York, NY",0.1641509433962264
+417,Endeavor Air Inc.,2018-10-01,"New York, NY",0.16221374045801526
+418,Endeavor Air Inc.,2018-11-01,"New York, NY",0.14521452145214522
+419,Endeavor Air Inc.,2018-12-01,"Atlanta, GA",0.1487603305785124
+420,Endeavor Air Inc.,2019-01-01,"Atlanta, GA",0.14461538461538462
+421,Endeavor Air Inc.,2019-02-01,"New York, NY",0.15757575757575756
+422,Endeavor Air Inc.,2019-03-01,"New York, NY",0.14038128249566725
+423,Endeavor Air Inc.,2019-04-01,"New York, NY",0.16607773851590105
+424,Endeavor Air Inc.,2019-05-01,"New York, NY",0.14078674948240166
+425,Endeavor Air Inc.,2019-06-01,"Atlanta, GA",0.1422087745839637
+426,Endeavor Air Inc.,2019-07-01,"Atlanta, GA",0.15232974910394265
+427,Endeavor Air Inc.,2019-08-01,"New York, NY",0.146875
+428,Endeavor Air Inc.,2019-09-01,"New York, NY",0.16423357664233576
+429,Endeavor Air Inc.,2019-10-01,"New York, NY",0.16477272727272727
+430,Endeavor Air Inc.,2019-11-01,"New York, NY",0.16613418530351437
+431,Endeavor Air Inc.,2019-12-01,"New York, NY",0.15151515151515152
+432,Envoy Air,2014-01-01,"Dallas/Fort Worth, TX",0.18241469816272965
+433,Envoy Air,2014-02-01,"Dallas/Fort Worth, TX",0.18407310704960836
+434,Envoy Air,2014-03-01,"Dallas/Fort Worth, TX",0.18007662835249041
+435,Envoy Air,2014-04-01,"Dallas/Fort Worth, TX",0.17935483870967742
+436,Envoy Air,2014-05-01,"Dallas/Fort Worth, TX",0.1690307328605201
+437,Envoy Air,2014-06-01,"Dallas/Fort Worth, TX",0.1733490566037736
+438,Envoy Air,2014-07-01,"Dallas/Fort Worth, TX",0.19623655913978494
+439,Envoy Air,2014-08-01,"Dallas/Fort Worth, TX",0.18688118811881188
+440,Envoy Air,2014-09-01,"Dallas/Fort Worth, TX",0.20132450331125828
+441,Envoy Air,2014-10-01,"Dallas/Fort Worth, TX",0.20291777188328913
+442,Envoy Air,2014-11-01,"Dallas/Fort Worth, TX",0.2056451612903226
+443,Envoy Air,2014-12-01,"Dallas/Fort Worth, TX",0.22448979591836735
+444,Envoy Air,2015-01-01,"Dallas/Fort Worth, TX",0.21279761904761904
+445,Envoy Air,2015-02-01,"Dallas/Fort Worth, TX",0.21407185628742514
+446,Envoy Air,2015-03-01,"Dallas/Fort Worth, TX",0.22038980509745126
+447,Envoy Air,2015-04-01,"Dallas/Fort Worth, TX",0.20795107033639143
+448,Envoy Air,2015-05-01,"Dallas/Fort Worth, TX",0.20535714285714285
+449,Envoy Air,2015-06-01,"Dallas/Fort Worth, TX",0.19799139167862267
+450,Envoy Air,2015-07-01,"Chicago, IL",0.2084006462035541
+451,Envoy Air,2015-08-01,"Chicago, IL",0.20793650793650795
+452,Envoy Air,2015-09-01,"Chicago, IL",0.21906354515050167
+453,Envoy Air,2015-10-01,"Chicago, IL",0.22547332185886404
+454,Envoy Air,2015-11-01,"Chicago, IL",0.23255813953488372
+455,Envoy Air,2015-12-01,"Chicago, IL",0.22512234910277323
+456,Envoy Air,2016-01-01,"Chicago, IL",0.2532347504621072
+457,Envoy Air,2016-02-01,"Chicago, IL",0.24798387096774194
+458,Envoy Air,2016-03-01,"Chicago, IL",0.23605947955390336
+459,Envoy Air,2016-04-01,"Chicago, IL",0.2597173144876325
+460,Envoy Air,2016-05-01,"Chicago, IL",0.22413793103448276
+461,Envoy Air,2016-06-01,"Chicago, IL",0.21368715083798884
+462,Envoy Air,2016-07-01,"Chicago, IL",0.2207977207977208
+463,Envoy Air,2016-08-01,"Chicago, IL",0.21199442119944212
+464,Envoy Air,2016-09-01,"Chicago, IL",0.24121405750798722
+465,Envoy Air,2016-10-01,"Chicago, IL",0.23390894819466249
+466,Envoy Air,2016-11-01,"Chicago, IL",0.23668639053254437
+467,Envoy Air,2016-12-01,"Chicago, IL",0.23242467718794835
+468,Envoy Air,2017-01-01,"Chicago, IL",0.21060171919770773
+469,Envoy Air,2017-02-01,"Chicago, IL",0.22719734660033167
+470,Envoy Air,2017-03-01,"Dallas/Fort Worth, TX",0.20980392156862746
+471,Envoy Air,2017-04-01,"Dallas/Fort Worth, TX",0.20411985018726592
+472,Envoy Air,2017-05-01,"Dallas/Fort Worth, TX",0.19027484143763213
+473,Envoy Air,2017-06-01,"Chicago, IL",0.17154811715481172
+474,Envoy Air,2017-07-01,"Chicago, IL",0.16955684007707128
+475,Envoy Air,2017-08-01,"Dallas/Fort Worth, TX",0.1930116472545757
+476,Envoy Air,2017-09-01,"Chicago, IL",0.2164750957854406
+477,Envoy Air,2017-10-01,"Chicago, IL",0.22846441947565543
+478,Envoy Air,2017-11-01,"Chicago, IL",0.2
+479,Envoy Air,2017-12-01,"Dallas/Fort Worth, TX",0.20251177394034536
+480,Envoy Air,2018-01-01,"Dallas/Fort Worth, TX",0.19322990126939352
+481,Envoy Air,2018-02-01,"Chicago, IL",0.17189835575485798
+482,Envoy Air,2018-03-01,"Dallas/Fort Worth, TX",0.1889400921658986
+483,Envoy Air,2018-04-01,"Chicago, IL",0.17797695262483995
+484,Envoy Air,2018-05-01,"Dallas/Fort Worth, TX",0.164021164021164
+485,Envoy Air,2018-06-01,"Chicago, IL",0.16343825665859565
+486,Envoy Air,2018-07-01,"Chicago, IL",0.17280453257790368
+487,Envoy Air,2018-08-01,"Chicago, IL",0.20166898470097358
+488,Envoy Air,2018-09-01,"Chicago, IL",0.19395866454689983
+489,Envoy Air,2018-10-01,"Chicago, IL",0.1834862385321101
+490,Envoy Air,2018-11-01,"Chicago, IL",0.17841079460269865
+491,Envoy Air,2018-12-01,"Chicago, IL",0.17956204379562044
+492,Envoy Air,2019-01-01,"Chicago, IL",0.1871069182389937
+493,Envoy Air,2019-02-01,"Chicago, IL",0.17530487804878048
+494,Envoy Air,2019-03-01,"Chicago, IL",0.18807339449541285
+495,Envoy Air,2019-04-01,"Chicago, IL",0.17877906976744187
+496,Envoy Air,2019-05-01,"Chicago, IL",0.1836734693877551
+497,Envoy Air,2019-06-01,"Chicago, IL",0.17883211678832117
+498,Envoy Air,2019-07-01,"Chicago, IL",0.19875
+499,Envoy Air,2019-08-01,"Chicago, IL",0.1929611650485437
+500,Envoy Air,2019-09-01,"Chicago, IL",0.21223470661672908
+501,Envoy Air,2019-10-01,"Chicago, IL",0.21303258145363407
+502,Envoy Air,2019-11-01,"Chicago, IL",0.21166032953105196
+503,Envoy Air,2019-12-01,"Chicago, IL",0.18770226537216828
+504,ExpressJet Airlines LLC,2014-01-01,"Atlanta, GA",0.10709253170502583
+505,ExpressJet Airlines LLC,2014-02-01,"Atlanta, GA",0.09398099260823653
+506,ExpressJet Airlines LLC,2014-03-01,"Atlanta, GA",0.1045016077170418
+507,ExpressJet Airlines LLC,2014-04-01,"Atlanta, GA",0.10987172336865589
+508,ExpressJet Airlines LLC,2014-05-01,"Atlanta, GA",0.09309462915601023
+509,ExpressJet Airlines LLC,2014-06-01,"Atlanta, GA",0.10100526567735758
+510,ExpressJet Airlines LLC,2014-07-01,"Atlanta, GA",0.09922480620155039
+511,ExpressJet Airlines LLC,2014-08-01,"Atlanta, GA",0.09662576687116564
+512,ExpressJet Airlines LLC,2014-09-01,"Atlanta, GA",0.09702660406885759
+513,ExpressJet Airlines LLC,2014-10-01,"Atlanta, GA",0.10376213592233009
+514,ExpressJet Airlines LLC,2014-11-01,"Atlanta, GA",0.10365135453474676
+515,ExpressJet Airlines LLC,2014-12-01,"Atlanta, GA",0.11587982832618025
+516,ExpressJet Airlines LLC,2015-01-01,"Atlanta, GA",0.10909090909090909
+517,ExpressJet Airlines LLC,2015-02-01,"Atlanta, GA",0.10016330974414807
+518,ExpressJet Airlines LLC,2015-03-01,"Atlanta, GA",0.10240626748740907
+519,ExpressJet Airlines LLC,2015-04-01,"Atlanta, GA",0.10648648648648648
+520,ExpressJet Airlines LLC,2015-05-01,"Atlanta, GA",0.102475532527346
+521,ExpressJet Airlines LLC,2015-06-01,"Atlanta, GA",0.10102095647501344
+522,ExpressJet Airlines LLC,2015-07-01,"Atlanta, GA",0.10026212319790301
+523,ExpressJet Airlines LLC,2015-08-01,"Atlanta, GA",0.10550458715596331
+524,ExpressJet Airlines LLC,2015-09-01,"Atlanta, GA",0.1125
+525,ExpressJet Airlines LLC,2015-10-01,"Atlanta, GA",0.1160337552742616
+526,ExpressJet Airlines LLC,2015-11-01,"Atlanta, GA",0.09786130913804278
+527,ExpressJet Airlines LLC,2015-12-01,"Atlanta, GA",0.12220205686630368
+528,ExpressJet Airlines LLC,2016-01-01,"Atlanta, GA",0.12389380530973451
+529,ExpressJet Airlines LLC,2016-02-01,"Atlanta, GA",0.1099312929419113
+530,ExpressJet Airlines LLC,2016-03-01,"Atlanta, GA",0.11522633744855967
+531,ExpressJet Airlines LLC,2016-04-01,"Atlanta, GA",0.11333333333333333
+532,ExpressJet Airlines LLC,2016-05-01,"Atlanta, GA",0.11028867505551443
+533,ExpressJet Airlines LLC,2016-06-01,"Atlanta, GA",0.10663360198388097
+534,ExpressJet Airlines LLC,2016-07-01,"Atlanta, GA",0.09523809523809523
+535,ExpressJet Airlines LLC,2016-08-01,"Atlanta, GA",0.10075566750629723
+536,ExpressJet Airlines LLC,2016-09-01,"Atlanta, GA",0.10542168674698796
+537,ExpressJet Airlines LLC,2016-10-01,"Atlanta, GA",0.1125984251968504
+538,ExpressJet Airlines LLC,2016-11-01,"Atlanta, GA",0.10277777777777777
+539,ExpressJet Airlines LLC,2016-12-01,"Atlanta, GA",0.12253829321663019
+540,ExpressJet Airlines LLC,2017-01-01,"Atlanta, GA",0.13189269746646795
+541,ExpressJet Airlines LLC,2017-02-01,"Atlanta, GA",0.11307692307692307
+542,ExpressJet Airlines LLC,2017-03-01,"Atlanta, GA",0.1204460966542751
+543,ExpressJet Airlines LLC,2017-04-01,"Atlanta, GA",0.11532125205930807
+544,ExpressJet Airlines LLC,2017-05-01,"Atlanta, GA",0.10902591599642537
+545,ExpressJet Airlines LLC,2017-06-01,"Atlanta, GA",0.1237928007023705
+546,ExpressJet Airlines LLC,2017-07-01,"Atlanta, GA",0.12168344007319305
+547,ExpressJet Airlines LLC,2017-08-01,"Atlanta, GA",0.1163604549431321
+548,ExpressJet Airlines LLC,2017-09-01,"Atlanta, GA",0.11902113459399333
+549,ExpressJet Airlines LLC,2017-10-01,"Atlanta, GA",0.10820451843043995
+550,ExpressJet Airlines LLC,2017-11-01,"Atlanta, GA",0.10906701708278581
+551,ExpressJet Airlines LLC,2017-12-01,"Atlanta, GA",0.11477411477411477
+552,ExpressJet Airlines LLC,2018-01-01,"Houston, TX",0.1048951048951049
+553,ExpressJet Airlines LLC,2018-02-01,"Houston, TX",0.11772486772486772
+554,ExpressJet Airlines LLC,2018-03-01,"Houston, TX",0.1220159151193634
+555,ExpressJet Airlines LLC,2018-04-01,"Houston, TX",0.12557427258805512
+556,ExpressJet Airlines LLC,2018-05-01,"Houston, TX",0.13218390804597702
+557,ExpressJet Airlines LLC,2018-06-01,"Houston, TX",0.13195548489666137
+558,ExpressJet Airlines LLC,2018-07-01,"Houston, TX",0.1471698113207547
+559,ExpressJet Airlines LLC,2018-08-01,"Houston, TX",0.14583333333333334
+560,ExpressJet Airlines LLC,2018-09-01,"Houston, TX",0.15587044534412955
+561,ExpressJet Airlines LLC,2018-10-01,"Houston, TX",0.1393939393939394
+562,ExpressJet Airlines LLC,2018-11-01,"Chicago, IL",0.13092979127134724
+563,ExpressJet Airlines LLC,2018-12-01,"Chicago, IL",0.1693548387096774
+564,ExpressJet Airlines LLC,2019-01-01,"Chicago, IL",0.15025906735751296
+565,ExpressJet Airlines LLC,2019-02-01,"Chicago, IL",0.16029143897996356
+566,ExpressJet Airlines LLC,2019-03-01,"Chicago, IL",0.17782026768642448
+567,ExpressJet Airlines LLC,2019-04-01,"Houston, TX",0.1759465478841871
+568,ExpressJet Airlines LLC,2019-05-01,"Houston, TX",0.1928374655647383
+569,ExpressJet Airlines LLC,2019-06-01,"Houston, TX",0.16820276497695852
+570,ExpressJet Airlines LLC,2019-07-01,"Houston, TX",0.2025974025974026
+571,ExpressJet Airlines LLC,2019-08-01,"Houston, TX",0.1797979797979798
+572,ExpressJet Airlines LLC,2019-09-01,"Houston, TX",0.18575063613231552
+573,ExpressJet Airlines LLC,2019-10-01,"Chicago, IL",0.19158878504672897
+574,ExpressJet Airlines LLC,2019-11-01,"Houston, TX",0.18387909319899245
+575,ExpressJet Airlines LLC,2019-12-01,"Chicago, IL",0.1871559633027523
+576,Frontier Airlines Inc.,2014-01-01,"Denver, CO",0.4010152284263959
+577,Frontier Airlines Inc.,2014-02-01,"Denver, CO",0.3879781420765027
+578,Frontier Airlines Inc.,2014-03-01,"Denver, CO",0.38974358974358975
+579,Frontier Airlines Inc.,2014-04-01,"Denver, CO",0.3951219512195122
+580,Frontier Airlines Inc.,2014-05-01,"Denver, CO",0.38495575221238937
+581,Frontier Airlines Inc.,2014-06-01,"Denver, CO",0.35074626865671643
+582,Frontier Airlines Inc.,2014-07-01,"Denver, CO",0.3426294820717131
+583,Frontier Airlines Inc.,2014-08-01,"Denver, CO",0.3170731707317073
+584,Frontier Airlines Inc.,2014-09-01,"Denver, CO",0.26865671641791045
+585,Frontier Airlines Inc.,2014-10-01,"Denver, CO",0.27167630057803466
+586,Frontier Airlines Inc.,2014-11-01,"Denver, CO",0.25663716814159293
+587,Frontier Airlines Inc.,2014-12-01,"Denver, CO",0.22872340425531915
+588,Frontier Airlines Inc.,2015-01-01,"Denver, CO",0.2292817679558011
+589,Frontier Airlines Inc.,2015-02-01,"Denver, CO",0.21739130434782608
+590,Frontier Airlines Inc.,2015-03-01,"Denver, CO",0.21543408360128619
+591,Frontier Airlines Inc.,2015-04-01,"Denver, CO",0.19827586206896552
+592,Frontier Airlines Inc.,2015-05-01,"Denver, CO",0.21839080459770116
+593,Frontier Airlines Inc.,2015-06-01,"Denver, CO",0.21942446043165467
+594,Frontier Airlines Inc.,2015-07-01,"Denver, CO",0.23843416370106763
+595,Frontier Airlines Inc.,2015-08-01,"Denver, CO",0.2195945945945946
+596,Frontier Airlines Inc.,2015-09-01,"Denver, CO",0.2265625
+597,Frontier Airlines Inc.,2015-10-01,"Denver, CO",0.2073170731707317
+598,Frontier Airlines Inc.,2015-11-01,"Denver, CO",0.2392857142857143
+599,Frontier Airlines Inc.,2015-12-01,"Denver, CO",0.23202614379084968
+600,Frontier Airlines Inc.,2016-01-01,"Denver, CO",0.2129032258064516
+601,Frontier Airlines Inc.,2016-02-01,"Denver, CO",0.23255813953488372
+602,Frontier Airlines Inc.,2016-03-01,"Denver, CO",0.24066390041493776
+603,Frontier Airlines Inc.,2016-04-01,"Denver, CO",0.171990171990172
+604,Frontier Airlines Inc.,2016-05-01,"Denver, CO",0.1782178217821782
+605,Frontier Airlines Inc.,2016-06-01,"Denver, CO",0.1784037558685446
+606,Frontier Airlines Inc.,2016-07-01,"Denver, CO",0.1824175824175824
+607,Frontier Airlines Inc.,2016-08-01,"Denver, CO",0.18376068376068377
+608,Frontier Airlines Inc.,2016-09-01,"Denver, CO",0.1797752808988764
+609,Frontier Airlines Inc.,2016-10-01,"Denver, CO",0.18689788053949905
+610,Frontier Airlines Inc.,2016-11-01,"Denver, CO",0.2125340599455041
+611,Frontier Airlines Inc.,2016-12-01,"Denver, CO",0.21204188481675393
+612,Frontier Airlines Inc.,2017-01-01,"Denver, CO",0.19951923076923078
+613,Frontier Airlines Inc.,2017-02-01,"Denver, CO",0.17994858611825193
+614,Frontier Airlines Inc.,2017-03-01,"Denver, CO",0.17724867724867724
+615,Frontier Airlines Inc.,2017-04-01,"Denver, CO",0.1693121693121693
+616,Frontier Airlines Inc.,2017-05-01,"Denver, CO",0.1957040572792363
+617,Frontier Airlines Inc.,2017-06-01,"Denver, CO",0.19310344827586207
+618,Frontier Airlines Inc.,2017-07-01,"Denver, CO",0.18414918414918416
+619,Frontier Airlines Inc.,2017-08-01,"Denver, CO",0.1857451403887689
+620,Frontier Airlines Inc.,2017-09-01,"Denver, CO",0.18701298701298702
+621,Frontier Airlines Inc.,2017-10-01,"Denver, CO",0.16723549488054607
+622,Frontier Airlines Inc.,2017-11-01,"Denver, CO",0.18687872763419483
+623,Frontier Airlines Inc.,2017-12-01,"Denver, CO",0.15806988352745424
+624,Frontier Airlines Inc.,2018-01-01,"Denver, CO",0.1431297709923664
+625,Frontier Airlines Inc.,2018-02-01,"Denver, CO",0.15384615384615385
+626,Frontier Airlines Inc.,2018-03-01,"Denver, CO",0.1673469387755102
+627,Frontier Airlines Inc.,2018-04-01,"Denver, CO",0.15209580838323353
+628,Frontier Airlines Inc.,2018-05-01,"Denver, CO",0.16666666666666666
+629,Frontier Airlines Inc.,2018-06-01,"Denver, CO",0.16835699797160245
+630,Frontier Airlines Inc.,2018-07-01,"Denver, CO",0.1708984375
+631,Frontier Airlines Inc.,2018-08-01,"Denver, CO",0.15822291504286828
+632,Frontier Airlines Inc.,2018-09-01,"Denver, CO",0.17128027681660898
+633,Frontier Airlines Inc.,2018-10-01,"Denver, CO",0.16449086161879894
+634,Frontier Airlines Inc.,2018-11-01,"Denver, CO",0.16118935837245696
+635,Frontier Airlines Inc.,2018-12-01,"Denver, CO",0.16100178890876565
+636,Frontier Airlines Inc.,2019-01-01,"Denver, CO",0.17726051924798567
+637,Frontier Airlines Inc.,2019-02-01,"Denver, CO",0.16955684007707128
+638,Frontier Airlines Inc.,2019-03-01,"Denver, CO",0.17794253938832252
+639,Frontier Airlines Inc.,2019-04-01,"Denver, CO",0.17491749174917492
+640,Frontier Airlines Inc.,2019-05-01,"Denver, CO",0.1810207336523126
+641,Frontier Airlines Inc.,2019-06-01,"Denver, CO",0.1823248407643312
+642,Frontier Airlines Inc.,2019-07-01,"Denver, CO",0.17824074074074073
+643,Frontier Airlines Inc.,2019-08-01,"Denver, CO",0.18615040953090098
+644,Frontier Airlines Inc.,2019-09-01,"Denver, CO",0.1904059040590406
+645,Frontier Airlines Inc.,2019-10-01,"Denver, CO",0.1852695520121488
+646,Frontier Airlines Inc.,2019-11-01,"Denver, CO",0.15907673112913287
+647,Frontier Airlines Inc.,2019-12-01,"Denver, CO",0.1417624521072797
+648,GoJet Airlines LLC d/b/a United Express,2014-01-01,"New York, NY",0.14885496183206107
+649,GoJet Airlines LLC d/b/a United Express,2014-02-01,"New York, NY",0.15357142857142858
+650,GoJet Airlines LLC d/b/a United Express,2014-03-01,"New York, NY",0.13793103448275862
+651,GoJet Airlines LLC d/b/a United Express,2014-04-01,"New York, NY",0.17937219730941703
+652,GoJet Airlines LLC d/b/a United Express,2014-05-01,"Chicago, IL",0.13553113553113552
+653,GoJet Airlines LLC d/b/a United Express,2014-06-01,"Chicago, IL",0.13442622950819672
+654,GoJet Airlines LLC d/b/a United Express,2014-07-01,"New York, NY",0.1387900355871886
+655,GoJet Airlines LLC d/b/a United Express,2014-08-01,"Chicago, IL",0.1299638989169675
+656,GoJet Airlines LLC d/b/a United Express,2014-09-01,"Chicago, IL",0.1541501976284585
+657,GoJet Airlines LLC d/b/a United Express,2014-10-01,"Chicago, IL",0.16336633663366337
+658,GoJet Airlines LLC d/b/a United Express,2014-11-01,"Chicago, IL",0.17370892018779344
+659,GoJet Airlines LLC d/b/a United Express,2014-12-01,"New York, NY",0.1821705426356589
+660,GoJet Airlines LLC d/b/a United Express,2015-01-01,"Chicago, IL",0.16740088105726872
+661,GoJet Airlines LLC d/b/a United Express,2015-02-01,"Chicago, IL",0.14559386973180077
+662,GoJet Airlines LLC d/b/a United Express,2015-03-01,"Chicago, IL",0.17391304347826086
+663,GoJet Airlines LLC d/b/a United Express,2015-04-01,"Chicago, IL",0.14979757085020243
+664,GoJet Airlines LLC d/b/a United Express,2015-05-01,"Chicago, IL",0.1848341232227488
+665,GoJet Airlines LLC d/b/a United Express,2015-06-01,"Chicago, IL",0.171875
+666,GoJet Airlines LLC d/b/a United Express,2015-07-01,"Chicago, IL",0.17279411764705882
+667,GoJet Airlines LLC d/b/a United Express,2015-08-01,"Chicago, IL",0.15204678362573099
+668,GoJet Airlines LLC d/b/a United Express,2015-09-01,"New York, NY",0.17704918032786884
+669,GoJet Airlines LLC d/b/a United Express,2015-10-01,"New York, NY",0.1875
+670,GoJet Airlines LLC d/b/a United Express,2015-11-01,"New York, NY",0.18495297805642633
+671,GoJet Airlines LLC d/b/a United Express,2015-12-01,"New York, NY",0.19679633867276888
+672,GoJet Airlines LLC d/b/a United Express,2016-01-01,"New York, NY",0.20098039215686275
+673,GoJet Airlines LLC d/b/a United Express,2016-02-01,"New York, NY",0.20155038759689922
+674,GoJet Airlines LLC d/b/a United Express,2016-03-01,"New York, NY",0.17525773195876287
+675,GoJet Airlines LLC d/b/a United Express,2016-04-01,"New York, NY",0.17613636363636365
+676,GoJet Airlines LLC d/b/a United Express,2016-05-01,"New York, NY",0.1540785498489426
+677,GoJet Airlines LLC d/b/a United Express,2016-06-01,"New York, NY",0.1280193236714976
+678,GoJet Airlines LLC d/b/a United Express,2016-07-01,"New York, NY",0.12045454545454545
+679,GoJet Airlines LLC d/b/a United Express,2016-08-01,"New York, NY",0.12293144208037825
+680,GoJet Airlines LLC d/b/a United Express,2016-09-01,"Chicago, IL",0.1382636655948553
+681,GoJet Airlines LLC d/b/a United Express,2016-10-01,"Chicago, IL",0.13864306784660768
+682,GoJet Airlines LLC d/b/a United Express,2016-11-01,"Detroit, MI",0.1339712918660287
+683,GoJet Airlines LLC d/b/a United Express,2016-12-01,"Detroit, MI",0.14418604651162792
+684,GoJet Airlines LLC d/b/a United Express,2017-01-01,"Detroit, MI",0.1641025641025641
+685,GoJet Airlines LLC d/b/a United Express,2017-02-01,"Chicago, IL",0.13920454545454544
+686,GoJet Airlines LLC d/b/a United Express,2017-03-01,"Detroit, MI",0.1466992665036675
+687,GoJet Airlines LLC d/b/a United Express,2017-04-01,"Chicago, IL",0.1400560224089636
+688,GoJet Airlines LLC d/b/a United Express,2017-05-01,"Detroit, MI",0.1377245508982036
+689,GoJet Airlines LLC d/b/a United Express,2017-06-01,"Detroit, MI",0.15841584158415842
+690,GoJet Airlines LLC d/b/a United Express,2017-07-01,"Detroit, MI",0.14242424242424243
+691,GoJet Airlines LLC d/b/a United Express,2017-08-01,"Detroit, MI",0.16331658291457288
+692,GoJet Airlines LLC d/b/a United Express,2017-09-01,"Detroit, MI",0.1711229946524064
+693,GoJet Airlines LLC d/b/a United Express,2017-10-01,"Detroit, MI",0.1687116564417178
+694,GoJet Airlines LLC d/b/a United Express,2017-11-01,"Detroit, MI",0.15803814713896458
+695,GoJet Airlines LLC d/b/a United Express,2017-12-01,"Detroit, MI",0.1791907514450867
+696,GoJet Airlines LLC d/b/a United Express,2018-01-01,"Detroit, MI",0.18157894736842106
+697,GoJet Airlines LLC d/b/a United Express,2018-02-01,"Detroit, MI",0.18032786885245902
+698,GoJet Airlines LLC d/b/a United Express,2018-03-01,"Detroit, MI",0.1671309192200557
+699,GoJet Airlines LLC d/b/a United Express,2018-04-01,"Detroit, MI",0.1620795107033639
+700,GoJet Airlines LLC d/b/a United Express,2018-05-01,"Detroit, MI",0.15172413793103448
+701,GoJet Airlines LLC d/b/a United Express,2018-06-01,"Detroit, MI",0.145985401459854
+702,GoJet Airlines LLC d/b/a United Express,2018-07-01,"Detroit, MI",0.17933130699088146
+703,GoJet Airlines LLC d/b/a United Express,2018-08-01,"Detroit, MI",0.17473118279569894
+704,GoJet Airlines LLC d/b/a United Express,2018-09-01,"Detroit, MI",0.21498371335504887
+705,GoJet Airlines LLC d/b/a United Express,2018-10-01,"Detroit, MI",0.18566775244299674
+706,GoJet Airlines LLC d/b/a United Express,2018-11-01,"Detroit, MI",0.1839080459770115
+707,GoJet Airlines LLC d/b/a United Express,2018-12-01,"Detroit, MI",0.16290726817042606
+708,GoJet Airlines LLC d/b/a United Express,2019-01-01,"Detroit, MI",0.1643835616438356
+709,GoJet Airlines LLC d/b/a United Express,2019-02-01,"Detroit, MI",0.1724137931034483
+710,GoJet Airlines LLC d/b/a United Express,2019-03-01,"Detroit, MI",0.1712707182320442
+711,GoJet Airlines LLC d/b/a United Express,2019-04-01,"Detroit, MI",0.18309859154929578
+712,GoJet Airlines LLC d/b/a United Express,2019-05-01,"Detroit, MI",0.13108614232209737
+713,GoJet Airlines LLC d/b/a United Express,2019-06-01,"Denver, CO",0.12885154061624648
+714,GoJet Airlines LLC d/b/a United Express,2019-07-01,"Detroit, MI",0.13157894736842105
+715,GoJet Airlines LLC d/b/a United Express,2019-08-01,"Chicago, IL",0.13975155279503104
+716,GoJet Airlines LLC d/b/a United Express,2019-09-01,"Detroit, MI",0.13983050847457626
+717,GoJet Airlines LLC d/b/a United Express,2019-10-01,"Chicago, IL",0.21428571428571427
+718,GoJet Airlines LLC d/b/a United Express,2019-11-01,"Chicago, IL",0.18050541516245489
+719,GoJet Airlines LLC d/b/a United Express,2019-12-01,"Chicago, IL",0.21246458923512748
+720,Grant Aviation,2014-01-01,"Bethel, AK",0.1348314606741573
+721,Grant Aviation,2014-02-01,"Bethel, AK",0.15331010452961671
+722,Grant Aviation,2014-03-01,"Bethel, AK",0.14057507987220447
+723,Grant Aviation,2014-04-01,"Bethel, AK",0.15240641711229946
+724,Grant Aviation,2014-05-01,"Bethel, AK",0.14600550964187328
+725,Grant Aviation,2014-06-01,"Bethel, AK",0.14794520547945206
+726,Grant Aviation,2014-07-01,"Bethel, AK",0.12876712328767123
+727,Grant Aviation,2014-08-01,"Bethel, AK",0.15384615384615385
+728,Grant Aviation,2014-09-01,"Bethel, AK",0.14953271028037382
+729,Grant Aviation,2014-10-01,"Bethel, AK",0.17096774193548386
+730,Grant Aviation,2014-11-01,"Bethel, AK",0.2113564668769716
+731,Grant Aviation,2014-12-01,"Bethel, AK",0.17994100294985252
+732,Grant Aviation,2015-01-01,"Bethel, AK",0.15946843853820597
+733,Grant Aviation,2015-02-01,"Bethel, AK",0.15
+734,Grant Aviation,2015-03-01,"Bethel, AK",0.1694915254237288
+735,Grant Aviation,2015-04-01,"Bethel, AK",0.16863905325443787
+736,Grant Aviation,2015-05-01,"Bethel, AK",0.16
+737,Grant Aviation,2015-06-01,"Bethel, AK",0.1532258064516129
+738,Grant Aviation,2015-07-01,"Bethel, AK",0.15342465753424658
+739,Grant Aviation,2015-08-01,"Bethel, AK",0.1546134663341646
+740,Grant Aviation,2015-09-01,"Bethel, AK",0.1686182669789227
+741,Grant Aviation,2015-10-01,"Bethel, AK",0.18220338983050846
+742,Grant Aviation,2015-11-01,"Bethel, AK",0.17155756207674944
+743,Grant Aviation,2015-12-01,"Bethel, AK",0.15193370165745856
+744,Grant Aviation,2016-01-01,"Bethel, AK",0.15844155844155844
+745,Grant Aviation,2016-02-01,"Bethel, AK",0.12533333333333332
+746,Grant Aviation,2016-03-01,"Bethel, AK",0.1484848484848485
+747,Grant Aviation,2016-04-01,"Bethel, AK",0.1506849315068493
+748,Grant Aviation,2016-05-01,"Bethel, AK",0.1246376811594203
+749,Grant Aviation,2016-06-01,"Bethel, AK",0.1267605633802817
+750,Grant Aviation,2016-07-01,"Bethel, AK",0.12857142857142856
+751,Grant Aviation,2016-08-01,"Bethel, AK",0.16137566137566137
+752,Grant Aviation,2016-09-01,"Bethel, AK",0.17119565217391305
+753,Grant Aviation,2016-10-01,"Bethel, AK",0.16666666666666666
+754,Grant Aviation,2016-11-01,"Bethel, AK",0.15363881401617252
+755,Grant Aviation,2016-12-01,"Bethel, AK",0.16774193548387098
+756,Grant Aviation,2017-01-01,"Bethel, AK",0.16943521594684385
+757,Grant Aviation,2017-02-01,"Bethel, AK",0.18122977346278318
+758,Grant Aviation,2017-03-01,"Bethel, AK",0.1554959785522788
+759,Grant Aviation,2017-04-01,"Bethel, AK",0.17037037037037037
+760,Grant Aviation,2017-05-01,"Bethel, AK",0.17468354430379746
+761,Grant Aviation,2017-06-01,"Bethel, AK",0.17086834733893558
+762,Grant Aviation,2017-07-01,"Bethel, AK",0.15987460815047022
+763,Grant Aviation,2017-08-01,"Bethel, AK",0.18154761904761904
+764,Grant Aviation,2017-09-01,"Bethel, AK",0.16314199395770393
+765,Grant Aviation,2017-10-01,"Bethel, AK",0.16307692307692306
+766,Grant Aviation,2017-11-01,"Bethel, AK",0.18125
+767,Grant Aviation,2017-12-01,"Bethel, AK",0.17786561264822134
+768,Grant Aviation,2018-01-01,"Bethel, AK",0.15753424657534246
+769,Grant Aviation,2018-02-01,"Bethel, AK",0.17320261437908496
+770,Grant Aviation,2018-03-01,"Bethel, AK",0.15946843853820597
+771,Grant Aviation,2018-04-01,"Bethel, AK",0.15
+772,Grant Aviation,2018-05-01,"Bethel, AK",0.16477272727272727
+773,Grant Aviation,2018-06-01,"Bethel, AK",0.17094017094017094
+774,Grant Aviation,2018-07-01,"Bethel, AK",0.18429003021148035
+775,Grant Aviation,2018-08-01,"Bethel, AK",0.19365079365079366
+776,Grant Aviation,2018-09-01,"Bethel, AK",0.19602272727272727
+777,Grant Aviation,2018-10-01,"Bethel, AK",0.19786096256684493
+778,Grant Aviation,2018-11-01,"Bethel, AK",0.21727019498607242
+779,Grant Aviation,2018-12-01,"Bethel, AK",0.19375
+780,Grant Aviation,2019-01-01,"Bethel, AK",0.2018348623853211
+781,Grant Aviation,2019-02-01,"Bethel, AK",0.19202898550724637
+782,Grant Aviation,2019-03-01,"Bethel, AK",0.18787878787878787
+783,Grant Aviation,2019-04-01,"Bethel, AK",0.19592875318066158
+784,Grant Aviation,2019-05-01,"Bethel, AK",0.1782178217821782
+785,Grant Aviation,2019-06-01,"Bethel, AK",0.18867924528301888
+786,Grant Aviation,2019-07-01,"Bethel, AK",0.1953125
+787,Grant Aviation,2019-08-01,"Bethel, AK",0.19708029197080293
+788,Grant Aviation,2019-09-01,"Bethel, AK",0.18863049095607234
+789,Grant Aviation,2019-10-01,"Bethel, AK",0.19035532994923857
+790,Grant Aviation,2019-11-01,"Bethel, AK",0.19642857142857142
+791,Grant Aviation,2019-12-01,"Bethel, AK",0.16566265060240964
+792,JetBlue Airways,2014-01-01,"New York, NY",0.17391304347826086
+793,JetBlue Airways,2014-02-01,"New York, NY",0.17040358744394618
+794,JetBlue Airways,2014-03-01,"New York, NY",0.17574257425742573
+795,JetBlue Airways,2014-04-01,"New York, NY",0.17098445595854922
+796,JetBlue Airways,2014-05-01,"New York, NY",0.17307692307692307
+797,JetBlue Airways,2014-06-01,"New York, NY",0.1632183908045977
+798,JetBlue Airways,2014-07-01,"New York, NY",0.17422434367541767
+799,JetBlue Airways,2014-08-01,"New York, NY",0.17274939172749393
+800,JetBlue Airways,2014-09-01,"New York, NY",0.14955357142857142
+801,JetBlue Airways,2014-10-01,"New York, NY",0.15991471215351813
+802,JetBlue Airways,2014-11-01,"New York, NY",0.16009280742459397
+803,JetBlue Airways,2014-12-01,"New York, NY",0.1655011655011655
+804,JetBlue Airways,2015-01-01,"New York, NY",0.16389548693586697
+805,JetBlue Airways,2015-02-01,"New York, NY",0.17333333333333334
+806,JetBlue Airways,2015-03-01,"New York, NY",0.15789473684210525
+807,JetBlue Airways,2015-04-01,"New York, NY",0.16079295154185022
+808,JetBlue Airways,2015-05-01,"New York, NY",0.1597222222222222
+809,JetBlue Airways,2015-06-01,"New York, NY",0.15369649805447472
+810,JetBlue Airways,2015-07-01,"New York, NY",0.17204301075268819
+811,JetBlue Airways,2015-08-01,"New York, NY",0.16880341880341881
+812,JetBlue Airways,2015-09-01,"New York, NY",0.1553398058252427
+813,JetBlue Airways,2015-10-01,"New York, NY",0.158203125
+814,JetBlue Airways,2015-11-01,"New York, NY",0.15466101694915255
+815,JetBlue Airways,2015-12-01,"New York, NY",0.15384615384615385
+816,JetBlue Airways,2016-01-01,"New York, NY",0.1522633744855967
+817,JetBlue Airways,2016-02-01,"New York, NY",0.15551181102362205
+818,JetBlue Airways,2016-03-01,"New York, NY",0.16176470588235295
+819,JetBlue Airways,2016-04-01,"New York, NY",0.1652542372881356
+820,JetBlue Airways,2016-05-01,"New York, NY",0.1511627906976744
+821,JetBlue Airways,2016-06-01,"New York, NY",0.16856060606060605
+822,JetBlue Airways,2016-07-01,"New York, NY",0.15630885122410546
+823,JetBlue Airways,2016-08-01,"New York, NY",0.1693227091633466
+824,JetBlue Airways,2016-09-01,"New York, NY",0.14656771799628943
+825,JetBlue Airways,2016-10-01,"New York, NY",0.15636363636363637
+826,JetBlue Airways,2016-11-01,"New York, NY",0.16195856873822975
+827,JetBlue Airways,2016-12-01,"New York, NY",0.14695340501792115
+828,JetBlue Airways,2017-01-01,"New York, NY",0.13261648745519714
+829,JetBlue Airways,2017-02-01,"New York, NY",0.15591397849462366
+830,JetBlue Airways,2017-03-01,"New York, NY",0.17148362235067438
+831,JetBlue Airways,2017-04-01,"New York, NY",0.16356107660455488
+832,JetBlue Airways,2017-05-01,"New York, NY",0.16431095406360424
+833,JetBlue Airways,2017-06-01,"New York, NY",0.17153284671532848
+834,JetBlue Airways,2017-07-01,"New York, NY",0.15669014084507044
+835,JetBlue Airways,2017-08-01,"New York, NY",0.16068052930056712
+836,JetBlue Airways,2017-09-01,"New York, NY",0.14980544747081712
+837,JetBlue Airways,2017-10-01,"New York, NY",0.1519230769230769
+838,JetBlue Airways,2017-11-01,"New York, NY",0.15139442231075698
+839,JetBlue Airways,2017-12-01,"New York, NY",0.15630885122410546
+840,JetBlue Airways,2018-01-01,"New York, NY",0.1614678899082569
+841,JetBlue Airways,2018-02-01,"New York, NY",0.14232209737827714
+842,JetBlue Airways,2018-03-01,"New York, NY",0.15913200723327306
+843,JetBlue Airways,2018-04-01,"New York, NY",0.15853658536585366
+844,JetBlue Airways,2018-05-01,"New York, NY",0.14950166112956811
+845,JetBlue Airways,2018-06-01,"New York, NY",0.15859766277128548
+846,JetBlue Airways,2018-07-01,"New York, NY",0.1451048951048951
+847,JetBlue Airways,2018-08-01,"New York, NY",0.15257048092868988
+848,JetBlue Airways,2018-09-01,"New York, NY",0.15539305301645337
+849,JetBlue Airways,2018-10-01,"New York, NY",0.15292096219931273
+850,JetBlue Airways,2018-11-01,"New York, NY",0.15761821366024517
+851,JetBlue Airways,2018-12-01,"New York, NY",0.15316901408450703
+852,JetBlue Airways,2019-01-01,"New York, NY",0.151618398637138
+853,JetBlue Airways,2019-02-01,"New York, NY",0.14762741652021089
+854,JetBlue Airways,2019-03-01,"Boston, MA",0.15157116451016636
+855,JetBlue Airways,2019-04-01,"New York, NY",0.16431095406360424
+856,JetBlue Airways,2019-05-01,"New York, NY",0.14652014652014653
+857,JetBlue Airways,2019-06-01,"New York, NY",0.15698587127158556
+858,JetBlue Airways,2019-07-01,"New York, NY",0.1642512077294686
+859,JetBlue Airways,2019-08-01,"New York, NY",0.16382252559726962
+860,JetBlue Airways,2019-09-01,"New York, NY",0.15732368896925858
+861,JetBlue Airways,2019-10-01,"New York, NY",0.1554054054054054
+862,JetBlue Airways,2019-11-01,"New York, NY",0.15798922800718132
+863,JetBlue Airways,2019-12-01,"New York, NY",0.14710743801652892
+864,Mesa Airlines Inc.,2014-01-01,"Charlotte, NC",0.18181818181818182
+865,Mesa Airlines Inc.,2014-02-01,"Charlotte, NC",0.1897810218978102
+866,Mesa Airlines Inc.,2014-03-01,"Charlotte, NC",0.1863799283154122
+867,Mesa Airlines Inc.,2014-04-01,"Charlotte, NC",0.18861209964412812
+868,Mesa Airlines Inc.,2014-05-01,"Charlotte, NC",0.20218579234972678
+869,Mesa Airlines Inc.,2014-06-01,"Charlotte, NC",0.20218579234972678
+870,Mesa Airlines Inc.,2014-07-01,"Charlotte, NC",0.18497109826589594
+871,Mesa Airlines Inc.,2014-08-01,"Charlotte, NC",0.14326647564469913
+872,Mesa Airlines Inc.,2014-09-01,"Charlotte, NC",0.17133956386292834
+873,Mesa Airlines Inc.,2014-10-01,"Charlotte, NC",0.19029850746268656
+874,Mesa Airlines Inc.,2014-11-01,"Charlotte, NC",0.17770034843205576
+875,Mesa Airlines Inc.,2014-12-01,"Charlotte, NC",0.13538461538461538
+876,Mesa Airlines Inc.,2015-01-01,"Charlotte, NC",0.11854103343465046
+877,Mesa Airlines Inc.,2015-02-01,"Charlotte, NC",0.11949685534591195
+878,Mesa Airlines Inc.,2015-03-01,"Phoenix, AZ",0.1072463768115942
+879,Mesa Airlines Inc.,2015-04-01,"Washington, DC",0.11944444444444445
+880,Mesa Airlines Inc.,2015-05-01,"Washington, DC",0.12562814070351758
+881,Mesa Airlines Inc.,2015-06-01,"Washington, DC",0.16422287390029325
+882,Mesa Airlines Inc.,2015-07-01,"Washington, DC",0.17484662576687116
+883,Mesa Airlines Inc.,2015-08-01,"Washington, DC",0.16526610644257703
+884,Mesa Airlines Inc.,2015-09-01,"Washington, DC",0.1606060606060606
+885,Mesa Airlines Inc.,2015-10-01,"Washington, DC",0.14745308310991956
+886,Mesa Airlines Inc.,2015-11-01,"Washington, DC",0.15425531914893617
+887,Mesa Airlines Inc.,2015-12-01,"Washington, DC",0.1358313817330211
+888,Mesa Airlines Inc.,2016-01-01,"Washington, DC",0.13106796116504854
+889,Mesa Airlines Inc.,2016-02-01,"Washington, DC",0.14040114613180515
+890,Mesa Airlines Inc.,2016-03-01,"Washington, DC",0.14516129032258066
+891,Mesa Airlines Inc.,2016-04-01,"Washington, DC",0.14594594594594595
+892,Mesa Airlines Inc.,2016-05-01,"Washington, DC",0.14736842105263157
+893,Mesa Airlines Inc.,2016-06-01,"Washington, DC",0.1323529411764706
+894,Mesa Airlines Inc.,2016-07-01,"Washington, DC",0.13695090439276486
+895,Mesa Airlines Inc.,2016-08-01,"Washington, DC",0.14285714285714285
+896,Mesa Airlines Inc.,2016-09-01,"Washington, DC",0.15615615615615616
+897,Mesa Airlines Inc.,2016-10-01,"Washington, DC",0.15774647887323945
+898,Mesa Airlines Inc.,2016-11-01,"Washington, DC",0.14320987654320988
+899,Mesa Airlines Inc.,2016-12-01,"Dallas/Fort Worth, TX",0.13658536585365855
+900,Mesa Airlines Inc.,2017-01-01,"Dallas/Fort Worth, TX",0.13602015113350127
+901,Mesa Airlines Inc.,2017-02-01,"Washington, DC",0.13613861386138615
+902,Mesa Airlines Inc.,2017-03-01,"Washington, DC",0.14578005115089515
+903,Mesa Airlines Inc.,2017-04-01,"Dallas/Fort Worth, TX",0.15217391304347827
+904,Mesa Airlines Inc.,2017-05-01,"Washington, DC",0.15748031496062992
+905,Mesa Airlines Inc.,2017-06-01,"Dallas/Fort Worth, TX",0.14250614250614252
+906,Mesa Airlines Inc.,2017-07-01,"Washington, DC",0.13411764705882354
+907,Mesa Airlines Inc.,2017-08-01,"Washington, DC",0.1414141414141414
+908,Mesa Airlines Inc.,2017-09-01,"Washington, DC",0.15469613259668508
+909,Mesa Airlines Inc.,2017-10-01,"Washington, DC",0.1643835616438356
+910,Mesa Airlines Inc.,2017-11-01,"Washington, DC",0.15303430079155672
+911,Mesa Airlines Inc.,2017-12-01,"Dallas/Fort Worth, TX",0.14423076923076922
+912,Mesa Airlines Inc.,2018-01-01,"Washington, DC",0.14318706697459585
+913,Mesa Airlines Inc.,2018-02-01,"Houston, TX",0.13701923076923078
+914,Mesa Airlines Inc.,2018-03-01,"Washington, DC",0.16285714285714287
+915,Mesa Airlines Inc.,2018-04-01,"Washington, DC",0.1432225063938619
+916,Mesa Airlines Inc.,2018-05-01,"Washington, DC",0.1511627906976744
+917,Mesa Airlines Inc.,2018-06-01,"Houston, TX",0.1662269129287599
+918,Mesa Airlines Inc.,2018-07-01,"Houston, TX",0.15897435897435896
+919,Mesa Airlines Inc.,2018-08-01,"Houston, TX",0.14553990610328638
+920,Mesa Airlines Inc.,2018-09-01,"Houston, TX",0.15121951219512195
+921,Mesa Airlines Inc.,2018-10-01,"Houston, TX",0.16019417475728157
+922,Mesa Airlines Inc.,2018-11-01,"Houston, TX",0.1580246913580247
+923,Mesa Airlines Inc.,2018-12-01,"Houston, TX",0.15625
+924,Mesa Airlines Inc.,2019-01-01,"Houston, TX",0.16822429906542055
+925,Mesa Airlines Inc.,2019-02-01,"Houston, TX",0.15945330296127563
+926,Mesa Airlines Inc.,2019-03-01,"Houston, TX",0.16247139588100687
+927,Mesa Airlines Inc.,2019-04-01,"Houston, TX",0.14831460674157304
+928,Mesa Airlines Inc.,2019-05-01,"Houston, TX",0.14285714285714285
+929,Mesa Airlines Inc.,2019-06-01,"Houston, TX",0.15587044534412955
+930,Mesa Airlines Inc.,2019-07-01,"Houston, TX",0.16129032258064516
+931,Mesa Airlines Inc.,2019-08-01,"Houston, TX",0.15866388308977036
+932,Mesa Airlines Inc.,2019-09-01,"Houston, TX",0.15848214285714285
+933,Mesa Airlines Inc.,2019-10-01,"Houston, TX",0.18354430379746836
+934,Mesa Airlines Inc.,2019-11-01,"Houston, TX",0.182
+935,Mesa Airlines Inc.,2019-12-01,"Houston, TX",0.19012797074954296
+936,PSA Airlines Inc.,2014-01-01,"Charlotte, NC",0.33
+937,PSA Airlines Inc.,2014-02-01,"Charlotte, NC",0.3242320819112628
+938,PSA Airlines Inc.,2014-03-01,"Charlotte, NC",0.2996632996632997
+939,PSA Airlines Inc.,2014-04-01,"Charlotte, NC",0.304635761589404
+940,PSA Airlines Inc.,2014-05-01,"Charlotte, NC",0.27844311377245506
+941,PSA Airlines Inc.,2014-06-01,"Charlotte, NC",0.2870662460567823
+942,PSA Airlines Inc.,2014-07-01,"Charlotte, NC",0.3595505617977528
+943,PSA Airlines Inc.,2014-08-01,"Charlotte, NC",0.39143730886850153
+944,PSA Airlines Inc.,2014-09-01,"Charlotte, NC",0.3746130030959752
+945,PSA Airlines Inc.,2014-10-01,"Charlotte, NC",0.382183908045977
+946,PSA Airlines Inc.,2014-11-01,"Charlotte, NC",0.3901098901098901
+947,PSA Airlines Inc.,2014-12-01,"Charlotte, NC",0.37530266343825663
+948,PSA Airlines Inc.,2015-01-01,"Charlotte, NC",0.39950372208436724
+949,PSA Airlines Inc.,2015-02-01,"Charlotte, NC",0.39655172413793105
+950,PSA Airlines Inc.,2015-03-01,"Charlotte, NC",0.3779342723004695
+951,PSA Airlines Inc.,2015-04-01,"Charlotte, NC",0.4025
+952,PSA Airlines Inc.,2015-05-01,"Charlotte, NC",0.39
+953,PSA Airlines Inc.,2015-06-01,"Charlotte, NC",0.3854875283446712
+954,PSA Airlines Inc.,2015-07-01,"Charlotte, NC",0.375
+955,PSA Airlines Inc.,2015-08-01,"Charlotte, NC",0.34555984555984554
+956,PSA Airlines Inc.,2015-09-01,"Charlotte, NC",0.3444676409185804
+957,PSA Airlines Inc.,2015-10-01,"Charlotte, NC",0.32934131736526945
+958,PSA Airlines Inc.,2015-11-01,"Charlotte, NC",0.3273092369477912
+959,PSA Airlines Inc.,2015-12-01,"Charlotte, NC",0.27938931297709924
+960,PSA Airlines Inc.,2016-01-01,"Charlotte, NC",0.3176043557168784
+961,PSA Airlines Inc.,2016-02-01,"Charlotte, NC",0.2991596638655462
+962,PSA Airlines Inc.,2016-03-01,"Charlotte, NC",0.3260437375745527
+963,PSA Airlines Inc.,2016-04-01,"Charlotte, NC",0.2875816993464052
+964,PSA Airlines Inc.,2016-05-01,"Charlotte, NC",0.2765273311897106
+965,PSA Airlines Inc.,2016-06-01,"Charlotte, NC",0.28325508607198746
+966,PSA Airlines Inc.,2016-07-01,"Charlotte, NC",0.2889908256880734
+967,PSA Airlines Inc.,2016-08-01,"Charlotte, NC",0.2864
+968,PSA Airlines Inc.,2016-09-01,"Charlotte, NC",0.2791461412151067
+969,PSA Airlines Inc.,2016-10-01,"Charlotte, NC",0.2910958904109589
+970,PSA Airlines Inc.,2016-11-01,"Charlotte, NC",0.296474358974359
+971,PSA Airlines Inc.,2016-12-01,"Charlotte, NC",0.28129829984544047
+972,PSA Airlines Inc.,2017-01-01,"Charlotte, NC",0.29027355623100304
+973,PSA Airlines Inc.,2017-02-01,"Charlotte, NC",0.31141868512110726
+974,PSA Airlines Inc.,2017-03-01,"Charlotte, NC",0.32437275985663083
+975,PSA Airlines Inc.,2017-04-01,"Charlotte, NC",0.31527093596059114
+976,PSA Airlines Inc.,2017-05-01,"Charlotte, NC",0.30405405405405406
+977,PSA Airlines Inc.,2017-06-01,"Charlotte, NC",0.284789644012945
+978,PSA Airlines Inc.,2017-07-01,"Charlotte, NC",0.2552891396332863
+979,PSA Airlines Inc.,2017-08-01,"Charlotte, NC",0.2719033232628399
+980,PSA Airlines Inc.,2017-09-01,"Charlotte, NC",0.2851782363977486
+981,PSA Airlines Inc.,2017-10-01,"Charlotte, NC",0.2805755395683453
+982,PSA Airlines Inc.,2017-11-01,"Charlotte, NC",0.2835314091680815
+983,PSA Airlines Inc.,2017-12-01,"Charlotte, NC",0.2896890343698854
+984,PSA Airlines Inc.,2018-01-01,"Charlotte, NC",0.2801724137931034
+985,PSA Airlines Inc.,2018-02-01,"Charlotte, NC",0.2685459940652819
+986,PSA Airlines Inc.,2018-03-01,"Charlotte, NC",0.2939244663382594
+987,PSA Airlines Inc.,2018-04-01,"Charlotte, NC",0.2521246458923513
+988,PSA Airlines Inc.,2018-05-01,"Charlotte, NC",0.2564841498559078
+989,PSA Airlines Inc.,2018-06-01,"Charlotte, NC",0.2852897473997028
+990,PSA Airlines Inc.,2018-07-01,"Charlotte, NC",0.26732673267326734
+991,PSA Airlines Inc.,2018-08-01,"Charlotte, NC",0.282642089093702
+992,PSA Airlines Inc.,2018-09-01,"Charlotte, NC",0.2691176470588235
+993,PSA Airlines Inc.,2018-10-01,"Charlotte, NC",0.2550231839258114
+994,PSA Airlines Inc.,2018-11-01,"Charlotte, NC",0.2551928783382789
+995,PSA Airlines Inc.,2018-12-01,"Charlotte, NC",0.2481962481962482
+996,PSA Airlines Inc.,2019-01-01,"Charlotte, NC",0.24447717231222385
+997,PSA Airlines Inc.,2019-02-01,"Charlotte, NC",0.24380165289256198
+998,PSA Airlines Inc.,2019-03-01,"Charlotte, NC",0.27232796486090777
+999,PSA Airlines Inc.,2019-04-01,"Charlotte, NC",0.24216524216524216
+1000,PSA Airlines Inc.,2019-05-01,"Charlotte, NC",0.2453083109919571
+1001,PSA Airlines Inc.,2019-06-01,"Charlotte, NC",0.25237449118046135
+1002,PSA Airlines Inc.,2019-07-01,"Charlotte, NC",0.24862637362637363
+1003,PSA Airlines Inc.,2019-08-01,"Charlotte, NC",0.25205479452054796
+1004,PSA Airlines Inc.,2019-09-01,"Charlotte, NC",0.26046511627906976
+1005,PSA Airlines Inc.,2019-10-01,"Charlotte, NC",0.2717219589257504
+1006,PSA Airlines Inc.,2019-11-01,"Charlotte, NC",0.25487465181058494
+1007,PSA Airlines Inc.,2019-12-01,"Charlotte, NC",0.2258852258852259
+1008,Republic Airline,2014-01-01,"Washington, DC",0.11096938775510204
+1009,Republic Airline,2014-02-01,"Washington, DC",0.10451612903225807
+1010,Republic Airline,2014-03-01,"Washington, DC",0.09367088607594937
+1011,Republic Airline,2014-04-01,"Washington, DC",0.1076923076923077
+1012,Republic Airline,2014-05-01,"Washington, DC",0.09855453350854139
+1013,Republic Airline,2014-06-01,"Washington, DC",0.11274509803921569
+1014,Republic Airline,2014-07-01,"Washington, DC",0.10732984293193717
+1015,Republic Airline,2014-08-01,"Washington, DC",0.11216216216216217
+1016,Republic Airline,2014-09-01,"Washington, DC",0.10970464135021098
+1017,Republic Airline,2014-10-01,"Washington, DC",0.09405255878284924
+1018,Republic Airline,2014-11-01,"Washington, DC",0.09272467902995721
+1019,Republic Airline,2014-12-01,"Washington, DC",0.1035007610350076
+1020,Republic Airline,2015-01-01,"Philadelphia, PA",0.09090909090909091
+1021,Republic Airline,2015-02-01,"Philadelphia, PA",0.0927694406548431
+1022,Republic Airline,2015-03-01,"Washington, DC",0.09946236559139784
+1023,Republic Airline,2015-04-01,"Washington, DC",0.09354413702239789
+1024,Republic Airline,2015-05-01,"Washington, DC",0.0973111395646607
+1025,Republic Airline,2015-06-01,"Washington, DC",0.09307875894988067
+1026,Republic Airline,2015-07-01,"Washington, DC",0.09348093480934809
+1027,Republic Airline,2015-08-01,"Washington, DC",0.10157367668097282
+1028,Republic Airline,2015-09-01,"Washington, DC",0.10570469798657718
+1029,Republic Airline,2015-10-01,"Newark, NJ",0.10866141732283464
+1030,Republic Airline,2015-11-01,"Newark, NJ",0.10790273556231003
+1031,Republic Airline,2015-12-01,"Philadelphia, PA",0.09583333333333334
+1032,Republic Airline,2016-01-01,"Philadelphia, PA",0.10900473933649289
+1033,Republic Airline,2016-02-01,"Newark, NJ",0.09216589861751152
+1034,Republic Airline,2016-03-01,"Newark, NJ",0.10101010101010101
+1035,Republic Airline,2016-04-01,"Newark, NJ",0.0951048951048951
+1036,Republic Airline,2016-05-01,"Newark, NJ",0.1182108626198083
+1037,Republic Airline,2016-06-01,"Newark, NJ",0.0992
+1038,Republic Airline,2016-07-01,"Newark, NJ",0.11747430249632893
+1039,Republic Airline,2016-08-01,"Chicago, IL",0.1078838174273859
+1040,Republic Airline,2016-09-01,"Chicago, IL",0.1123076923076923
+1041,Republic Airline,2016-10-01,"Chicago, IL",0.11312849162011174
+1042,Republic Airline,2016-11-01,"Chicago, IL",0.10482758620689656
+1043,Republic Airline,2016-12-01,"Newark, NJ",0.10683760683760683
+1044,Republic Airline,2017-01-01,"Newark, NJ",0.08277404921700224
+1045,Republic Airline,2017-02-01,"Newark, NJ",0.08470588235294117
+1046,Republic Airline,2017-03-01,"Newark, NJ",0.09578107183580388
+1047,Republic Airline,2017-04-01,"Newark, NJ",0.10208816705336426
+1048,Republic Airline,2017-05-01,"Newark, NJ",0.09310344827586207
+1049,Republic Airline,2017-06-01,"Newark, NJ",0.0821917808219178
+1050,Republic Airline,2017-07-01,"New York, NY",0.07871720116618076
+1051,Republic Airline,2017-08-01,"New York, NY",0.09013282732447818
+1052,Republic Airline,2017-09-01,"Newark, NJ",0.08690987124463519
+1053,Republic Airline,2017-10-01,"Newark, NJ",0.09278350515463918
+1054,Republic Airline,2017-11-01,"Newark, NJ",0.09739524348810873
+1055,Republic Airline,2017-12-01,"Chicago, IL",0.08897876643073811
+1056,Republic Airline,2018-01-01,"Newark, NJ",0.08449197860962566
+1057,Republic Airline,2018-02-01,"Newark, NJ",0.08608490566037735
+1058,Republic Airline,2018-03-01,"Newark, NJ",0.08253588516746412
+1059,Republic Airline,2018-04-01,"Newark, NJ",0.09081527347781218
+1060,Republic Airline,2018-05-01,"Newark, NJ",0.0794979079497908
+1061,Republic Airline,2018-06-01,"Newark, NJ",0.07883461868037704
+1062,Republic Airline,2018-07-01,"Newark, NJ",0.08287895310796074
+1063,Republic Airline,2018-08-01,"Newark, NJ",0.08
+1064,Republic Airline,2018-09-01,"Newark, NJ",0.08133971291866028
+1065,Republic Airline,2018-10-01,"Newark, NJ",0.08823529411764706
+1066,Republic Airline,2018-11-01,"Newark, NJ",0.08423326133909287
+1067,Republic Airline,2018-12-01,"New York, NY",0.07678075855689177
+1068,Republic Airline,2019-01-01,"Newark, NJ",0.07684918347742556
+1069,Republic Airline,2019-02-01,"Newark, NJ",0.08350100603621731
+1070,Republic Airline,2019-03-01,"Newark, NJ",0.0787704130643612
+1071,Republic Airline,2019-04-01,"Newark, NJ",0.08378088077336197
+1072,Republic Airline,2019-05-01,"Newark, NJ",0.08491508491508491
+1073,Republic Airline,2019-06-01,"Washington, DC",0.06912804399057344
+1074,Republic Airline,2019-07-01,"New York, NY",0.07174490699734277
+1075,Republic Airline,2019-08-01,"Chicago, IL",0.07581803671189145
+1076,Republic Airline,2019-09-01,"Newark, NJ",0.08021390374331551
+1077,Republic Airline,2019-10-01,"Chicago, IL",0.08795411089866156
+1078,Republic Airline,2019-11-01,"Chicago, IL",0.08333333333333333
+1079,Republic Airline,2019-12-01,"Chicago, IL",0.06951484431571325
+1080,Shuttle America Corp.,2014-01-01,"New York, NY",0.13938053097345132
+1081,Shuttle America Corp.,2014-02-01,"New York, NY",0.13232104121475055
+1082,Shuttle America Corp.,2014-03-01,"New York, NY",0.1211340206185567
+1083,Shuttle America Corp.,2014-04-01,"New York, NY",0.13212435233160622
+1084,Shuttle America Corp.,2014-05-01,"New York, NY",0.11597374179431072
+1085,Shuttle America Corp.,2014-06-01,"New York, NY",0.10756972111553785
+1086,Shuttle America Corp.,2014-07-01,"New York, NY",0.11013215859030837
+1087,Shuttle America Corp.,2014-08-01,"New York, NY",0.12147505422993492
+1088,Shuttle America Corp.,2014-09-01,"New York, NY",0.11286089238845144
+1089,Shuttle America Corp.,2014-10-01,"Chicago, IL",0.11764705882352941
+1090,Shuttle America Corp.,2014-11-01,"New York, NY",0.11859838274932614
+1091,Shuttle America Corp.,2014-12-01,"New York, NY",0.11688311688311688
+1092,Shuttle America Corp.,2015-01-01,"New York, NY",0.136
+1093,Shuttle America Corp.,2015-02-01,"New York, NY",0.11666666666666667
+1094,Shuttle America Corp.,2015-03-01,"New York, NY",0.12292358803986711
+1095,Shuttle America Corp.,2015-04-01,"New York, NY",0.14307004470938897
+1096,Shuttle America Corp.,2015-05-01,"New York, NY",0.14125200642054575
+1097,Shuttle America Corp.,2015-06-01,"New York, NY",0.13578274760383385
+1098,Shuttle America Corp.,2015-07-01,"New York, NY",0.14125200642054575
+1099,Shuttle America Corp.,2015-08-01,"New York, NY",0.13344051446945338
+1100,Shuttle America Corp.,2015-09-01,"New York, NY",0.13194444444444445
+1101,Shuttle America Corp.,2015-10-01,"New York, NY",0.1306715063520871
+1102,Shuttle America Corp.,2015-11-01,"New York, NY",0.12979890310786105
+1103,Shuttle America Corp.,2015-12-01,"New York, NY",0.14831804281345565
+1104,Shuttle America Corp.,2016-01-01,"New York, NY",0.11604095563139932
+1105,Shuttle America Corp.,2016-02-01,"New York, NY",0.12218045112781954
+1106,Shuttle America Corp.,2016-03-01,"New York, NY",0.11332007952286283
+1107,Shuttle America Corp.,2016-04-01,"New York, NY",0.1284796573875803
+1108,Shuttle America Corp.,2016-05-01,"New York, NY",0.1232876712328767
+1109,Shuttle America Corp.,2016-06-01,"New York, NY",0.1211453744493392
+1110,Shuttle America Corp.,2016-07-01,"New York, NY",0.15099009900990099
+1111,Shuttle America Corp.,2016-08-01,"New York, NY",0.13752913752913754
+1112,Shuttle America Corp.,2016-09-01,"New York, NY",0.13909774436090225
+1113,Shuttle America Corp.,2016-10-01,"New York, NY",0.13671875
+1114,Shuttle America Corp.,2016-11-01,"New York, NY",0.14444444444444443
+1115,Shuttle America Corp.,2016-12-01,"New York, NY",0.14626865671641792
+1116,SkyWest Airlines Inc.,2014-01-01,"Salt Lake City, UT",0.08610936517913262
+1117,SkyWest Airlines Inc.,2014-02-01,"Salt Lake City, UT",0.08113590263691683
+1118,SkyWest Airlines Inc.,2014-03-01,"Salt Lake City, UT",0.08777852802160702
+1119,SkyWest Airlines Inc.,2014-04-01,"Salt Lake City, UT",0.09253499222395023
+1120,SkyWest Airlines Inc.,2014-05-01,"Denver, CO",0.08625730994152046
+1121,SkyWest Airlines Inc.,2014-06-01,"Salt Lake City, UT",0.09037328094302555
+1122,SkyWest Airlines Inc.,2014-07-01,"Denver, CO",0.08523489932885905
+1123,SkyWest Airlines Inc.,2014-08-01,"Salt Lake City, UT",0.08317460317460318
+1124,SkyWest Airlines Inc.,2014-09-01,"Denver, CO",0.0872210953346856
+1125,SkyWest Airlines Inc.,2014-10-01,"Denver, CO",0.09553641346906813
+1126,SkyWest Airlines Inc.,2014-11-01,"Salt Lake City, UT",0.09523809523809523
+1127,SkyWest Airlines Inc.,2014-12-01,"Denver, CO",0.08183508989460632
+1128,SkyWest Airlines Inc.,2015-01-01,"Salt Lake City, UT",0.0806742925948224
+1129,SkyWest Airlines Inc.,2015-02-01,"Denver, CO",0.08370044052863436
+1130,SkyWest Airlines Inc.,2015-03-01,"Denver, CO",0.08449720670391062
+1131,SkyWest Airlines Inc.,2015-04-01,"Salt Lake City, UT",0.08218277449046679
+1132,SkyWest Airlines Inc.,2015-05-01,"Denver, CO",0.08636977058029689
+1133,SkyWest Airlines Inc.,2015-06-01,"Chicago, IL",0.0896168108776267
+1134,SkyWest Airlines Inc.,2015-07-01,"Denver, CO",0.0925
+1135,SkyWest Airlines Inc.,2015-08-01,"Denver, CO",0.09382422802850356
+1136,SkyWest Airlines Inc.,2015-09-01,"Denver, CO",0.09987515605493133
+1137,SkyWest Airlines Inc.,2015-10-01,"Denver, CO",0.09767441860465116
+1138,SkyWest Airlines Inc.,2015-11-01,"Denver, CO",0.09070165430690245
+1139,SkyWest Airlines Inc.,2015-12-01,"Denver, CO",0.08864696734059098
+1140,SkyWest Airlines Inc.,2016-01-01,"Denver, CO",0.0857449088960343
+1141,SkyWest Airlines Inc.,2016-02-01,"Denver, CO",0.08219923788786064
+1142,SkyWest Airlines Inc.,2016-03-01,"Denver, CO",0.08434959349593496
+1143,SkyWest Airlines Inc.,2016-04-01,"Denver, CO",0.0891304347826087
+1144,SkyWest Airlines Inc.,2016-05-01,"Denver, CO",0.09466437177280551
+1145,SkyWest Airlines Inc.,2016-06-01,"Denver, CO",0.09024896265560166
+1146,SkyWest Airlines Inc.,2016-07-01,"Denver, CO",0.08818813468733298
+1147,SkyWest Airlines Inc.,2016-08-01,"Denver, CO",0.08907301916105645
+1148,SkyWest Airlines Inc.,2016-09-01,"Denver, CO",0.09023415191319246
+1149,SkyWest Airlines Inc.,2016-10-01,"Denver, CO",0.09220261809903244
+1150,SkyWest Airlines Inc.,2016-11-01,"Chicago, IL",0.08083989501312336
+1151,SkyWest Airlines Inc.,2016-12-01,"Chicago, IL",0.07471548738248392
+1152,SkyWest Airlines Inc.,2017-01-01,"Chicago, IL",0.08
+1153,SkyWest Airlines Inc.,2017-02-01,"Chicago, IL",0.07983193277310924
+1154,SkyWest Airlines Inc.,2017-03-01,"Chicago, IL",0.09067882472137791
+1155,SkyWest Airlines Inc.,2017-04-01,"Chicago, IL",0.10400811770674784
+1156,SkyWest Airlines Inc.,2017-05-01,"Chicago, IL",0.10491071428571429
+1157,SkyWest Airlines Inc.,2017-06-01,"Chicago, IL",0.09415121255349501
+1158,SkyWest Airlines Inc.,2017-07-01,"Chicago, IL",0.09857773418342325
+1159,SkyWest Airlines Inc.,2017-08-01,"Chicago, IL",0.09373549883990719
+1160,SkyWest Airlines Inc.,2017-09-01,"Chicago, IL",0.09713135379969803
+1161,SkyWest Airlines Inc.,2017-10-01,"Chicago, IL",0.10063507572056668
+1162,SkyWest Airlines Inc.,2017-11-01,"Chicago, IL",0.09674234945705824
+1163,SkyWest Airlines Inc.,2017-12-01,"Chicago, IL",0.09133709981167608
+1164,SkyWest Airlines Inc.,2018-01-01,"Chicago, IL",0.08554160855416086
+1165,SkyWest Airlines Inc.,2018-02-01,"Chicago, IL",0.0977587029089175
+1166,SkyWest Airlines Inc.,2018-03-01,"Chicago, IL",0.09594985535197685
+1167,SkyWest Airlines Inc.,2018-04-01,"Chicago, IL",0.10088743577767398
+1168,SkyWest Airlines Inc.,2018-05-01,"Chicago, IL",0.09409505520883342
+1169,SkyWest Airlines Inc.,2018-06-01,"Chicago, IL",0.08704706372344856
+1170,SkyWest Airlines Inc.,2018-07-01,"Chicago, IL",0.08214285714285714
+1171,SkyWest Airlines Inc.,2018-08-01,"Chicago, IL",0.08738277919863598
+1172,SkyWest Airlines Inc.,2018-09-01,"Chicago, IL",0.08955962394854032
+1173,SkyWest Airlines Inc.,2018-10-01,"Chicago, IL",0.08876900441392839
+1174,SkyWest Airlines Inc.,2018-11-01,"Chicago, IL",0.07968678028558268
+1175,SkyWest Airlines Inc.,2018-12-01,"Chicago, IL",0.07222222222222222
+1176,SkyWest Airlines Inc.,2019-01-01,"Chicago, IL",0.07014181678804139
+1177,SkyWest Airlines Inc.,2019-02-01,"Chicago, IL",0.08211818879508825
+1178,SkyWest Airlines Inc.,2019-03-01,"Chicago, IL",0.08463817181548879
+1179,SkyWest Airlines Inc.,2019-04-01,"Chicago, IL",0.07792207792207792
+1180,SkyWest Airlines Inc.,2019-05-01,"Chicago, IL",0.08159934720522236
+1181,SkyWest Airlines Inc.,2019-06-01,"Chicago, IL",0.08504958047292144
+1182,SkyWest Airlines Inc.,2019-07-01,"Chicago, IL",0.07501090274749236
+1183,SkyWest Airlines Inc.,2019-08-01,"Chicago, IL",0.08082026537997587
+1184,SkyWest Airlines Inc.,2019-09-01,"Chicago, IL",0.09480122324159021
+1185,SkyWest Airlines Inc.,2019-10-01,"Chicago, IL",0.09669317706153202
+1186,SkyWest Airlines Inc.,2019-11-01,"Chicago, IL",0.08322382829610162
+1187,SkyWest Airlines Inc.,2019-12-01,"Chicago, IL",0.09114486846980363
+1188,Southwest Airlines Co.,2014-01-01,"Chicago, IL",0.058927937522186724
+1189,Southwest Airlines Co.,2014-02-01,"Chicago, IL",0.05734211545912437
+1190,Southwest Airlines Co.,2014-03-01,"Chicago, IL",0.05766423357664233
+1191,Southwest Airlines Co.,2014-04-01,"Chicago, IL",0.05815198002140564
+1192,Southwest Airlines Co.,2014-05-01,"Chicago, IL",0.060507246376811596
+1193,Southwest Airlines Co.,2014-06-01,"Chicago, IL",0.06051386071670047
+1194,Southwest Airlines Co.,2014-07-01,"Chicago, IL",0.05682242990654206
+1195,Southwest Airlines Co.,2014-08-01,"Chicago, IL",0.05665024630541872
+1196,Southwest Airlines Co.,2014-09-01,"Chicago, IL",0.060236370568051846
+1197,Southwest Airlines Co.,2014-10-01,"Chicago, IL",0.05738658394726638
+1198,Southwest Airlines Co.,2014-11-01,"Chicago, IL",0.05894886363636364
+1199,Southwest Airlines Co.,2014-12-01,"Chicago, IL",0.058048433048433046
+1200,Southwest Airlines Co.,2015-01-01,"Chicago, IL",0.053583617747440276
+1201,Southwest Airlines Co.,2015-02-01,"Chicago, IL",0.05498533724340176
+1202,Southwest Airlines Co.,2015-03-01,"Chicago, IL",0.05502154458070931
+1203,Southwest Airlines Co.,2015-04-01,"Chicago, IL",0.05240746806419915
+1204,Southwest Airlines Co.,2015-05-01,"Chicago, IL",0.053970436576143005
+1205,Southwest Airlines Co.,2015-06-01,"Chicago, IL",0.05292307692307692
+1206,Southwest Airlines Co.,2015-07-01,"Chicago, IL",0.05181171689806976
+1207,Southwest Airlines Co.,2015-08-01,"Chicago, IL",0.05026109660574413
+1208,Southwest Airlines Co.,2015-09-01,"Chicago, IL",0.05582985187998481
+1209,Southwest Airlines Co.,2015-10-01,"Baltimore, MD",0.05151864667435602
+1210,Southwest Airlines Co.,2015-11-01,"Baltimore, MD",0.04928404928404929
+1211,Southwest Airlines Co.,2015-12-01,"Chicago, IL",0.04735099337748344
+1212,Southwest Airlines Co.,2016-01-01,"Baltimore, MD",0.04598825831702544
+1213,Southwest Airlines Co.,2016-02-01,"Las Vegas, NV",0.04693140794223827
+1214,Southwest Airlines Co.,2016-03-01,"Dallas, TX",0.045409674234945706
+1215,Southwest Airlines Co.,2016-04-01,"Las Vegas, NV",0.048160535117056855
+1216,Southwest Airlines Co.,2016-05-01,"Dallas, TX",0.04703055269481634
+1217,Southwest Airlines Co.,2016-06-01,"Denver, CO",0.048873373532211994
+1218,Southwest Airlines Co.,2016-07-01,"Denver, CO",0.04691988509415895
+1219,Southwest Airlines Co.,2016-08-01,"Denver, CO",0.048423789405264865
+1220,Southwest Airlines Co.,2016-09-01,"Dallas, TX",0.04962962962962963
+1221,Southwest Airlines Co.,2016-10-01,"Baltimore, MD",0.04959938954597482
+1222,Southwest Airlines Co.,2016-11-01,"Baltimore, MD",0.047286575690257064
+1223,Southwest Airlines Co.,2016-12-01,"Baltimore, MD",0.04538191115372323
+1224,Southwest Airlines Co.,2017-01-01,"Baltimore, MD",0.04466813463353256
+1225,Southwest Airlines Co.,2017-02-01,"Baltimore, MD",0.04821802935010482
+1226,Southwest Airlines Co.,2017-03-01,"Baltimore, MD",0.045353631462099586
+1227,Southwest Airlines Co.,2017-04-01,"Baltimore, MD",0.04700061842918986
+1228,Southwest Airlines Co.,2017-05-01,"Baltimore, MD",0.04923076923076923
+1229,Southwest Airlines Co.,2017-06-01,"Baltimore, MD",0.046172539489671933
+1230,Southwest Airlines Co.,2017-07-01,"Baltimore, MD",0.04555247768544168
+1231,Southwest Airlines Co.,2017-08-01,"Baltimore, MD",0.047373215912541754
+1232,Southwest Airlines Co.,2017-09-01,"Baltimore, MD",0.04975643702157272
+1233,Southwest Airlines Co.,2017-10-01,"Chicago, IL",0.05316223648029331
+1234,Southwest Airlines Co.,2017-11-01,"Chicago, IL",0.0505091649694501
+1235,Southwest Airlines Co.,2017-12-01,"Chicago, IL",0.04831320283215327
+1236,Southwest Airlines Co.,2018-01-01,"Chicago, IL",0.04736842105263158
+1237,Southwest Airlines Co.,2018-02-01,"Chicago, IL",0.04638529043042206
+1238,Southwest Airlines Co.,2018-03-01,"Chicago, IL",0.04721549636803874
+1239,Southwest Airlines Co.,2018-04-01,"Chicago, IL",0.04510408635312259
+1240,Southwest Airlines Co.,2018-05-01,"Baltimore, MD",0.04549019607843137
+1241,Southwest Airlines Co.,2018-06-01,"Chicago, IL",0.04948148148148148
+1242,Southwest Airlines Co.,2018-07-01,"Chicago, IL",0.04967401428127911
+1243,Southwest Airlines Co.,2018-08-01,"Chicago, IL",0.04908338261383797
+1244,Southwest Airlines Co.,2018-09-01,"Chicago, IL",0.05172951075101278
+1245,Southwest Airlines Co.,2018-10-01,"Denver, CO",0.04970669959864155
+1246,Southwest Airlines Co.,2018-11-01,"Denver, CO",0.04704225352112676
+1247,Southwest Airlines Co.,2018-12-01,"Denver, CO",0.046175243393602225
+1248,Southwest Airlines Co.,2019-01-01,"Chicago, IL",0.04755205402363534
+1249,Southwest Airlines Co.,2019-02-01,"Chicago, IL",0.047390521895620874
+1250,Southwest Airlines Co.,2019-03-01,"Chicago, IL",0.046274738067520374
+1251,Southwest Airlines Co.,2019-04-01,"Chicago, IL",0.04553668232743043
+1252,Southwest Airlines Co.,2019-05-01,"Denver, CO",0.04483645718485851
+1253,Southwest Airlines Co.,2019-06-01,"Denver, CO",0.04661602209944751
+1254,Southwest Airlines Co.,2019-07-01,"Denver, CO",0.046763935652824544
+1255,Southwest Airlines Co.,2019-08-01,"Chicago, IL",0.04540501271340356
+1256,Southwest Airlines Co.,2019-09-01,"Chicago, IL",0.04982483456597898
+1257,Southwest Airlines Co.,2019-10-01,"Chicago, IL",0.04892842701172665
+1258,Southwest Airlines Co.,2019-11-01,"Chicago, IL",0.04456928838951311
+1259,Southwest Airlines Co.,2019-12-01,"Denver, CO",0.04362801377726751
+1260,Spirit Air Lines,2014-01-01,"Fort Lauderdale, FL",0.14979757085020243
+1261,Spirit Air Lines,2014-02-01,"Fort Lauderdale, FL",0.1646586345381526
+1262,Spirit Air Lines,2014-03-01,"Fort Lauderdale, FL",0.12403100775193798
+1263,Spirit Air Lines,2014-04-01,"Fort Lauderdale, FL",0.15867158671586715
+1264,Spirit Air Lines,2014-05-01,"Dallas/Fort Worth, TX",0.11074918566775244
+1265,Spirit Air Lines,2014-06-01,"Fort Lauderdale, FL",0.12627986348122866
+1266,Spirit Air Lines,2014-07-01,"Dallas/Fort Worth, TX",0.11764705882352941
+1267,Spirit Air Lines,2014-08-01,"Fort Lauderdale, FL",0.12871287128712872
+1268,Spirit Air Lines,2014-09-01,"Fort Lauderdale, FL",0.12609970674486803
+1269,Spirit Air Lines,2014-10-01,"Fort Lauderdale, FL",0.14
+1270,Spirit Air Lines,2014-11-01,"Fort Lauderdale, FL",0.11924119241192412
+1271,Spirit Air Lines,2014-12-01,"Fort Lauderdale, FL",0.1299638989169675
+1272,Spirit Air Lines,2015-01-01,"Fort Lauderdale, FL",0.13592233009708737
+1273,Spirit Air Lines,2015-02-01,"Fort Lauderdale, FL",0.12852664576802508
+1274,Spirit Air Lines,2015-03-01,"Fort Lauderdale, FL",0.1178343949044586
+1275,Spirit Air Lines,2015-04-01,"Dallas/Fort Worth, TX",0.09615384615384616
+1276,Spirit Air Lines,2015-05-01,"Fort Lauderdale, FL",0.10379746835443038
+1277,Spirit Air Lines,2015-06-01,"Dallas/Fort Worth, TX",0.10101010101010101
+1278,Spirit Air Lines,2015-07-01,"Fort Lauderdale, FL",0.096
+1279,Spirit Air Lines,2015-08-01,"Fort Lauderdale, FL",0.11081794195250659
+1280,Spirit Air Lines,2015-09-01,"Fort Lauderdale, FL",0.09302325581395349
+1281,Spirit Air Lines,2015-10-01,"Fort Lauderdale, FL",0.11139896373056994
+1282,Spirit Air Lines,2015-11-01,"Fort Lauderdale, FL",0.10101010101010101
+1283,Spirit Air Lines,2015-12-01,"Fort Lauderdale, FL",0.12030075187969924
+1284,Spirit Air Lines,2016-01-01,"Fort Lauderdale, FL",0.13
+1285,Spirit Air Lines,2016-02-01,"Fort Lauderdale, FL",0.11421319796954314
+1286,Spirit Air Lines,2016-03-01,"Fort Lauderdale, FL",0.11358024691358025
+1287,Spirit Air Lines,2016-04-01,"Fort Lauderdale, FL",0.10172413793103448
+1288,Spirit Air Lines,2016-05-01,"Fort Lauderdale, FL",0.10981308411214953
+1289,Spirit Air Lines,2016-06-01,"Fort Lauderdale, FL",0.11428571428571428
+1290,Spirit Air Lines,2016-07-01,"Fort Lauderdale, FL",0.10816777041942605
+1291,Spirit Air Lines,2016-08-01,"Fort Lauderdale, FL",0.09684684684684684
+1292,Spirit Air Lines,2016-09-01,"Fort Lauderdale, FL",0.10425531914893617
+1293,Spirit Air Lines,2016-10-01,"Fort Lauderdale, FL",0.1141552511415525
+1294,Spirit Air Lines,2016-11-01,"Fort Lauderdale, FL",0.10740740740740741
+1295,Spirit Air Lines,2016-12-01,"Fort Lauderdale, FL",0.11512415349887133
+1296,Spirit Air Lines,2017-01-01,"Fort Lauderdale, FL",0.11893203883495146
+1297,Spirit Air Lines,2017-02-01,"Fort Lauderdale, FL",0.11333333333333333
+1298,Spirit Air Lines,2017-03-01,"Fort Lauderdale, FL",0.10596026490066225
+1299,Spirit Air Lines,2017-04-01,"Fort Lauderdale, FL",0.09355828220858896
+1300,Spirit Air Lines,2017-05-01,"Fort Lauderdale, FL",0.09580838323353294
+1301,Spirit Air Lines,2017-06-01,"Fort Lauderdale, FL",0.10642201834862386
+1302,Spirit Air Lines,2017-07-01,"Fort Lauderdale, FL",0.10546139359698682
+1303,Spirit Air Lines,2017-08-01,"Fort Lauderdale, FL",0.10404624277456648
+1304,Spirit Air Lines,2017-09-01,"Fort Lauderdale, FL",0.08631921824104234
+1305,Spirit Air Lines,2017-10-01,"Fort Lauderdale, FL",0.10386965376782077
+1306,Spirit Air Lines,2017-11-01,"Fort Lauderdale, FL",0.0867579908675799
+1307,Spirit Air Lines,2017-12-01,"Fort Lauderdale, FL",0.12475247524752475
+1308,Spirit Air Lines,2018-01-01,"Fort Lauderdale, FL",0.10778443113772455
+1309,Spirit Air Lines,2018-02-01,"Fort Lauderdale, FL",0.09671532846715329
+1310,Spirit Air Lines,2018-03-01,"Fort Lauderdale, FL",0.09181969949916527
+1311,Spirit Air Lines,2018-04-01,"Fort Lauderdale, FL",0.0960591133004926
+1312,Spirit Air Lines,2018-05-01,"Fort Lauderdale, FL",0.09446254071661238
+1313,Spirit Air Lines,2018-06-01,"Fort Lauderdale, FL",0.09888357256778309
+1314,Spirit Air Lines,2018-07-01,"Fort Lauderdale, FL",0.09342560553633218
+1315,Spirit Air Lines,2018-08-01,"Fort Lauderdale, FL",0.09666666666666666
+1316,Spirit Air Lines,2018-09-01,"Fort Lauderdale, FL",0.10509031198686371
+1317,Spirit Air Lines,2018-10-01,"Fort Lauderdale, FL",0.10144927536231885
+1318,Spirit Air Lines,2018-11-01,"Fort Lauderdale, FL",0.10884353741496598
+1319,Spirit Air Lines,2018-12-01,"Fort Lauderdale, FL",0.10207612456747404
+1320,Spirit Air Lines,2019-01-01,"Fort Lauderdale, FL",0.0944741532976827
+1321,Spirit Air Lines,2019-02-01,"Fort Lauderdale, FL",0.09353348729792148
+1322,Spirit Air Lines,2019-03-01,"Fort Lauderdale, FL",0.09598214285714286
+1323,Spirit Air Lines,2019-04-01,"Fort Lauderdale, FL",0.09513742071881606
+1324,Spirit Air Lines,2019-05-01,"Fort Lauderdale, FL",0.08296943231441048
+1325,Spirit Air Lines,2019-06-01,"Fort Lauderdale, FL",0.0830945558739255
+1326,Spirit Air Lines,2019-07-01,"Fort Lauderdale, FL",0.0812133072407045
+1327,Spirit Air Lines,2019-08-01,"Fort Lauderdale, FL",0.0763819095477387
+1328,Spirit Air Lines,2019-09-01,"Fort Lauderdale, FL",0.08608058608058608
+1329,Spirit Air Lines,2019-10-01,"Fort Lauderdale, FL",0.09154929577464789
+1330,Spirit Air Lines,2019-11-01,"Fort Lauderdale, FL",0.09028374892519346
+1331,Spirit Air Lines,2019-12-01,"Fort Lauderdale, FL",0.10077519379844961
+1332,Sun Country Airlines d/b/a MN Airlines,2014-01-01,"Bullhead City, AZ",0.20434782608695654
+1333,Sun Country Airlines d/b/a MN Airlines,2014-02-01,"Bullhead City, AZ",0.23618090452261306
+1334,Sun Country Airlines d/b/a MN Airlines,2014-03-01,"Bullhead City, AZ",0.20920502092050208
+1335,Sun Country Airlines d/b/a MN Airlines,2014-04-01,"Minneapolis, MN",0.19583333333333333
+1336,Sun Country Airlines d/b/a MN Airlines,2014-05-01,"Bullhead City, AZ",0.23222748815165878
+1337,Sun Country Airlines d/b/a MN Airlines,2014-06-01,"Bullhead City, AZ",0.182648401826484
+1338,Sun Country Airlines d/b/a MN Airlines,2014-07-01,"Bullhead City, AZ",0.20175438596491227
+1339,Sun Country Airlines d/b/a MN Airlines,2014-08-01,"Bullhead City, AZ",0.15384615384615385
+1340,Sun Country Airlines d/b/a MN Airlines,2014-09-01,"Minneapolis, MN",0.12601626016260162
+1341,Sun Country Airlines d/b/a MN Airlines,2014-10-01,"Minneapolis, MN",0.13380281690140844
+1342,Sun Country Airlines d/b/a MN Airlines,2014-11-01,"Minneapolis, MN",0.15593220338983052
+1343,Sun Country Airlines d/b/a MN Airlines,2014-12-01,"Minneapolis, MN",0.19402985074626866
+1344,Sun Country Airlines d/b/a MN Airlines,2015-01-01,"Minneapolis, MN",0.2206405693950178
+1345,Sun Country Airlines d/b/a MN Airlines,2015-02-01,"Minneapolis, MN",0.20717131474103587
+1346,Sun Country Airlines d/b/a MN Airlines,2015-03-01,"Minneapolis, MN",0.1723076923076923
+1347,Sun Country Airlines d/b/a MN Airlines,2015-04-01,"Minneapolis, MN",0.2041522491349481
+1348,Sun Country Airlines d/b/a MN Airlines,2015-05-01,"Minneapolis, MN",0.19615384615384615
+1349,Sun Country Airlines d/b/a MN Airlines,2015-06-01,"Minneapolis, MN",0.2081447963800905
+1350,Sun Country Airlines d/b/a MN Airlines,2015-07-01,"Minneapolis, MN",0.18859649122807018
+1351,Sun Country Airlines d/b/a MN Airlines,2015-08-01,"Bullhead City, AZ",0.1906474820143885
+1352,Sun Country Airlines d/b/a MN Airlines,2015-09-01,"Bullhead City, AZ",0.175
+1353,Sun Country Airlines d/b/a MN Airlines,2015-10-01,"Bullhead City, AZ",0.2086720867208672
+1354,Sun Country Airlines d/b/a MN Airlines,2015-11-01,"Bullhead City, AZ",0.2140845070422535
+1355,Sun Country Airlines d/b/a MN Airlines,2015-12-01,"Bullhead City, AZ",0.15767634854771784
+1356,Sun Country Airlines d/b/a MN Airlines,2016-01-01,"Bullhead City, AZ",0.24277456647398843
+1357,Sun Country Airlines d/b/a MN Airlines,2016-02-01,"Bullhead City, AZ",0.23225806451612904
+1358,Sun Country Airlines d/b/a MN Airlines,2016-03-01,"Bullhead City, AZ",0.20157068062827224
+1359,Sun Country Airlines d/b/a MN Airlines,2016-04-01,"Bullhead City, AZ",0.19680851063829788
+1360,Sun Country Airlines d/b/a MN Airlines,2016-05-01,"Bullhead City, AZ",0.20588235294117646
+1361,Sun Country Airlines d/b/a MN Airlines,2016-06-01,"Bullhead City, AZ",0.23574144486692014
+1362,Sun Country Airlines d/b/a MN Airlines,2016-07-01,"Bullhead City, AZ",0.27350427350427353
+1363,Sun Country Airlines d/b/a MN Airlines,2016-08-01,"Bullhead City, AZ",0.1912751677852349
+1364,Sun Country Airlines d/b/a MN Airlines,2016-09-01,"Bullhead City, AZ",0.14397905759162305
+1365,Sun Country Airlines d/b/a MN Airlines,2016-10-01,"Bullhead City, AZ",0.13681592039800994
+1366,Sun Country Airlines d/b/a MN Airlines,2016-11-01,"Bullhead City, AZ",0.15326633165829145
+1367,Sun Country Airlines d/b/a MN Airlines,2016-12-01,"Minneapolis, MN",0.17293233082706766
+1368,Sun Country Airlines d/b/a MN Airlines,2017-01-01,"Bullhead City, AZ",0.18960244648318042
+1369,Sun Country Airlines d/b/a MN Airlines,2017-02-01,"Bullhead City, AZ",0.21107266435986158
+1370,Sun Country Airlines d/b/a MN Airlines,2017-03-01,"Bullhead City, AZ",0.17980295566502463
+1371,Sun Country Airlines d/b/a MN Airlines,2017-04-01,"Bullhead City, AZ",0.20155038759689922
+1372,Sun Country Airlines d/b/a MN Airlines,2017-05-01,"Bullhead City, AZ",0.18848167539267016
+1373,Sun Country Airlines d/b/a MN Airlines,2017-06-01,"Bullhead City, AZ",0.16822429906542055
+1374,Sun Country Airlines d/b/a MN Airlines,2017-07-01,"Bullhead City, AZ",0.25882352941176473
+1375,Sun Country Airlines d/b/a MN Airlines,2017-08-01,"Bullhead City, AZ",0.19424460431654678
+1376,Sun Country Airlines d/b/a MN Airlines,2017-09-01,"Bullhead City, AZ",0.13636363636363635
+1377,Sun Country Airlines d/b/a MN Airlines,2017-10-01,"Bullhead City, AZ",0.15046296296296297
+1378,Sun Country Airlines d/b/a MN Airlines,2017-11-01,"Bullhead City, AZ",0.16322314049586778
+1379,Sun Country Airlines d/b/a MN Airlines,2017-12-01,"Minneapolis, MN",0.14925373134328357
+1380,Sun Country Airlines d/b/a MN Airlines,2018-01-01,"Bullhead City, AZ",0.21428571428571427
+1381,Sun Country Airlines d/b/a MN Airlines,2018-02-01,"Bullhead City, AZ",0.20648967551622419
+1382,Sun Country Airlines d/b/a MN Airlines,2018-03-01,"Bullhead City, AZ",0.18681318681318682
+1383,Sun Country Airlines d/b/a MN Airlines,2018-04-01,"Bullhead City, AZ",0.2245430809399478
+1384,Sun Country Airlines d/b/a MN Airlines,2018-05-01,"Bullhead City, AZ",0.21407624633431085
+1385,Sun Country Airlines d/b/a MN Airlines,2018-06-01,"Bullhead City, AZ",0.19798657718120805
+1386,Sun Country Airlines d/b/a MN Airlines,2018-07-01,"Bullhead City, AZ",0.2578125
+1387,Sun Country Airlines d/b/a MN Airlines,2018-08-01,"Bullhead City, AZ",0.19498607242339833
+1388,Sun Country Airlines d/b/a MN Airlines,2018-09-01,"Bullhead City, AZ",0.12526997840172785
+1389,Sun Country Airlines d/b/a MN Airlines,2018-10-01,"Bullhead City, AZ",0.15274949083503056
+1390,Sun Country Airlines d/b/a MN Airlines,2018-11-01,"Bullhead City, AZ",0.14481409001956946
+1391,Sun Country Airlines d/b/a MN Airlines,2018-12-01,"Gulfport/Biloxi, MS",0.13690476190476192
+1392,Sun Country Airlines d/b/a MN Airlines,2019-01-01,"Bullhead City, AZ",0.17525773195876287
+1393,Sun Country Airlines d/b/a MN Airlines,2019-02-01,"Bullhead City, AZ",0.17771084337349397
+1394,Sun Country Airlines d/b/a MN Airlines,2019-03-01,"Bullhead City, AZ",0.17543859649122806
+1395,Sun Country Airlines d/b/a MN Airlines,2019-04-01,"Bullhead City, AZ",0.16666666666666666
+1396,Sun Country Airlines d/b/a MN Airlines,2019-05-01,"Bullhead City, AZ",0.1642512077294686
+1397,Sun Country Airlines d/b/a MN Airlines,2019-06-01,"Bullhead City, AZ",0.16459627329192547
+1398,Sun Country Airlines d/b/a MN Airlines,2019-07-01,"Bullhead City, AZ",0.17302052785923755
+1399,Sun Country Airlines d/b/a MN Airlines,2019-08-01,"Bullhead City, AZ",0.1509433962264151
+1400,Sun Country Airlines d/b/a MN Airlines,2019-09-01,"Bullhead City, AZ",0.1095890410958904
+1401,Sun Country Airlines d/b/a MN Airlines,2019-10-01,"Bullhead City, AZ",0.14150943396226415
+1402,Sun Country Airlines d/b/a MN Airlines,2019-11-01,"Bullhead City, AZ",0.13513513513513514
+1403,Sun Country Airlines d/b/a MN Airlines,2019-12-01,"Gulfport/Biloxi, MS",0.12394366197183099
+1404,US Airways Inc.,2014-01-01,"Charlotte, NC",0.19517795637198623
+1405,US Airways Inc.,2014-02-01,"Charlotte, NC",0.1890380313199105
+1406,US Airways Inc.,2014-03-01,"Charlotte, NC",0.203125
+1407,US Airways Inc.,2014-04-01,"Charlotte, NC",0.19686800894854586
+1408,US Airways Inc.,2014-05-01,"Charlotte, NC",0.2012847965738758
+1409,US Airways Inc.,2014-06-01,"Charlotte, NC",0.19444444444444445
+1410,US Airways Inc.,2014-07-01,"Charlotte, NC",0.17894736842105263
+1411,US Airways Inc.,2014-08-01,"Charlotte, NC",0.1865079365079365
+1412,US Airways Inc.,2014-09-01,"Charlotte, NC",0.17485029940119762
+1413,US Airways Inc.,2014-10-01,"Charlotte, NC",0.18571428571428572
+1414,US Airways Inc.,2014-11-01,"Charlotte, NC",0.18327183271832717
+1415,US Airways Inc.,2014-12-01,"Charlotte, NC",0.18895705521472392
+1416,US Airways Inc.,2015-01-01,"Charlotte, NC",0.18928571428571428
+1417,US Airways Inc.,2015-02-01,"Charlotte, NC",0.1819277108433735
+1418,US Airways Inc.,2015-03-01,"Charlotte, NC",0.17929292929292928
+1419,US Airways Inc.,2015-04-01,"Charlotte, NC",0.17861482381530985
+1420,US Airways Inc.,2015-05-01,"Charlotte, NC",0.16037735849056603
+1421,US Airways Inc.,2015-06-01,"Charlotte, NC",0.16971916971916973
+1422,United Air Lines Inc.,2014-01-01,"Houston, TX",0.11282051282051282
+1423,United Air Lines Inc.,2014-02-01,"Chicago, IL",0.11066997518610422
+1424,United Air Lines Inc.,2014-03-01,"Chicago, IL",0.11209006363191386
+1425,United Air Lines Inc.,2014-04-01,"Chicago, IL",0.11286919831223628
+1426,United Air Lines Inc.,2014-05-01,"Chicago, IL",0.11441241685144124
+1427,United Air Lines Inc.,2014-06-01,"Chicago, IL",0.11910112359550562
+1428,United Air Lines Inc.,2014-07-01,"Chicago, IL",0.10115473441108545
+1429,United Air Lines Inc.,2014-08-01,"Chicago, IL",0.11056401074306177
+1430,United Air Lines Inc.,2014-09-01,"Chicago, IL",0.11382878645343368
+1431,United Air Lines Inc.,2014-10-01,"Chicago, IL",0.11365807067812798
+1432,United Air Lines Inc.,2014-11-01,"Chicago, IL",0.11851851851851852
+1433,United Air Lines Inc.,2014-12-01,"Chicago, IL",0.10995260663507109
+1434,United Air Lines Inc.,2015-01-01,"Chicago, IL",0.11667527103768714
+1435,United Air Lines Inc.,2015-02-01,"Houston, TX",0.10868407032498668
+1436,United Air Lines Inc.,2015-03-01,"Chicago, IL",0.12027491408934708
+1437,United Air Lines Inc.,2015-04-01,"Chicago, IL",0.12086874409820586
+1438,United Air Lines Inc.,2015-05-01,"Chicago, IL",0.11505229649840837
+1439,United Air Lines Inc.,2015-06-01,"Chicago, IL",0.11376465479808945
+1440,United Air Lines Inc.,2015-07-01,"Chicago, IL",0.12171052631578948
+1441,United Air Lines Inc.,2015-08-01,"Chicago, IL",0.12041884816753927
+1442,United Air Lines Inc.,2015-09-01,"Chicago, IL",0.1215113782739373
+1443,United Air Lines Inc.,2015-10-01,"Chicago, IL",0.11457868925546144
+1444,United Air Lines Inc.,2015-11-01,"Chicago, IL",0.12186379928315412
+1445,United Air Lines Inc.,2015-12-01,"Houston, TX",0.11188811188811189
+1446,United Air Lines Inc.,2016-01-01,"Chicago, IL",0.11187528656579551
+1447,United Air Lines Inc.,2016-02-01,"Chicago, IL",0.11767508337303478
+1448,United Air Lines Inc.,2016-03-01,"Chicago, IL",0.12276882890727035
+1449,United Air Lines Inc.,2016-04-01,"Chicago, IL",0.12466487935656836
+1450,United Air Lines Inc.,2016-05-01,"Chicago, IL",0.13379369874838154
+1451,United Air Lines Inc.,2016-06-01,"Chicago, IL",0.1191437802907916
+1452,United Air Lines Inc.,2016-07-01,"Chicago, IL",0.12568077084206117
+1453,United Air Lines Inc.,2016-08-01,"Chicago, IL",0.13781512605042018
+1454,United Air Lines Inc.,2016-09-01,"Chicago, IL",0.13196611680784665
+1455,United Air Lines Inc.,2016-10-01,"Chicago, IL",0.13227990970654627
+1456,United Air Lines Inc.,2016-11-01,"Chicago, IL",0.1307901907356948
+1457,United Air Lines Inc.,2016-12-01,"Chicago, IL",0.11359649122807018
+1458,United Air Lines Inc.,2017-01-01,"Chicago, IL",0.11662650602409638
+1459,United Air Lines Inc.,2017-02-01,"Chicago, IL",0.12090558766859345
+1460,United Air Lines Inc.,2017-03-01,"Chicago, IL",0.12671081677704193
+1461,United Air Lines Inc.,2017-04-01,"Chicago, IL",0.12207792207792208
+1462,United Air Lines Inc.,2017-05-01,"Chicago, IL",0.11885612153708669
+1463,United Air Lines Inc.,2017-06-01,"Chicago, IL",0.12530512611879577
+1464,United Air Lines Inc.,2017-07-01,"Chicago, IL",0.12273302404048925
+1465,United Air Lines Inc.,2017-08-01,"Chicago, IL",0.12977983777520277
+1466,United Air Lines Inc.,2017-09-01,"Chicago, IL",0.1244408296055307
+1467,United Air Lines Inc.,2017-10-01,"Chicago, IL",0.1192468619246862
+1468,United Air Lines Inc.,2017-11-01,"Chicago, IL",0.11140466754733598
+1469,United Air Lines Inc.,2017-12-01,"Chicago, IL",0.1055952881783761
+1470,United Air Lines Inc.,2018-01-01,"Houston, TX",0.10780834072759539
+1471,United Air Lines Inc.,2018-02-01,"Chicago, IL",0.11029411764705882
+1472,United Air Lines Inc.,2018-03-01,"Denver, CO",0.1020128087831656
+1473,United Air Lines Inc.,2018-04-01,"Chicago, IL",0.10417582417582417
+1474,United Air Lines Inc.,2018-05-01,"Houston, TX",0.10431985294117647
+1475,United Air Lines Inc.,2018-06-01,"Chicago, IL",0.11838599162542825
+1476,United Air Lines Inc.,2018-07-01,"Chicago, IL",0.11575178997613365
+1477,United Air Lines Inc.,2018-08-01,"Chicago, IL",0.11785216178521618
+1478,United Air Lines Inc.,2018-09-01,"Chicago, IL",0.12110726643598616
+1479,United Air Lines Inc.,2018-10-01,"Chicago, IL",0.11602209944751381
+1480,United Air Lines Inc.,2018-11-01,"Chicago, IL",0.11595330739299611
+1481,United Air Lines Inc.,2018-12-01,"Chicago, IL",0.11220621683093253
+1482,United Air Lines Inc.,2019-01-01,"Chicago, IL",0.10945674044265594
+1483,United Air Lines Inc.,2019-02-01,"Houston, TX",0.11461794019933555
+1484,United Air Lines Inc.,2019-03-01,"Chicago, IL",0.1138763197586727
+1485,United Air Lines Inc.,2019-04-01,"Chicago, IL",0.12314853999153619
+1486,United Air Lines Inc.,2019-05-01,"Chicago, IL",0.12106918238993711
+1487,United Air Lines Inc.,2019-06-01,"Chicago, IL",0.12166558230318802
+1488,United Air Lines Inc.,2019-07-01,"Chicago, IL",0.12108412530799015
+1489,United Air Lines Inc.,2019-08-01,"Chicago, IL",0.12005365526492287
+1490,United Air Lines Inc.,2019-09-01,"Chicago, IL",0.12290076335877863
+1491,United Air Lines Inc.,2019-10-01,"Chicago, IL",0.11764705882352941
+1492,United Air Lines Inc.,2019-11-01,"Chicago, IL",0.11766945925361767
+1493,United Air Lines Inc.,2019-12-01,"Chicago, IL",0.11079136690647481
