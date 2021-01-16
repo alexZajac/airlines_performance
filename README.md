@@ -1,5 +1,7 @@
 # RAMP starting kit on Airlines Performance Prediction
 
+Yann KERVELLA | Olivier BOIVIN | Soumaya SABRY | Maxime LEPEYTRE | Alexandre ZAJAC
+
 [![Build Status](https://travis-ci.com/alexZajac/airlines_performance.svg?branch=master)](https://travis-ci.com/alexZajac/airlines_performance)
 
 ## Getting started
