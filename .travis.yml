@@ -16,8 +16,7 @@ install:
 script:
   - python download_data.py
   - jupyter nbconvert --execute airlines_performance.ipynb --ExecutePreprocessor.kernel_name=$IPYTHON_KERNEL --to markdown
-  - travis_wait 30 jupyter nbconvert --execute ./explanations_professors/data_engineering.ipynb --ExecutePreprocessor.kernel_name=$IPYTHON_KERNEL --to markdown
   - ramp-test --submission=starting_kit
-  - travis_wait 20 ramp-test --submission=lstm_kit
+  - travis_wait 15 ramp-test --submission=lstm_kit
 notifications:
   email: true
